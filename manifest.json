@@ -1,6 +1,6 @@
 {
-    "name": "explore",
-    "short_name": "explore",
+    "name": "meeting_booking",
+    "short_name": "meeting_booking",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
