@@ -33749,8 +33749,8 @@ q.ok.k1.m9(s)}r.xr=r.T=r.y2=r.y1=null
 r.OL()}}
 A.mO.prototype={
 a_C(a){var s,r,q,p,o,n,m=this
-for(s=m.CW,r=a*0.05,q=m.cx,p=300,o=0;o<4;o=n){n=o+1
-p+=Math.sin(a*s[o]*(1+Math.sin(r*n)*0.1))*q[o]*300}m.ax.aU(0,p*Math.min((a-m.cy)/0.5,1))},
+for(s=m.CW,r=a*0.05,q=m.cx,p=23,o=0;o<4;o=n){n=o+1
+p+=Math.sin(a*s[o]*(1+Math.sin(r*n)*0.1))*q[o]*8}m.ax.aU(0,p*Math.min((a-m.cy)/0.5,1))},
 aK(a){var s=this
 if(!s.db)return
 s.uN(a)
