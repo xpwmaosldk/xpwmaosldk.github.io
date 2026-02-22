@@ -34296,7 +34296,7 @@ n=p?A.aW(230,B.cD.K()>>>16&255,B.cD.K()>>>8&255,B.cD.K()&255):f
 m=p?A.l4(24):f
 l=p?B.hN:B.aH
 k=A.w2("\uc81c "+(g.w+1)+" \ud68c \ub85c\ub610 6/45",B.KG)
-d=d?"\ubc29\uc1a1 \uc9c4\ud589 \uc911":"\uc2a4\ud0e0\ubc14\uc774"
+d=d?"\ucd94\ucca8 \uc9c4\ud589 \uc911":"\ub300\uae30\uc911"
 j=t.F
 j=A.c([A.Ph(A.c([k,A.w2(d,A.iZ(f,f,B.h,f,f,f,f,f,f,f,f,p?14:18,f,f,B.bc,f,f,!0,f,f,f,f,f,f,f,f))],j),B.bn,B.hN)],j)
 if(!p)j.push(B.HY)
@@ -34311,14 +34311,14 @@ return A.fH(f,A.abp(!1,A.vi(j,B.am,B.aT,l),!1),B.F,f,f,new A.dA(n,f,f,m,f,f,B.aD
 A.nR.prototype={
 a_(a){return A.TK(new A.Qy(this,a))}}
 A.Qy.prototype={
-$2(a,b){var s,r,q,p=null,o=B.c.d8((b.b-120)/6,20,42),n=this.a,m=n.c
+$2(a,b){var s,r,q,p=null,o=B.c.d8((b.b-120)/6,20,38),n=this.a,m=n.c
 if(m.length===0)return A.OL(A.w2("\ub300\uae30 \uc911\uc785\ub2c8\ub2e4",A.iZ(p,p,A.aW(77,B.h.K()>>>16&255,B.h.K()>>>8&255,B.h.K()&255),p,p,p,p,p,p,p,p,16,p,p,B.H,p,p,!0,p,p,p,p,p,p,p,p)),p,p)
 s=n.e
 r=A.cm(this.b,p,t.w).w
 m=m.length
 q=s==null
 q=q?B.iZ:p
-return new A.CW(new A.a0U(new A.Qx(n,o,o*0.45),m,!0,!0,!0,p),new A.bl(16,16,16,r.r.d+24),B.b5,!1,s,p,q,!1,p,m,B.aQ,p,p,B.al,B.ae,p)},
+return new A.CW(new A.a0U(new A.Qx(n,o,o*0.45),m,!0,!0,!0,p),new A.bl(16,12,16,r.r.d+24),B.b5,!1,s,p,q,!1,p,m,B.aQ,p,p,B.al,B.ae,p)},
 $S:45}
 A.Qx.prototype={
 $2(a,b){var s,r,q=null,p=this.a.c,o=p.length-1-b,n=p[o]
@@ -34335,11 +34335,11 @@ A.ty.prototype={
 aq(){return new A.xl(new A.rR(A.aq(t.A_),$.au()))}}
 A.xl.prototype={
 a_X(){var s=this.d
-s.e3(s.a.as.x.a>0.375?0.15:0.6,B.zs,B.bb)},
-a_(a){return A.abp(!1,new A.rS(0.15,0.15,0.6,!0,this.d,new A.a5o(this),null),!0)}}
+s.e3(s.a.as.x.a>0.42500000000000004?0.2:0.65,B.zs,B.bb)},
+a_(a){return A.abp(!1,new A.rS(0.2,0.2,0.65,!0,this.d,new A.a5o(this),null),!0)}}
 A.a5o.prototype={
 $2(a,b){var s=null,r=A.aW(26,B.h.K()>>>16&255,B.h.K()>>>8&255,B.h.K()&255),q=A.c([new A.ec(0,B.aL,A.aW(179,B.k.K()>>>16&255,B.k.K()>>>8&255,B.k.K()&255),B.Ew,30)],t.sq),p=this.a
-return A.fH(s,A.Ph(A.c([A.aaQ(B.ae,A.fH(s,A.OL(A.fH(s,s,B.F,s,s,new A.dA(B.zc,s,s,A.l4(3),s,s,B.aD),6,s,s,48),s,s),B.F,s,s,s,s,s,B.A4,1/0),B.aQ,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,p.ga_W(),s,s,s),A.jE(new A.nR(p.a.c,!0,b,s),1)],t.F),B.am,B.aH),B.F,s,s,new A.dA(B.cD,s,new A.cJ(new A.bP(r,1.5,B.I,-1),B.t,B.t,B.t),B.wE,q,s,B.aD),s,s,s,s)},
+return A.fH(s,A.Ph(A.c([A.aaQ(B.ae,A.fH(s,A.OL(A.fH(s,s,B.F,s,s,new A.dA(B.zc,s,s,A.l4(2.5),s,s,B.aD),5,s,s,48),s,s),B.F,s,s,s,s,s,B.A4,1/0),B.aQ,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,p.ga_W(),s,s,s),A.jE(new A.nR(p.a.c,!0,b,s),1)],t.F),B.am,B.aH),B.F,s,s,new A.dA(B.cD,s,new A.cJ(new A.bP(r,1.5,B.I,-1),B.t,B.t,B.t),B.wE,q,s,B.aD),s,s,s,s)},
 $S:209}
 A.iy.prototype={
 gMD(){var s,r=this.mi
@@ -70985,8 +70985,8 @@ B.e6=new A.rX(1,"edgeA")
 B.kh=new A.rX(2,"edgeB")
 B.c2=new A.bl(0,0,0,0)
 B.A3=new A.bl(0,0,0,12)
-B.A4=new A.bl(0,12,0,12)
-B.A5=new A.bl(12,16,12,16)
+B.A4=new A.bl(0,12,0,8)
+B.A5=new A.bl(12,14,12,14)
 B.A6=new A.bl(16,0,16,0)
 B.A7=new A.bl(16,16,16,16)
 B.A8=new A.bl(24,24,24,24)
