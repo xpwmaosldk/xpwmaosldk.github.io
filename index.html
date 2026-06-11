@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume // Full-Stack Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .brutal-shadow {
+      box-shadow: 6px 6px 0px #000;
+    }
+
+    .brutal-shadow-lg {
+      box-shadow: 10px 10px 0px #000;
+    }
+
+    .brutal-shadow-sm {
+      box-shadow: 3px 3px 0px #000;
+    }
+
+    .brutal-btn:active {
+      transform: translate(3px, 3px);
+      box-shadow: 3px 3px 0px #000;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FFE600] text-black font-sans antialiased p-4 md:p-12 selection:bg-black selection:text-[#FFE600]">
+
+  <main class="max-w-4xl mx-auto space-y-12">
+
+    <!-- Header BLOCK -->
+    <header class="bg-white border-4 border-black p-6 md:p-8 brutal-shadow-lg space-y-4">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="bg-black text-white px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider">CAREER: 9 YEARS
+          8 MONTHS</span>
+        <span
+          class="bg-blue-400 text-black border-2 border-black px-3 py-0.5 font-mono text-xs font-bold uppercase">SENIOR
+          FULL-STACK</span>
+      </div>
+
+      <p class="text-sm md:text-base font-bold leading-relaxed text-zinc-900 border-t-2 border-black pt-4">
+        풀스택 개발 역량과 문제 해결 능력을 바탕으로 사용자 경험을 혁신하고 비즈니스 성장에 직접적으로 기여하며 세상에 긍정적인 변화를 줄 수 있는 서비스를 만드는 것을 목표로 합니다.
+        서비스 기획부터 개발, 출시, 운영까지의 전 과정 경험을 살려, 안정적이고 확장 가능한 시스템을 구축하고 최적화하여 사용자에게 실질적인 가치를 제공하는 데 집중하고 있습니다.
+      </p>
+      <div class="flex flex-wrap gap-4 font-mono text-xs font-bold border-t border-zinc-200 pt-3">
+        <a href="mailto:xpwmaosldk@gmail.com" class="flex items-center gap-1 hover:underline"><i
+            class="fa-regular fa-envelope"></i> xpwmaosldk@gmail.com</a>
+      </div>
+    </header>
+
+    <!-- Live Sandbox STATIONS -->
+    <section class="space-y-4">
+      <h2
+        class="inline-block bg-black text-white px-4 py-1 text-sm font-black uppercase tracking-wider brutal-shadow-sm">
+        ⚡ DEPLOYED & PROJECTS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-[#94FF98] border-4 border-black p-6 brutal-shadow space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-black uppercase tracking-tight">🔮 3D LOTTO SIMULATOR</h3>
+              <span class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[10px] font-bold">FLUTTER
+                WEB</span>
+            </div>
+            <p class="text-xs font-bold text-zinc-900 leading-relaxed">
+              Flame/Forge2D 물리 엔진 레이어를 활용하여 웹 브라우저 환경에서 현실감 넘치는 3D 로또 볼 믹싱 애니메이션을 구현한 시뮬레이션입니다.
+            </p>
+          </div>
+          <a href="https://xpwmaosldk.github.io/LotteryPredictor" target="_blank"
+            class="w-full text-center bg-white border-2 border-black py-2 text-xs font-bold uppercase brutal-btn brutal-shadow">LAUNCH
+            LIVE SITE <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+        </div>
+
+        <div class="bg-[#FF94E7] border-4 border-black p-6 brutal-shadow space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-black uppercase tracking-tight">🐎 HORSE RACE PREDICTOR</h3>
+              <span class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[10px] font-bold">REACT
+                SYSTEM</span>
+            </div>
+            <p class="text-xs font-bold text-zinc-900 leading-relaxed">
+              공공 API(한국마사회)를 활용한 경마정보 전달 및 순위 예측 서비스입니다. 바이브 코딩 컴포넌트를 응용해 데이터를 시각화합니다.
+            </p>
+          </div>
+          <a href="https://xpwmaosldk.github.io/HorseRacePredictor" target="_blank"
+            class="w-full text-center bg-white border-2 border-black py-2 text-xs font-bold uppercase brutal-btn brutal-shadow">LAUNCH
+            LIVE SITE <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Open Source Packages -->
+    <section class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+      <h2 class="text-xl font-black uppercase tracking-tight">DISTRIBUTED OPEN SOURCE PACKAGES</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono font-bold">
+        <a href="https://pub.dev/packages/number_pagination" target="_blank"
+          class="p-3 bg-zinc-50 border-2 border-black hover:bg-zinc-100 block transition">
+          <span class="text-blue-600">📦 number_pagination (pub.dev)</span>
+          <p class="text-zinc-600 font-sans mt-1">Flutter Web 환경에서 대용량 데이터 로드 시 성능 저하를 방지하기 위해 무한 스크롤 방식을 대체하는 번호 지정형
+            고성능 넘버 페이징 오픈소스 패키지 고안 및 전 세계 배포.</p>
+        </a>
+        <a href="https://pub.dev/packages/single_centered_multi_child_layout" target="_blank"
+          class="p-3 bg-zinc-50 border-2 border-black hover:bg-zinc-100 block transition">
+          <span class="text-blue-600">📦 single_centered_multi_child_layout</span>
+          <p class="text-zinc-600 font-sans mt-1">다중 정렬 제한이 걸린 복잡한 UI 캔버스 트리 내에서 특정 위젯 자식 컬렉션을 스크린 정중앙에 강제 렌더링 정렬하기 위한
+            확장 컴포넌트 레이아웃 패키지.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- GLOBAL OPEN SOURCE CONTRIBUTIONS -->
+    <section class="bg-cyan-300 border-4 border-black p-6 brutal-shadow space-y-4">
+      <h2 class="text-xl font-black uppercase tracking-tight">🌐 GLOBAL OPEN SOURCE CONTRIBUTION</h2>
+      <div class="bg-white border-2 border-black p-4 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-2">
+          <span class="text-sm font-black text-black">🚀 immich-app / immich (Core Mobile Contributor)</span>
+          <a href="https://github.com/immich-app/immich/commits?author=xpwmaosldk" target="_blank"
+            class="bg-black text-white font-mono text-[11px] font-bold px-3 py-1 rounded hover:bg-zinc-800 transition">VIEW
+            COMMITS ↗</a>
+        </div>
+        <p class="text-xs font-bold text-zinc-800 leading-relaxed font-sans">
+          글로벌 대형 오픈소스 백업 및 사진 관리 플랫폼인 <strong class="bg-[#FFE600] px-1">Immich</strong> 프로젝트의 코어 모바일 코드 최적화 및 유지보수에 직접
+          참여했습니다.
+          프로덕션 레벨의 모바일 소스 코드를 면밀히 분석하고 구조 개선안을 제시하여 글로벌 개발자 커뮤니티와 협업하고 코드 품질을 향상하는 데 기여했습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Stack MATRIX -->
+    <section class="bg-white border-4 border-black p-6 brutal-shadow space-y-6">
+      <h2 class="text-2xl font-black uppercase tracking-tight">TECHNICAL STACK CLASSIFICATION</h2>
+
+      <!-- Core Stack Block -->
+      <div class="space-y-2">
+        <span
+          class="inline-block bg-black text-white px-3 py-0.5 font-mono text-xs font-bold uppercase tracking-wider">CORE
+          STACK</span>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold font-mono">
+          <div class="p-4 bg-blue-50 border-2 border-black space-y-1">
+            <span class="text-blue-600">[FRONTEND / APP]</span>
+            <p class="text-zinc-800">Flutter, Dart, Android, Java, Kotlin, JSP, HTML, JavaScript</p>
+          </div>
+          <div class="p-4 bg-emerald-50 border-2 border-black space-y-1">
+            <span class="text-emerald-600">[BACKEND]</span>
+            <p class="text-zinc-800">Spring Boot, MySQL, REST API, Firebase</p>
+          </div>
+          <div class="p-4 bg-purple-50 border-2 border-black space-y-1">
+            <span class="text-purple-600">[INFRA / DEVOPS]</span>
+            <p class="text-zinc-800">AWS (EC2 / S3 / RDS / CloudFront / Lambda / API Gateway / Route53), Git, GitHub
+              Actions, Jenkins</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experienced Stack Block -->
+      <div class="space-y-2">
+        <span
+          class="inline-block bg-zinc-200 text-black border-2 border-black px-3 py-0.5 font-mono text-xs font-bold uppercase tracking-wider">EXPERIENCED
+          STACK</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold font-mono">
+          <div class="p-4 bg-zinc-50 border-2 border-black space-y-1">
+            <span class="text-zinc-600">[FRONTEND / APP]</span>
+            <p class="text-zinc-700">React, Vue, AngularJS, jQuery</p>
+          </div>
+          <div class="p-4 bg-zinc-50 border-2 border-black space-y-1">
+            <span class="text-zinc-600">[BACKEND / DB]</span>
+            <p class="text-zinc-700">QueryDSL, Spring REST Docs, Swagger, Node.js, MariaDB, SQLite, Provider, Docker,
+              Socket Communication,
+              MQTT</p>
+          </div>
+          <div class="p-4 bg-zinc-50 border-2 border-black space-y-1">
+            <span class="text-zinc-600">[ENV]</span>
+            <p class="text-zinc-700">Linux, MacOS, AOSP automotive</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience RECORDS -->
+    <section class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <h2
+          class="inline-block bg-black text-white px-4 py-1 text-sm font-black uppercase tracking-wider brutal-shadow-sm">
+          💼 WORK HISTORY</h2>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- F.LAB -->
+        <div class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2 gap-2">
+            <div>
+              <h3 class="text-lg font-black uppercase">주식회사 파***</h3>
+              <p class="text-xs font-bold text-zinc-500">2021.11 - 2025.06 (3년 8개월) // 정규직</p>
+            </div>
+            <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">CORE
+              FULL-STACK</span>
+          </div>
+          <div class="space-y-4 text-xs font-bold font-mono">
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 사내 메신저 정보 통합 및 연동 System</div>
+              <p class="text-zinc-700 font-sans">업무 효율성 증진을 목표로 사내 정보 검색(와이파이 비밀번호, ssh 접속 정보), CI/CD 정보 연동(GitHub
+                Actions, Jenkins) 및 최신 트렌드 뉴스피드/RSS 연동(GeekNews, 요즘IT) 시스템을 주도적으로 기획 및 개발.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Git, GitHub Actions, Jenkins, RSS API,
+                REST API</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 스마트 수업 시스템</div>
+              <p class="text-zinc-700 font-sans">WebRTC 기반 실시간 영상 수업 및 화면 공유 기능 기존 React 프로젝트 유지보수 및 기능 개선. 주요 버그 수정,
+                글로벌 서비스를 위한 현지화 적용 및 다국적 팀 협업을 통한 UI/UX 개선.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: React, JavaScript, WebRTC, REST API
+              </div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 글로벌향 eSignature 전자 계약</div>
+              <p class="text-zinc-700 font-sans">Flutter Web 기반 반응형 UI/UX 개발 담당, PDF 위 서명/텍스트/이미지 등 커스텀 오버레이 기능 구현.
+                Riverpod 상태관리, GoRouter 라우팅 적용 및 외부 패키지(http, intl, pdf 등) 적극 활용.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Flutter(web), Dart, Riverpod, GoRouter,
+                REST
+                API, PDF Engine</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ AOSP Automotive Boot Optimization (외주개발)</div>
+              <p class="text-zinc-700 font-sans">Java 코드(Preload, SystemServer, Log 등)를 정밀 분석하여 부팅 병목 구간 파악. init.rc 실행
+                순서 조정 및 병렬 처리를 통해 Bootchart 기준 평균 부팅 시간 25% 단축 (60초 → 45초 달성).</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: AOSP automotive(Android), Java, Linux
+                Shell
+                Script, Bootchart</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ AOSP Automotive 시스템 앱 (외주개발)</div>
+              <p class="text-zinc-700 font-sans">차량 관리 시스템(FMS) 연동을 위한 백그라운드 서비스 데이터 수집 시스템 앱 개발. CarProperty Manager 활용
+                VHAL 데이터 수집 및 AWS IoT Core 연동 MQTT 통신 구현. 네트워크 음영 지역 대비 데이터 유실 최소화 메시지 큐 및 재전송 로직 설계.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: AOSP automotive(Android), Kotlin, Java,
+                AIDL, CarService
+                API, AWS IoT Core, MQTT</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 임베디드 보드 개발 QnA 웹 사이트 (외주개발 / <a href="https://topst.ai/" target="_blank"
+                  class="underline text-blue-600">Link</a>)</div>
+              <p class="text-zinc-700 font-sans">Stack Overflow 스타일 Q&A 웹사이트 개발 프로젝트 리딩 및 백엔드 아키텍처 설계. Spring REST Docs
+                활용 API 문서 자동화 및 테스트 환경 구축, MySQL Full-text search 기반 게시글 검색 성능 확보 및 GitHub Actions CI/CD 구축.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Java, Spring Boot, JPA, QueryDSL, Spring
+                REST Docs, MySQL, AWS, Git, Github Actions</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 물류관제서비스 & 대기업 차량관제 연구과제 (외주개발)</div>
+              <p class="text-zinc-700 font-sans">택배 기사 및 관리자용 물류 관제/정산 시스템 앱 개발(Flutter) 및 서버 API 지원. Flutter 기반 크로스 플랫폼
+                아키텍처 직접 설계로 개발 효율성 30% 이상 향상. FCM 푸시 연동 및 webview_flutter 활용 자바스크립트 브릿지 구현(외부 PG 결제, 본인 인증 연동) 및 사용자 행위
+                추적 감사 로그 시스템 구축.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Flutter, Dart, Java, Spring Boot, JPA,
+                MariaDB, FCM, JavaScript Bridge, Jenkins</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EASY TECH FIN -->
+        <div class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2 gap-2">
+            <div>
+              <h3 class="text-lg font-black uppercase">주식회사 이****</h3>
+              <p class="text-xs font-bold text-zinc-500">2021.07 - 2021.10 // 정규직</p>
+            </div>
+            <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">QUANT FLUTTER</span>
+          </div>
+          <div class="p-4 bg-zinc-50 border-2 border-black text-xs font-bold font-mono space-y-3">
+            <div class="text-blue-600">■ 모바일 주식 자동매매 앱</div>
+            <p class="text-zinc-700 font-sans">
+              GetX, Bloc 등 다수 상태관리 라이브러리 혼용으로 인한 복잡도 문제를 진단하고 Provider 기반으로 리팩토링을 단행하여 코드 안정성과 유지보수 효율성 대폭 향상. 증권사 API
+              연동 자동매매 로직 검증 및 오류 수정, Flutter Channel (Method/Event) 활용 네이티브 모듈 데이터 연동 및 성능 최적화 수행.
+            </p>
+            <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Flutter, Dart, Android, Kotlin, Provider,
+              REST API, WebSocket</div>
+          </div>
+        </div>
+
+        <!-- YLABS -->
+        <div class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2 gap-2">
+            <div>
+              <h3 class="text-lg font-black uppercase">주식회사 와***</h3>
+              <p class="text-xs font-bold text-zinc-500">2018.01 - 2021.06 (3년 6개월) // 정규직</p>
+            </div>
+            <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">ENGINEERING
+              LEAD</span>
+          </div>
+          <div class="space-y-4 text-xs font-bold font-mono">
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 개발 문화 개선 및 테크 매니징</div>
+              <p class="text-zinc-700 font-sans">팀 전체의 개발 생산성 향상을 목적으로 Git-flow 브랜치 전략 및 GitHub 기반 상호 코드 리뷰 문화를 성공적으로 도입
+                및 안정적으로 정착시켜 사내 개발 표준화 및 소스 코드 품질 향상에 기여. Trello 칸반 보드 설계 및 Slack 파이프라인 연동을 통해 전사 개발 프로세스의 가시성을 대폭 증대하고
+                주간 기술 공유 세션 및 회고 미팅을 정례화. 비즈니스 프로젝트 요구사항 분석에 기반한 태스크 분할, 정밀 개발 기간 산정 및 전체 진척 상황 리스크
+                매니지먼트 수행.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Git, Git-flow, GitHub, Trello, Slack,
+                Agile Methodology</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 자사몰 리뷰 플랫폼 서비스</div>
+              <p class="text-zinc-700 font-sans">Flutter Web 기반의 반응형 프론트엔드 파트 및 Spring Boot 아키텍처 기반의 백엔드 API 서버의 구조 전체
+                설계 및 풀스택 개발 전담. 고도화된 디자인 요구사항을 완벽히 소화하기 위해 Flutter 내 하위 레벨 렌더링 프레임워크인 Custom Paint 모듈을 응용하여 브라우저 독립적인 자체
+                UI 컴포넌트 세트를 직접 제작 및 연동. AWS(Route53, S3 Hosting, CloudFront, EC2, RDS) 클라우드 인프라 아키텍처 전체 설계 및 안정화 환경 배포
+                구축.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Flutter Web, Dart, Spring Boot, Java,
+                JPA, AWS (Route53/S3/CloudFront/EC2/RDS)</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 지역기반 중고거래 플랫폼 V1 & V2 고도화 (<a
+                  href="https://play.google.com/store/apps/details?id=kr.ylabs.localmarket" target="_blank"
+                  class="underline text-blue-600">Link</a>)</div>
+              <p class="text-zinc-700 font-sans"><strong>[v1 고도화]</strong> 기존 레거시 안드로이드 앱의 런타임 주요 버그 수정 및 예외 처리 구문 강화를
+                통한 안정성 개선 주도 및 iOS 외주 개발 협력사 진척도 관리 및 산출물 정밀 검증 수행. 기존 지번 주소 기반 데이터베이스 체계를 행정동/법정동 동 단위 주소 체계로 원활하게
+                마이그레이션 및 공간 복잡도를 축소하는 주소 전환 매핑 백엔드 로직 수정 반영. 확장 가능한 클라우드 데이터 스토리지를 확보하기 위해 AWS S3(이미지 저장 인프라) 및 RDS(DB)
+                구조를 최초로 도입하여 데이터 가용성 인프라 기반 확보. 행안부 오픈 주소 API 및 Google Maps API 인프라를 확장 활용한 위치 기반(Geocoding / Reverse
+                Geocoding) 핵심 서비스 구현.</p>
+              <p class="text-zinc-700 font-sans mt-2"><strong>[v2 통합 전환]</strong> 기존 분리 운영되던 네이티브(Android/iOS) 모바일
+                애플리케이션 파이프라인을 Flutter 기반 단일 코드베이스 구조로 완전 통합 개발하여 전사 다중 플랫폼 개발 생산성 및 유지보수 효율성 극대화 달성. WebSocket 커넥션 및 FCM
+                푸시 엔진을 연동한 대기 지연 없는 실시간 양방향 채팅 허브 모듈 신규 설계 및 구현. Firebase Crashlytics 및 Analytics 로그 추적 장치를 전면 도입하여 앱
+                안정성 모니터링 환경 및 사용자 데이터 트래픽 분석 기반 마련.</p>
+              <p class="text-emerald-600 font-mono mt-1">※ 성과 요약: 백엔드 인프라에 AWS Lambda 및 API Gateway를 연동 도입하여 기존 상시 구동되던
+                고비용 EC2 인스턴스를 완벽히 제거하고, 비용 누수 없는 완전한 서버리스(Serverless) 아키텍처 전환을 달성하여 고정 유지보수 운영 비용을 파격적으로 절감함. 동적 리스트 가상화
+                최적화를 적용하여 스크롤 등 모바일 클라이언트 주요 UI 퍼포먼스 개선.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Flutter, Dart, Android, Java, WebSocket,
+                FCM, Firebase Crashlytics/Analytics, AWS Lambda, API Gateway, Route53, RDS, Node.js, Google Maps API
+              </div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 국악 반주/장단 플레이 서비스 V1 & V2 (<a
+                  href="https://play.google.com/store/apps/details?id=kr.ylabs.wooang" target="_blank"
+                  class="underline text-blue-600">Link</a>)</div>
+              <p class="text-zinc-700 font-sans"><strong>[v1 초기 모델]</strong> 안드로이드 기반 클라이언트 모바일 서비스 아키텍처 초기 버전 개발 리딩 및
+                서버 파트 외주 개발 관리. 미디어 코어 오픈소스인 ExoPlayer 인프라를 심층 제어하여 다양한 국악 악기의 다중 음원 스트림 동시 재생 아키텍처를 원활하게 구현.</p>
+              <p class="text-zinc-700 font-sans mt-2"><strong>[v2 서버 마이그레이션]</strong> 기존 Django 기반의 레거시 백엔드 인프라 환경을
+                Spring Boot 컴포넌트 아키텍처 구조로 전면 재설계 및 데이터 마이그레이션 총괄 처리. Android Native MediaPlayer 컴포넌트의 가상 병렬 로딩 처리 및 인메모리
+                바이너리 캐싱 정책을 설계 및 적용하여 미디어 음원 파일 초기 로딩 속도 성능을 기존 레거시 시스템 대비 50% 이상 획기적으로 향상 시킴.</p>
+              <p class="text-emerald-600 font-mono mt-1">※ 성과 요약: 오디오 자산 배포에 최적화된 AWS S3 저장 정책 수정 및 글로벌 클라우드프론트(AWS
+                CloudFront) 분산 레이어 엣지 캐싱 전략을 전면 전술 변경 적용함으로써 미디어 트래픽 대역폭 누수를 차단, 클라우드 서버 전체 운영 고정 비용을 기존 아키텍처 대비 90% 이상
+                대폭 절감하는 성과 창출.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, ExoPlayer, MediaPlayer
+                API, Spring Boot, JPA, AWS (EC2/S3/RDS/CloudFront)</div>
+            </div>
+            <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+              <div class="text-blue-600">■ 사내 파일럿(재고관리 시스템)</div>
+              <p class="text-zinc-700 font-sans">안드로이드 전용 태블릿 디바이스 기반의 지능형 간편 주문 POS 애플리케이션 프론트엔드 개발 담당 및 사내 디자인 UI/UX
+                사내 신규 핵심 프레임워크인 Flutter 기술 검증 및 전파를 위한 파일럿 프로젝트로 중고 상품 QR코드 스캔을 통한 실시간 창고 재고관리 정합성 매칭 앱 전체 시스템 기획, 설계
+                및 시범 개발 주도.</p>
+              <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, Flutter, Dart, FCM,
+                Bluetooth API, USB API, Hardware SDK</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL UNPACKED EARLY RECORDS (2014 - 2017) -->
+        <div class="space-y-4">
+          <h2
+            class="inline-block bg-black text-white px-4 py-1 text-sm font-black uppercase tracking-wider brutal-shadow-sm">
+            📜 EARLY ENGINEERING RECORDS (2014 - 2017)</h2>
+
+          <div class="space-y-6">
+            <!-- PEOPLEROAD -->
+            <div class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+              <div
+                class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2 gap-2">
+                <div>
+                  <h3 class="text-lg font-black uppercase">(주) 피***</h3>
+                  <p class="text-xs font-bold text-zinc-500">2016.09 - 2017.01 // 정규직</p>
+                </div>
+                <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">ANDROID
+                  ENGINEER</span>
+              </div>
+              <div class="space-y-3 text-xs font-bold font-mono">
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ 지인기반 SNS & e커머스 앱 고도화</div>
+                  <p class="text-zinc-700 font-sans">Android 앱 개발을 담당하여 웹뷰 기반 PG 연동 결제 시스템 안정적 적용. Android Studio
+                    Profiler를 활용한 세밀한 메모리 및 CPU 프로파일링 분석 작업을 통해 주요 렌더링 병목(보틀넥) 구간 최적화 수행.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, WebView, PG
+                    Interfacing, Android Studio Profiler</div>
+                </div>
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ MVVM 아키텍처 리팩토링</div>
+                  <p class="text-zinc-700 font-sans">DataBinding 및 LiveData 구조를 전면 선제 도입하여 기존 명령형 아키텍처를 선언형 MVVM 패턴 기반으로
+                    혁신하여 소스 코드의 결합도를 완화하고 반응형 UI 흐름 확보. Retrofit, Glide 등 비동기 이미지 캐싱 통신 오픈소스 코어 컴포넌트를 능숙하게 빌드하여 개발 생산성
+                    향상 도모.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, DataBinding,
+                    LiveData, Retrofit, Glide</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- EZENCOMMS -->
+            <div class="bg-white border-4 border-black p-6 brutal-shadow space-y-4">
+              <div
+                class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2 gap-2">
+                <div>
+                  <h3 class="text-lg font-black uppercase">주식회사 이***</h3>
+                  <p class="text-xs font-bold text-zinc-500">2014.12 - 2016.08 (1년 9개월) // 정규직</p>
+                </div>
+                <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">FULL-STACK
+                  JUNIOR</span>
+              </div>
+              <div class="space-y-3 text-xs font-bold font-mono">
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ 미국판 배달의 민족 서비스 개발</div>
+                  <p class="text-zinc-700 font-sans">AngularJS 기반 웹 프론트엔드 핵심 모듈 개발 전담. 글로벌 통화 결제를 처리하기 위해 해외 전용 결제
+                    대행사(Stripe 등) API 웹 인터페이스 프로토콜 연동 설계 및 복합 예외 처리 결제 파이프라인 안전 구현.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: AngularJS, JavaScript, HTML, CSS,
+                    REST API, Stripe API</div>
+                </div>
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ 생체인증 FIDO 인프라 및 보안메일 모듈 관리 (외주개발)</div>
+                  <p class="text-zinc-700 font-sans">한국정보인증(KICA) 생체인증(KIDO) 간편 로그인 애플리케이션 지문 인증 연동 보안 모듈 분석 및 바이오메트릭 처리
+                    구현. FCM 비동기 푸시 리스너를 연동하여 앱-웹 로그인 상태 실시간 유기적 동기화 구현. 한국정보인증 샵(#)메일 암호화 전용 메일 앱 소스 코드 유지보수 중 클래스 내부
+                    Static 남용으로 인한 메모리 누수(Memory Leak) 구간을 정밀 탐지하여 Application Context 기반의 완벽한 Singleton 디자인 패턴을 설계 및
+                    리팩토링 적용함으로써 앱 런타임 안정성 전면 개선.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, FIDO SDK, FCM,
+                    Thread-safe Singleton Design Pattern</div>
+                </div>
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ 블루투스 BLE 비콘 및 하드웨어 연동 시스템 설계</div>
+                  <p class="text-zinc-700 font-sans">블루투스 4.0 BLE 비콘 무선 주파수 신호 기반의 실내 정밀 측위 및 자이로 가속도 연동 걸음수 계산 시스템 구현.
+                    신호 수신 감도(RSSI) 필터링 하드웨어 주파수 보정 알고리즘을 최적화 설계하여 난반사 구역 오차 범위를 최소화하고 측정 정밀도 향상 기여. 하드웨어 저레벨 패킷 분석을 통해
+                    제조사 기본 매뉴얼 레퍼런스 문서 상에 누락되어 있던 비콘 고유 배터리 잔량 정보 필드를 직접 역엔지니어링 획득하여 상용 관제 모니터링 기능 스펙에 연동 반영. 어린이 통학 버스
+                    GPS 원격 트래킹 허브 모듈 구축 및 한국/미국 현지화 레이아웃 분기, 통신 네트워크 대역폭 한계를 고려한 소형 패킷 직렬화 컴팩트 축소 및 JWT 토큰 기반 SQLite 로컬
+                    오프라인 데이터 캐싱 파이프라인 최적화 빌드 완료.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, Bluetooth BLE, Sensor
+                    API, GPS, Google Maps API, JWT, SQLite, Packet Hex Analysis</div>
+                </div>
+                <div class="p-3 bg-zinc-50 border-2 border-black space-y-2">
+                  <div class="text-black">■ 스마트 시설점검 & 인프라 데이터베이스 안전화</div>
+                  <p class="text-zinc-700 font-sans">NFC 저레벨 태그 데이터 읽기/쓰기를 응용한 시설관리공단 스마트 실시간 시설물 점검 기록 감사 시스템 안드로이드 앱
+                    구현. 반려동물 펜던트형 NFC/RFID 스마트 연동 커뮤니티 케어 서비스 유지보수 작업 중 백엔드 Spring Framework 구동 단에서 발생하는 중대한 DB
+                    Connection Pool 누수(Leak) 결함을 추적 및 리소스 반환 코드 수정 조치를 통해 인프라 크래시 및 다운타임 장애 유발 현상 완전히 해결.</p>
+                  <div class="text-[10px] text-zinc-500 tracking-tight">TECH STACK: Android, Java, NFC API, Spring
+                    Framework, Spring MVC, MySQL, JDBC Connection Pool Leak Tracking</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer
+      class="flex flex-col sm:flex-row justify-between items-center font-mono font-bold text-xs bg-black text-white p-4 border-4 border-black brutal-shadow gap-4">
+      <span></span>
+      <div class="flex gap-4">
+        <a href="mailto:xpwmaosldk@gmail.com" class="underline text-[#FFE600] hover:text-white">EMAIL</a>
+        <a href="https://github.com/xpwmaosldk" target="_blank"
+          class="underline text-[#FFE600] hover:text-white">GITHUB</a>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
