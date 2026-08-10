@@ -8,27 +8,54 @@
   <meta name="yandex-verification" content="764a5004a6720cdc" />
 
   <!-- SEO & Social Meta Tags -->
-  <title>Senior Full-Stack Architect // Portfolio & Resume</title>
+  <title>풀스택 개발자 이력서 & 포트폴리오 | xpwmaosldk</title>
   <meta name="description"
-    content="9년 8개월 차 시니어 풀스택 엔지니어 & 모바일/클라우드 아키텍트 포트폴리오. Flutter, Spring Boot, Android/AOSP, AWS 기반 대규모 서비스 구축 및 최적화 전문.">
-  <meta name="keywords" content="풀스택 개발자, 시니어 개발자, Flutter, Spring Boot, Android, AOSP, AWS, 아키텍트, 이력서, 포트폴리오">
+    content="9년 8개월 차 시니어 풀스택 개발자 포트폴리오. Flutter, Android, Spring Boot(Java/Kotlin), AWS 기반 서비스 기획부터 개발, 출시, 운영까지의 전 과정 구축 및 성능 최적화.">
+  <meta name="keywords" content="풀스택 개발자, 시니어 개발자, Flutter, Spring Boot, Android, AOSP, AWS, 이력서, 포트폴리오">
   <meta name="author" content="xpwmaosldk">
   <meta name="theme-color" content="#FFE600">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://xpwmaosldk.github.io/">
-  <meta property="og:title" content="Senior Full-Stack Architect // Portfolio & Resume">
+  <meta property="og:title" content="풀스택 개발자 이력서 & 포트폴리오 | xpwmaosldk">
   <meta property="og:description"
-    content="9년 8개월 차 시니어 풀스택 엔지니어 & 모바일/클라우드 아키텍트. Flutter, Spring Boot, Android/AOSP, AWS.">
+    content="9년 8개월 차 풀스택 개발자 포트폴리오. Flutter, Android, Spring Boot(Java/Kotlin), AWS. 기획부터 개발, 출시, 운영까지의 전 과정 주도.">
   <meta property="og:image" content="https://xpwmaosldk.github.io/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://xpwmaosldk.github.io/">
-  <meta property="twitter:title" content="Senior Full-Stack Architect // Portfolio & Resume">
+  <meta property="twitter:title" content="풀스택 개발자 이력서 & 포트폴리오 | xpwmaosldk">
   <meta property="twitter:description"
-    content="9년 8개월 차 시니어 풀스택 엔지니어 & 모바일/클라우드 아키텍트. Flutter, Spring Boot, Android/AOSP, AWS.">
+    content="9년 8개월 차 풀스택 개발자 포트폴리오. Flutter, Android, Spring Boot(Java/Kotlin), AWS.">
+
+  <!-- Structured Data: JSON-LD for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "xpwmaosldk",
+      "jobTitle": "시니어 풀스택 개발자 (Senior Full-Stack Developer)",
+      "email": "xpwmaosldk@gmail.com",
+      "url": "https://xpwmaosldk.github.io/",
+      "sameAs": [
+        "https://github.com/xpwmaosldk",
+        "https://pub.dev/publishers/xpwmaosldk"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "강**대학교(춘천)"
+      },
+      "knowsAbout": [
+        "Flutter", "Dart", "Spring Boot", "Java", "Kotlin", "Android", "AOSP Automotive", "AWS", "React", "JavaScript", "WebSocket", "JPA", "MySQL", "CI/CD"
+      ],
+      "description": "풀스택 개발 역량과 문제 해결 능력을 바탕으로 사용자 경험을 혁신하고 비즈니스 성장에 기여하는 9년 8개월 차 시니어 풀스택 개발자입니다."
+    }
+  }
+  </script>
 
   <!-- Favicon (Inline SVG Neo-Brutalist Icon) -->
   <link rel="icon" type="image/svg+xml"
@@ -40,7 +67,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Tailwind CSS & Font Awesome -->
@@ -53,7 +80,7 @@
         extend: {
           fontFamily: {
             sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
-            display: ['"Space Grotesk"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'Pretendard', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
           },
           colors: {
@@ -75,161 +102,302 @@
   </script>
 
   <style>
-    /* Neo-Brutalist Design System 2.0 */
+    /* Streamlined Neo-Brutalist Design System */
     :root {
-      --brutal-shadow: 4px 4px 0px #000;
-      --brutal-shadow-lg: 8px 8px 0px #000;
-      --brutal-shadow-xl: 12px 12px 0px #000;
       --brutal-shadow-sm: 2px 2px 0px #000;
+      --brutal-shadow: 4px 4px 0px #000;
+      --brutal-shadow-lg: 6px 6px 0px #000;
     }
 
     body {
       background-color: #F8F7F2;
       background-image:
-        radial-gradient(#E2DFD2 1.2px, transparent 1.2px),
-        radial-gradient(#E2DFD2 1.2px, #F8F7F2 1.2px);
+        radial-gradient(#DFDCD0 1.2px, transparent 1.2px),
+        radial-gradient(#DFDCD0 1.2px, #F8F7F2 1.2px);
       background-size: 24px 24px;
       background-position: 0 0, 12px 12px;
       color: #111;
     }
 
-    .brutal-border {
-      border: 3px solid #000;
+    /* Accessibility Focus Styles */
+    :focus-visible {
+      outline: 2px solid #000;
+      outline-offset: 2px;
+      background-color: #FFE600 !important;
+      color: #000 !important;
     }
 
-    .brutal-border-thick {
-      border: 4px solid #000;
+    /* Clean Horizontal Scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
     }
 
-    .brutal-border-sm {
-      border: 2px solid #000;
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
 
-    .brutal-shadow-sm {
-      box-shadow: 3px 3px 0px #000;
-    }
-
-    .brutal-shadow {
-      box-shadow: 5px 5px 0px #000;
-    }
-
-    .brutal-shadow-lg {
-      box-shadow: 8px 8px 0px #000;
-    }
-
-    .brutal-shadow-xl {
-      box-shadow: 12px 12px 0px #000;
-    }
-
+    /* Neo-Brutalist Cards */
     .brutal-card {
-      border: 3px solid #000;
-      box-shadow: 5px 5px 0px #000;
+      border: 2px solid #000;
+      box-shadow: 4px 4px 0px #000;
+      background-color: #FFF;
       transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .brutal-card-hover:hover {
-      transform: translate(-3px, -3px);
-      box-shadow: 8px 8px 0px #000;
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px #000;
     }
 
+    /* Tactile Buttons */
     .brutal-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       border: 2px solid #000;
-      box-shadow: 3px 3px 0px #000;
-      font-weight: 800;
-      transition: all 0.1s ease;
+      box-shadow: 2.5px 2.5px 0px #000;
+      font-weight: 700;
+      transition: all 0.12s cubic-bezier(0.16, 1, 0.3, 1);
       user-select: none;
       cursor: pointer;
     }
 
     .brutal-btn:hover {
       transform: translate(-1px, -1px);
-      box-shadow: 4px 4px 0px #000;
+      box-shadow: 3.5px 3.5px 0px #000;
     }
 
     .brutal-btn:active {
       transform: translate(2px, 2px);
-      box-shadow: 1px 1px 0px #000;
+      box-shadow: 0.5px 0.5px 0px #000;
     }
 
+    /* Interactive Tag Badges */
     .tag-badge {
       display: inline-flex;
       align-items: center;
+      gap: 3px;
       border: 1.5px solid #000;
-      padding: 2px 8px;
+      padding: 2px 7px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       font-weight: 700;
       background: #FFF;
-      box-shadow: 2px 2px 0px #000;
+      box-shadow: 1.5px 1.5px 0px #000;
       transition: all 0.12s ease;
+      cursor: pointer;
+      user-select: none;
     }
 
     .tag-badge:hover {
       transform: translate(-1px, -1px);
-      box-shadow: 3px 3px 0px #000;
+      box-shadow: 2.5px 2.5px 0px #000;
       background: #FFE600;
+      color: #000;
+    }
+
+    /* Sticky Nav Anchor Scroll Offset */
+    section[id] {
+      scroll-margin-top: 68px;
+    }
+
+    /* Navigation ScrollSpy Active Styles */
+    .nav-tab {
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+      border: 1.5px solid transparent;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .nav-tab:hover {
+      background-color: #EEE;
+      border-color: #000;
+    }
+
+    .nav-tab.active {
+      background-color: #FFE600 !important;
+      color: #000 !important;
+      border-color: #000 !important;
+      box-shadow: 2px 2px 0px #000;
     }
 
     /* Filter Active / Inactive States */
     .filter-chip {
       border: 2px solid #000;
-      box-shadow: 3px 3px 0px #000;
-      transition: all 0.15s ease;
+      box-shadow: 2px 2px 0px #000;
+      transition: all 0.12s ease;
       cursor: pointer;
+      user-select: none;
     }
 
     .filter-chip.active {
       background-color: #000 !important;
       color: #FFE600 !important;
-      transform: translate(2px, 2px);
+      transform: translate(1px, 1px);
       box-shadow: 1px 1px 0px #000;
     }
 
     .filter-chip:hover:not(.active) {
       transform: translate(-1px, -1px);
-      box-shadow: 4px 4px 0px #000;
+      box-shadow: 3px 3px 0px #000;
     }
 
+    /* Search & Filter Highlighting */
     .item-highlight {
       border-color: #000 !important;
       background-color: #FFFDEB !important;
-      box-shadow: 8px 8px 0px #FFE600, 8px 8px 0px 3px #000 !important;
-      transform: scale(1.008);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 4px 4px 0px #FFE600, 4px 4px 0px 2px #000 !important;
+      transform: scale(1.004);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .item-dimmed {
-      opacity: 0.35;
+      opacity: 0.25;
       filter: grayscale(80%);
-      transform: scale(0.99);
-      transition: all 0.25s ease;
+      transform: scale(0.995);
+      transition: all 0.2s ease;
+    }
+
+    /* Hide Unmatched Mode */
+    body.filter-hide-unmatched .career-item.item-dimmed,
+    body.filter-hide-unmatched .company-card.company-no-match {
+      display: none !important;
+    }
+
+    /* Recruiter TL;DR Summary Mode */
+    body.tldr-mode .detail-desc {
+      display: none !important;
+    }
+
+    body.tldr-mode .career-item {
+      padding: 0.75rem 1rem !important;
+      gap: 0.5rem !important;
+    }
+
+    body.tldr-mode .impact-callout {
+      margin-top: 0.35rem !important;
+      padding: 0.5rem 0.75rem !important;
+    }
+
+    /* Impact KPI Callout Card */
+    .impact-callout {
+      border: 2px solid #000;
+      border-left: 5px solid #059669;
+      background: #ECFDF5;
+      box-shadow: 2.5px 2.5px 0px #000;
+    }
+
+    /* Career Timeline Spine & Markers */
+    .timeline-container {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      bottom: 20px;
+      left: 7px;
+      width: 2px;
+      background: #000;
+      z-index: 1;
+    }
+
+    .timeline-node {
+      position: relative;
+    }
+
+    .timeline-node::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: -21px;
+      width: 12px;
+      height: 12px;
+      background: #FFE600;
+      border: 2px solid #000;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: 1.5px 1.5px 0px #000;
+    }
+
+    @media (max-width: 640px) {
+      .timeline-container {
+        padding-left: 0;
+      }
+
+      .timeline-container::before,
+      .timeline-node::before {
+        display: none;
+      }
+    }
+
+    /* Keyboard Shortcut Tag */
+    kbd {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFF;
+      border: 1px solid #000;
+      box-shadow: 1px 1px 0px #000;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 4px;
+      border-radius: 3px;
     }
 
     /* Toast Notification */
     #copy-toast {
-      transform: translateY(150%);
-      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+      transform: translate(-50%, 150%);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s ease;
     }
 
     #copy-toast.show {
-      transform: translateY(0);
+      transform: translate(-50%, 0);
       opacity: 1;
+      pointer-events: auto;
     }
 
-    /* Print Optimization */
+    /* Pulse Glow Animation */
+    @keyframes neoPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.7; }
+    }
+
+    .neo-pulse-dot {
+      animation: neoPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    /* Copy Button Instant Success State */
+    .copy-success {
+      background-color: #94FF98 !important;
+      color: #000 !important;
+      border-color: #000 !important;
+    }
+
+    /* Print Optimization (A4 Executive Resume Mode) */
     @media print {
       body {
         background: #FFF !important;
+        background-image: none !important;
         color: #000 !important;
-        font-size: 11pt;
+        font-size: 9pt;
       }
 
       .no-print,
       nav,
+      #scroll-progress-container,
       #back-to-top,
+      #floating-quick-bar,
       #tech-filter-bar,
       #copy-toast {
         display: none !important;
@@ -238,14 +406,24 @@
       .brutal-card,
       .brutal-card-hover {
         box-shadow: none !important;
-        border: 1.5px solid #333 !important;
+        border: 1.5px solid #222 !important;
         break-inside: avoid;
         page-break-inside: avoid;
-        margin-bottom: 12px !important;
+        margin-bottom: 10px !important;
+        padding: 12px !important;
       }
 
       .early-records-content {
         display: block !important;
+      }
+
+      .timeline-container {
+        padding-left: 0 !important;
+      }
+
+      .timeline-container::before,
+      .timeline-node::before {
+        display: none !important;
       }
     }
   </style>
@@ -253,996 +431,1548 @@
 
 <body class="font-sans antialiased text-zinc-900 selection:bg-black selection:text-[#FFE600]">
 
-  <!-- STICKY QUICK NAV & CONTROLS -->
-  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-4 border-black px-4 py-2.5 shadow-sm no-print">
-    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <!-- Left: Identity Badge & Status -->
-      <div class="flex items-center gap-2">
-        <a href="#"
-          class="font-display font-black text-base md:text-lg tracking-tight uppercase hover:text-blue-600 transition flex items-center gap-1.5">
-          <span class="bg-[#FFE600] border-2 border-black px-1.5 py-0.5 text-xs font-mono font-black">DEV</span>
-          <span>FULL-STACK ARCHITECT</span>
-        </a>
-        <span
-          class="hidden sm:inline-flex items-center gap-1.5 bg-emerald-100 border border-emerald-800 text-emerald-800 text-[11px] font-bold px-2 py-0.5 rounded-full font-mono">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          9Y 8M+ SENIOR
-        </span>
-      </div>
+  <!-- ACCESSIBILITY: SKIP NAVIGATION LINK -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 z-50 bg-[#FFE600] text-black font-mono font-black px-4 py-2 border-2 border-black brutal-shadow-sm text-xs">
+    ⚡ 본문 콘텐츠로 바로가기 (Skip to Main Content)
+  </a>
 
-      <!-- Center / Right: Quick Navigation Jump Links -->
-      <div class="flex items-center gap-1.5 sm:gap-2 text-xs font-mono font-bold flex-wrap">
-        <a href="#projects" class="px-2.5 py-1 bg-zinc-100 hover:bg-[#FFE600] border border-black transition rounded">🚀
-          PROJECTS</a>
-        <a href="#opensource"
-          class="px-2.5 py-1 bg-zinc-100 hover:bg-cyan-300 border border-black transition rounded">🌐 OPEN SOURCE</a>
-        <a href="#techstack"
-          class="px-2.5 py-1 bg-zinc-100 hover:bg-emerald-300 border border-black transition rounded">⚡ TECH</a>
-        <a href="#experience"
-          class="px-2.5 py-1 bg-zinc-100 hover:bg-pink-300 border border-black transition rounded">💼 CAREER</a>
+  <!-- TOP READING PROGRESS BAR -->
+  <div id="scroll-progress-container" class="fixed top-0 left-0 w-full h-1 bg-zinc-200 z-50 no-print"
+    aria-hidden="true">
+    <div id="scroll-progress" class="h-full bg-[#FFE600] border-b border-black w-0 transition-all duration-75"></div>
+  </div>
 
-        <!-- One-Click Email Copy Button -->
-        <button id="copy-email-btn" onclick="copyEmailToClipboard()"
-          class="brutal-btn bg-[#FFE600] text-black px-3 py-1 text-xs font-mono font-black gap-1 ml-1"
-          title="이메일 주소 복사">
-          <i class="fa-regular fa-copy"></i>
-          <span>COPY EMAIL</span>
-        </button>
-      </div>
+  <!-- STICKY TOP TECH STACK TOGGLE BAR -->
+  <nav
+    class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-black px-3 sm:px-6 py-2 transition-all no-print"
+    aria-label="기술 스택 필터 네비게이션">
+    <div
+      class="max-w-5xl mx-auto flex items-center justify-start sm:justify-center gap-1.5 overflow-x-auto no-scrollbar font-mono text-xs font-bold py-0.5">
+      <span class="text-[11px] font-black text-black uppercase tracking-wider shrink-0 mr-1 hidden sm:inline">
+        STACK:
+      </span>
+      <button onclick="applyTechFilter('all')" class="filter-chip active bg-zinc-100 px-3 py-1 text-xs shrink-0"
+        data-tech="all">
+        ⚡ ALL
+      </button>
+      <button onclick="applyTechFilter('flutter')" class="filter-chip bg-[#94FF98] text-black px-3 py-1 text-xs shrink-0"
+        data-tech="flutter">
+        📱 Flutter / Dart
+      </button>
+      <button onclick="applyTechFilter('spring')" class="filter-chip bg-emerald-200 text-black px-3 py-1 text-xs shrink-0"
+        data-tech="spring">
+        🌱 Spring Boot
+      </button>
+      <button onclick="applyTechFilter('android')" class="filter-chip bg-[#70E1FF] text-black px-3 py-1 text-xs shrink-0"
+        data-tech="android">
+        🤖 Android / AOSP
+      </button>
+      <button onclick="applyTechFilter('aws')" class="filter-chip bg-[#FF9F43] text-black px-3 py-1 text-xs shrink-0"
+        data-tech="aws">
+        ☁️ AWS / DevOps
+      </button>
+      <button onclick="applyTechFilter('react')" class="filter-chip bg-[#FF94E7] text-black px-3 py-1 text-xs shrink-0"
+        data-tech="react">
+        ⚛️ React / Web
+      </button>
     </div>
   </nav>
 
   <!-- MAIN CONTAINER -->
-  <main class="max-w-5xl mx-auto p-4 sm:p-6 md:p-10 space-y-12">
+  <main id="main-content" class="max-w-5xl mx-auto p-4 sm:p-6 md:p-8 space-y-8 sm:space-y-10">
 
     <!-- HERO / IDENTITY HEADER BLOCK -->
-    <header class="bg-white brutal-border-thick p-6 sm:p-8 md:p-10 brutal-shadow-xl space-y-6 relative overflow-hidden">
-      <!-- Decorative Neo Sticker -->
+    <header class="bg-white brutal-card p-5 sm:p-7 md:p-8 space-y-6 relative overflow-hidden">
+      <!-- Decorative Neo Tag -->
       <div
-        class="absolute -right-8 -top-8 bg-[#FFE600] border-4 border-black w-24 h-24 rotate-12 flex items-end justify-center pb-2 pointer-events-none hidden sm:flex shadow-md">
-        <span class="font-mono font-black text-xs">SENIOR</span>
+        class="absolute -right-8 -top-8 bg-[#FFE600] border-2 border-black w-24 h-24 rotate-12 flex items-end justify-center pb-2 pointer-events-none hidden sm:flex shadow-sm">
+        <span class="font-mono font-black text-xs">9Y 8M</span>
       </div>
 
-      <!-- Top Badges & Meta -->
-      <div class="flex flex-wrap items-center gap-2.5">
+      <!-- 1. Top Badges & Experience Meta -->
+      <div class="flex flex-wrap items-center gap-2">
         <span
-          class="bg-black text-white px-3.5 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm">
-          ⏱ CAREER: 9 YEARS 8 MONTHS
+          class="bg-black text-white px-3 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#FFE600] neo-pulse-dot"></span>
+          <span>총 경력 9년 8개월</span>
         </span>
         <span
-          class="bg-[#70E1FF] text-black border-2 border-black px-3 py-1 font-mono text-xs font-bold uppercase brutal-shadow-sm">
-          🛡 SENIOR FULL-STACK ARCHITECT
+          class="bg-[#70E1FF] text-black border-2 border-black px-2.5 py-0.5 font-mono text-xs font-black uppercase brutal-shadow-sm">
+          🛡 FULL-STACK ARCHITECT
         </span>
         <span
-          class="bg-[#94FF98] text-black border-2 border-black px-3 py-1 font-mono text-xs font-bold uppercase brutal-shadow-sm">
-          📱 FLUTTER · SPRING BOOT · AOSP · AWS
+          class="bg-[#94FF98] text-black border-2 border-black px-2.5 py-0.5 font-mono text-xs font-black uppercase brutal-shadow-sm">
+          📱 FLUTTER · SPRING BOOT · ANDROID · AWS
         </span>
       </div>
 
-      <!-- Headline & Introduction -->
+      <!-- 2. Headline & Introduction Narrative -->
       <div class="space-y-3">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-display tracking-tight text-black leading-tight">
-          사용자 경험 혁신과 비즈니스 확장을 이끄는<br class="hidden sm:inline">
-          <span class="bg-[#FFE600] px-2 py-0.5 border-2 border-black inline-block mt-1">풀스택 엔지니어 & 아키텍트</span>
-        </h1>
-        <p class="text-sm sm:text-base font-medium leading-relaxed text-zinc-700 pt-2 border-t-2 border-black">
-          서비스 기획부터 아키텍처 설계, 풀스택 개발, CI/CD 자동화 배포, 프로덕션 운영 및 비용 최적화까지의 전 과정을 9년 8개월간 성공적으로 주도해 왔습니다.
-          Flutter Web/App 기반 고성능 크로스 플랫폼 구축, Spring Boot 기반 대용량 백엔드 API 설계, AOSP 오토모티브 임베디드 성능 최적화(부팅 25% 단축),
-          그리고 AWS 서버리스 아키텍처 전환(운영 비용 90% 절감) 등 비즈니스 임팩트와 코드 퀄리티를 동시에 창출하는 데 집중합니다.
-        </p>
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-display tracking-tight text-black leading-tight">
+            비즈니스 임팩트를 증명하는 풀스택 엔지니어
+          </h1>
+          <p class="text-xs sm:text-sm font-bold text-zinc-700 mt-1 font-mono">
+            Flutter, Android, Spring Boot(Java/Kotlin), AWS 기반 풀스택 개발자
+          </p>
+        </div>
+
+        <div class="space-y-2 text-xs sm:text-sm font-medium leading-relaxed text-zinc-800 pt-2 border-t-2 border-black">
+          <p>
+            풀스택 개발 역량과 문제 해결 능력을 바탕으로 사용자 경험을 혁신하고 비즈니스 성장에 직접적으로 기여하는 안정적이고 확장 가능한 서비스를 만듭니다.
+          </p>
+          <p>
+            서비스 기획부터 아키텍처 설계, 개발, 출시, 운영까지의 전 과정 경험을 바탕으로 <strong>AOSP 부팅 시간 25% 단축</strong>, <strong>서버 운영 비용 90% 절감</strong>, <strong>크로스 플랫폼 개발 효율 30% 향상</strong> 등 실질적 성과를 창출해 왔습니다.
+          </p>
+        </div>
       </div>
 
-      <!-- Contact & Action Toolbar -->
-      <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-zinc-200">
-        <div class="flex flex-wrap items-center gap-3 font-mono text-xs font-bold">
-          <a href="mailto:xpwmaosldk@gmail.com"
-            class="flex items-center gap-1.5 px-3 py-1.5 bg-zinc-100 hover:bg-[#FFE600] border-2 border-black transition brutal-shadow-sm">
+      <!-- 3. Key Performance Metrics (Unified 4-Slot KPI Dashboard) -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <!-- KPI 1 -->
+        <div class="p-3 bg-zinc-50 border-2 border-black brutal-shadow-sm space-y-0.5">
+          <span class="text-[10px] font-mono font-bold text-zinc-500 block uppercase">총 경력</span>
+          <div class="text-xl sm:text-2xl font-black font-mono text-black">9년 8개월+</div>
+          <p class="text-[11px] text-zinc-600 font-semibold">풀스택 전주기 리드</p>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="p-3 bg-emerald-50 border-2 border-black brutal-shadow-sm space-y-0.5">
+          <span class="text-[10px] font-mono font-bold text-emerald-800 block uppercase">AOSP 부팅 최적화</span>
+          <div class="text-xl sm:text-2xl font-black font-mono text-emerald-700">25% ⬇</div>
+          <p class="text-[11px] text-zinc-600 font-semibold">60초 → 45초 단축</p>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="p-3 bg-blue-50 border-2 border-black brutal-shadow-sm space-y-0.5">
+          <span class="text-[10px] font-mono font-bold text-blue-800 block uppercase">서버 운영비 절감</span>
+          <div class="text-xl sm:text-2xl font-black font-mono text-blue-700">90% ⬇</div>
+          <p class="text-[11px] text-zinc-600 font-semibold">AWS 캐싱·서버리스</p>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="p-3 bg-amber-50 border-2 border-black brutal-shadow-sm space-y-0.5">
+          <span class="text-[10px] font-mono font-bold text-amber-800 block uppercase">개발 생산성</span>
+          <div class="text-xl sm:text-2xl font-black font-mono text-amber-700">30% ⬆</div>
+          <p class="text-[11px] text-zinc-600 font-semibold">Flutter 단일 코드베이스</p>
+        </div>
+      </div>
+
+      <!-- 4. Core Domain Competencies (4대 핵심 역량 카드) -->
+      <div class="space-y-2 pt-2 border-t-2 border-black">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono font-black text-black uppercase tracking-wider">
+            🛠 CORE DOMAIN COMPETENCIES (핵심 기술 도메인)
+          </span>
+          <span class="text-[11px] font-mono text-zinc-500 hidden sm:inline">4대 중점 엔지니어링 영역</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <!-- Pillar 1 -->
+          <div class="p-3.5 bg-blue-50/90 border-2 border-black brutal-shadow-sm space-y-1.5 flex flex-col justify-between">
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-blue-900 font-mono text-xs font-black flex items-center gap-1">
+                  <span>📱</span> <span>FLUTTER / MOBILE</span>
+                </span>
+                <span class="text-[10px] font-mono font-bold bg-blue-200 text-blue-900 px-1.5 py-0.5 border border-blue-900 rounded">WEB/APP</span>
+              </div>
+              <p class="text-xs font-black text-black">크로스 플랫폼 아키텍처</p>
+              <p class="text-[11px] text-zinc-700 leading-tight">Flutter Web 반응형 UI/UX, 상태관리(Riverpod/Bloc), 60fps 커스텀 캔버스</p>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-3.5 bg-emerald-50/90 border-2 border-black brutal-shadow-sm space-y-1.5 flex flex-col justify-between">
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-900 font-mono text-xs font-black flex items-center gap-1">
+                  <span>🌱</span> <span>SPRING BOOT / API</span>
+                </span>
+                <span class="text-[10px] font-mono font-bold bg-emerald-200 text-emerald-900 px-1.5 py-0.5 border border-emerald-900 rounded">BACKEND</span>
+              </div>
+              <p class="text-xs font-black text-black">Java / Kotlin REST & 실시간</p>
+              <p class="text-[11px] text-zinc-700 leading-tight">JPA/QueryDSL 성능 튜닝, Spring REST Docs 자동화, WebSocket/STOMP</p>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-3.5 bg-amber-50/90 border-2 border-black brutal-shadow-sm space-y-1.5 flex flex-col justify-between">
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-amber-900 font-mono text-xs font-black flex items-center gap-1">
+                  <span>🚗</span> <span>AOSP / EMBEDDED</span>
+                </span>
+                <span class="text-[10px] font-mono font-bold bg-amber-200 text-amber-900 px-1.5 py-0.5 border border-amber-900 rounded">SYSTEM</span>
+              </div>
+              <p class="text-xs font-black text-black">오토모티브 OS & 성능 최적화</p>
+              <p class="text-[11px] text-zinc-700 leading-tight">Bootchart 병목 분석(부팅 25% 단축), CarService & VHAL 실시간 연동</p>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-3.5 bg-purple-50/90 border-2 border-black brutal-shadow-sm space-y-1.5 flex flex-col justify-between">
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-purple-900 font-mono text-xs font-black flex items-center gap-1">
+                  <span>☁️</span> <span>AWS & CLOUD INFRA</span>
+                </span>
+                <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 border border-purple-900 rounded">DEVOPS</span>
+              </div>
+              <p class="text-xs font-black text-black">클라우드 비용 절감 & CI/CD</p>
+              <p class="text-[11px] text-zinc-700 leading-tight">CloudFront 캐싱 전략(비용 90% 절감), GitHub Actions 자동화 배포</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Contact & Action Toolbar -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t-2 border-black">
+        <div class="flex flex-wrap items-center gap-2 font-mono text-xs font-bold">
+          <!-- Email Copy -->
+          <button id="hero-copy-email-btn" onclick="copyEmailToClipboard(this)"
+            class="flex items-center gap-1.5 px-3 py-1.5 bg-[#FFE600] hover:bg-[#E6CF00] border-2 border-black transition brutal-shadow-sm text-black cursor-pointer font-black"
+            title="이메일 주소 복사">
             <i class="fa-regular fa-envelope text-sm"></i>
             <span>xpwmaosldk@gmail.com</span>
-          </a>
+            <i class="fa-regular fa-copy text-[11px] opacity-70"></i>
+          </button>
+
+          <!-- GitHub -->
           <a href="https://github.com/xpwmaosldk" target="_blank" rel="noopener noreferrer"
-            class="flex items-center gap-1.5 px-3 py-1.5 bg-zinc-100 hover:bg-black hover:text-white border-2 border-black transition brutal-shadow-sm">
+            class="flex items-center gap-1.5 px-3 py-1.5 bg-black text-white hover:bg-zinc-800 border-2 border-black transition brutal-shadow-sm cursor-pointer"
+            title="GitHub 프로필 열기">
             <i class="fa-brands fa-github text-sm"></i>
             <span>github.com/xpwmaosldk</span>
-            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
+          </a>
+
+          <!-- Pub.dev -->
+          <a href="https://pub.dev/publishers/xpwmaosldk" target="_blank" rel="noopener noreferrer"
+            class="flex items-center gap-1.5 px-3 py-1.5 bg-white text-black hover:bg-zinc-100 border-2 border-black transition brutal-shadow-sm cursor-pointer"
+            title="pub.dev 패키지 배포 프로필 열기">
+            <i class="fa-solid fa-cube text-blue-600 text-xs"></i>
+            <span>pub.dev/publishers</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
           </a>
         </div>
 
-        <!-- Print Resume Button -->
+        <!-- Print / PDF Save Action -->
         <button onclick="window.print()"
-          class="no-print brutal-btn bg-white hover:bg-zinc-100 text-black px-3.5 py-1.5 text-xs font-mono font-bold gap-1.5">
+          class="no-print brutal-btn bg-white hover:bg-zinc-100 text-black px-3.5 py-1.5 text-xs font-mono font-bold gap-1.5 cursor-pointer self-start sm:self-auto"
+          aria-label="이력서 인쇄 또는 PDF 저장" title="A4 이력서 포맷으로 인쇄 또는 PDF 저장">
           <i class="fa-solid fa-print"></i>
-          <span>PRINT / SAVE PDF</span>
+          <span>PRINT / PDF</span>
         </button>
       </div>
     </header>
 
-    <!-- INTERACTIVE TECH STACK FILTER BAR (Recruiter Ergonomics) -->
-    <section id="tech-filter-bar" class="no-print bg-white brutal-border p-4 sm:p-5 brutal-shadow space-y-3">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+    <!-- INTERACTIVE TECH STACK FILTER & OMNI-SEARCH BAR -->
+    <section id="tech-filter-bar" class="no-print bg-white brutal-card p-4 sm:p-5 space-y-3.5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-2.5">
         <div class="flex items-center gap-2">
-          <span class="bg-black text-white px-2 py-0.5 font-mono text-xs font-black uppercase">FILTER BY TECH</span>
-          <span class="text-xs font-bold text-zinc-600">원하는 기술 스택을 클릭하면 관련 경력과 프로젝트가 하이라이트됩니다.</span>
+          <span class="bg-black text-white px-2 py-0.5 font-mono text-xs font-black uppercase">SMART SEARCH</span>
+          <span class="text-xs font-bold text-zinc-600 hidden sm:inline">원하는 기술 스택이나 프로젝트 키워드로 이력서를 검색하세요.</span>
         </div>
-        <span id="filter-status-text" class="text-xs font-mono font-bold text-blue-700 hidden sm:inline-block"></span>
+
+        <!-- Toggle: Show Matches Only -->
+        <label
+          class="flex items-center gap-2 text-xs font-mono font-bold cursor-pointer select-none bg-zinc-100 border border-black px-2 py-0.5 rounded">
+          <input type="checkbox" id="hide-unmatched-checkbox" onchange="toggleHideUnmatched(this.checked)"
+            class="accent-black w-3.5 h-3.5">
+          <span>🎯 일치 항목만 모아보기</span>
+        </label>
       </div>
 
-      <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs font-bold">
-        <button onclick="applyTechFilter('all')" class="filter-chip active bg-zinc-100 px-3 py-1.5" data-tech="all">
-          ⚡ ALL (전체보기)
-        </button>
-        <button onclick="applyTechFilter('flutter')" class="filter-chip bg-[#94FF98] text-black px-3 py-1.5"
-          data-tech="flutter">
-          📱 Flutter / Dart
-        </button>
-        <button onclick="applyTechFilter('spring')" class="filter-chip bg-emerald-200 text-black px-3 py-1.5"
-          data-tech="spring">
-          🌱 Spring Boot / Java
-        </button>
-        <button onclick="applyTechFilter('android')" class="filter-chip bg-[#70E1FF] text-black px-3 py-1.5"
-          data-tech="android">
-          🤖 Android / AOSP
-        </button>
-        <button onclick="applyTechFilter('aws')" class="filter-chip bg-[#FF9F43] text-black px-3 py-1.5"
-          data-tech="aws">
-          ☁️ AWS / Infra / DevOps
-        </button>
-        <button onclick="applyTechFilter('react')" class="filter-chip bg-[#FF94E7] text-black px-3 py-1.5"
-          data-tech="react">
-          ⚛️ React / Web
-        </button>
-      </div>
-    </section>
+      <!-- Real-time Omni-Search Input -->
+      <div class="relative">
+        <div
+          class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500 font-mono text-xs">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input type="search" id="tech-search-input" oninput="handleSearchInput(this.value)"
+          placeholder="기술 스택, 프로젝트명, 성과 검색 (예: Flutter, Spring Boot, AOSP, Bootchart, WebRTC, AWS, Riverpod...)"
+          class="w-full pl-9 pr-28 py-2 bg-zinc-50 border-2 border-black font-mono text-xs sm:text-sm font-semibold focus:bg-white focus:outline-none placeholder:text-zinc-400">
 
-    <!-- SECTION: LIVE SANDBOX STATIONS & DEPLOYED PROJECTS -->
-    <section id="projects" class="space-y-4">
-      <div class="flex items-center gap-2">
-        <h2
-          class="inline-block bg-black text-white px-4 py-1.5 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
-          ⚡ LIVE SANDBOX & DEPLOYED PROJECTS
-        </h2>
-        <span class="text-xs font-mono font-bold text-zinc-500 hidden sm:inline">PROD ENVIRONMENTS</span>
+        <div class="absolute inset-y-1 right-1.5 flex items-center gap-1">
+          <span class="hidden sm:inline-flex text-[10px] text-zinc-400 font-mono items-center gap-0.5 mr-1">
+            <kbd>Esc</kbd> 초기화
+          </span>
+          <button id="search-clear-btn" onclick="clearSearch()"
+            class="hidden px-2 py-0.5 bg-zinc-200 hover:bg-black hover:text-white text-black font-mono text-xs font-bold border border-black transition items-center">
+            CLEAR ✕
+          </button>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-        <!-- 3D Lotto Simulator -->
-        <article
-          class="career-item bg-[#94FF98] brutal-card brutal-card-hover p-6 flex flex-col justify-between space-y-4"
-          data-techs="flutter,web">
-          <div class="space-y-3">
-            <div class="flex justify-between items-start gap-2">
-              <div>
-                <span
-                  class="text-[11px] font-mono font-bold text-zinc-800 bg-white/80 border border-black px-2 py-0.5 inline-block mb-1">PHYSICS
-                  3D SIMULATION</span>
-                <h3 class="text-xl font-black font-display uppercase tracking-tight text-black">🔮 3D LOTTO SIMULATOR
-                </h3>
-              </div>
-              <span
-                class="bg-white border-2 border-black px-2.5 py-1 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
-                FLUTTER
-              </span>
-            </div>
-
-            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
-              Flame 2D & Forge2D 물리 엔진 레이어를 결합하여 웹 브라우저 캔버스 환경에서 고프레임으로 구동되는 현실감 넘치는 3D 로또 볼 믹싱 및 물리 충돌 시뮬레이션을 구현한 프로덕션
-              웹 애플리케이션입니다.
-            </p>
-
-            <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="tag-badge">Flutter Web</span>
-              <span class="tag-badge">Dart</span>
-              <span class="tag-badge">Flame Engine</span>
-              <span class="tag-badge">Forge2D Physics</span>
-              <span class="tag-badge">Canvas Rendering</span>
-            </div>
-          </div>
-
-          <a href="https://xpwmaosldk.github.io/LotteryPredictor" target="_blank" rel="noopener noreferrer"
-            class="w-full text-center bg-white hover:bg-black hover:text-[#94FF98] text-black brutal-border-sm py-2.5 text-xs font-mono font-black uppercase brutal-shadow transition">
-            LAUNCH LIVE SITE <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
-          </a>
-        </article>
-
-        <!-- Horse Race Predictor -->
-        <article
-          class="career-item bg-[#FF94E7] brutal-card brutal-card-hover p-6 flex flex-col justify-between space-y-4"
-          data-techs="react,web,aws">
-          <div class="space-y-3">
-            <div class="flex justify-between items-start gap-2">
-              <div>
-                <span
-                  class="text-[11px] font-mono font-bold text-zinc-800 bg-white/80 border border-black px-2 py-0.5 inline-block mb-1">DATA
-                  VISUALIZATION & AI PREDICTION</span>
-                <h3 class="text-xl font-black font-display uppercase tracking-tight text-black">🐎 HORSE RACE PREDICTOR
-                </h3>
-              </div>
-              <span
-                class="bg-white border-2 border-black px-2.5 py-1 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
-                REACT
-              </span>
-            </div>
-
-            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
-              한국마사회(KRA) 공공 데이터 API와 연동하여 경주 일정, 출전마 전적, 주로 상태 등을 정밀 분석하고 순위 예측 알고리즘 및 레이더 차트/스파크라인 데이터 시각화 컴포넌트를 구현한 웹
-              서비스입니다.
-            </p>
-
-            <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="tag-badge">React 18</span>
-              <span class="tag-badge">TypeScript</span>
-              <span class="tag-badge">TailwindCSS</span>
-              <span class="tag-badge">Recharts</span>
-              <span class="tag-badge">IndexedDB Cache</span>
-              <span class="tag-badge">Vite</span>
-            </div>
-          </div>
-
-          <a href="https://xpwmaosldk.github.io/HorseRacePredictor" target="_blank" rel="noopener noreferrer"
-            class="w-full text-center bg-white hover:bg-black hover:text-[#FF94E7] text-black brutal-border-sm py-2.5 text-xs font-mono font-black uppercase brutal-shadow transition">
-            LAUNCH LIVE SITE <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
-          </a>
-        </article>
-
+      <!-- Search & Filter Result Status -->
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span id="filter-status-text" class="font-bold text-blue-700"></span>
       </div>
     </section>
 
-    <!-- SECTION: OPEN SOURCE (PACKAGES & GLOBAL CONTRIBUTIONS) -->
-    <section id="opensource" class="space-y-6">
-      <div class="flex items-center gap-2">
-        <h2
-          class="inline-block bg-black text-white px-4 py-1.5 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
-          🌐 OPEN SOURCE & PACKAGES
-        </h2>
-        <span class="text-xs font-mono font-bold text-zinc-500 hidden sm:inline">GLOBAL ECOSYSTEM IMPACT</span>
+    <!-- SECTION: PROFESSIONAL WORK HISTORY WITH TIMELINE (2018 - 2025) -->
+    <section id="experience" class="scroll-mt-16 sm:scroll-mt-20 space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-2">
+        <div class="flex items-center gap-2">
+          <h2
+            class="inline-block bg-black text-white px-3.5 py-1 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
+            💼 경력 사항 (WORK HISTORY)
+          </h2>
+          <span class="text-xs font-mono font-bold text-zinc-500">2018 - 2025</span>
+        </div>
+        <span class="text-xs font-mono font-bold text-zinc-600">총 경력 9년 8개월</span>
       </div>
 
-      <!-- Global Contribution: Immich -->
-      <article class="career-item bg-[#70E1FF] brutal-card brutal-card-hover p-6 sm:p-7 space-y-4"
-        data-techs="flutter,android">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 border-black pb-3">
+      <!-- Timeline Spine Container -->
+      <div class="timeline-container space-y-6">
+
+        <!-- COMPANY 1: 주식회사 파*** (F.LAB) (2021.11 - 2025.06) -->
+        <article class="company-card timeline-node bg-white brutal-card p-5 sm:p-7 space-y-5" data-company="fatherslab">
+          <!-- Company Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-3 gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="bg-[#FFE600] border-2 border-black px-1.5 py-0.5 text-xs font-mono font-black brutal-shadow-sm">LATEST</span>
+                <h3 class="text-lg sm:text-xl font-black font-display uppercase">주식회사 파***</h3>
+              </div>
+              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-0.5 font-mono">
+                📅 2021.11 - 2025.06 (3년 8개월) | 정규직
+              </p>
+            </div>
+            <span
+              class="bg-black text-white px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm">
+              FULL-STACK DEVELOPER
+            </span>
+          </div>
+
+          <!-- Projects List (8 Projects) -->
+          <div class="space-y-3.5">
+
+            <!-- 1. 사내 메신저 정보 통합 및 연동 -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="git,github actions,jenkins,rss,rest api"
+              data-keywords="사내 메신저 정보 통합 연동 와이파이 ssh github action jenkins geeknews 요즘it rss 뉴스피드">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 사내 메신저 정보 통합 및 연동</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">DevOps & Tooling</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 업무 효율성 증진을 목표로 사내 메신저 정보 통합 시스템을 주도적으로 기획 및 개발</p>
+                <p>• 사내 정보 검색 (ex. 와이파이 비밀번호, ssh 접속정보)</p>
+                <p>• CI / CD 정보 연동 (ex. github action, jenkins)</p>
+                <p>• 최신 개발 트랜드 뉴스피드, rss 연동 (ex. geeknews, 요즘it)</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="GitHub Actions">GitHub Actions</span>
+                <span class="tag-badge" data-search="Jenkins">Jenkins</span>
+                <span class="tag-badge" data-search="RSS">RSS Feed</span>
+                <span class="tag-badge" data-search="REST API">REST API</span>
+              </div>
+            </div>
+
+            <!-- 2. 스마트 수업 시스템 -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="react,javascript,webrtc,rest api"
+              data-keywords="스마트 수업 시스템 react webrtc 실시간 영상 수업 화면 공유 글로벌 현지화 ui ux 개선 rest api">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 스마트 수업 시스템</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">React</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• WebRTC 기반 실시간 영상 수업/화면 공유 기능 등 기존 React 프로젝트 유지보수 및 기능 개선.</p>
+                <p>• 주요 버그 수정, 사용자 요구사항 기반 신규 기능 개발 및 글로벌 서비스 위한 현지화 적용.</p>
+                <p>• 다국적 팀과의 협업을 통해 요구사항을 조율하고, 사용자 피드백을 반영하여 UI/UX를 개선</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="React">React</span>
+                <span class="tag-badge" data-search="JavaScript">JavaScript</span>
+                <span class="tag-badge" data-search="WebRTC">WebRTC</span>
+                <span class="tag-badge" data-search="REST API">REST API</span>
+              </div>
+            </div>
+
+            <!-- 3. 글로벌향 eSignature 전자 계약 -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="flutter,dart,riverpod,gorouter,rest api,pdf"
+              data-keywords="글로벌향 esignature 전자 계약 flutter web 반응형 ui ux pdf 서명 텍스트 이미지 커스텀 오버레이 riverpod gorouter http intl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 글로벌향 eSignature 전자 계약</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">Flutter (Web)</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Flutter Web 기반 반응형 UI/UX 개발 담당, PDF 위 서명/텍스트/이미지 등 커스텀 오버레이 기능 구현.</p>
+                <p>• Riverpod 상태관리, GoRouter 라우팅 적용 및 http, intl, pdf 등 외부 패키지 적극 활용.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Flutter">Flutter (Web)</span>
+                <span class="tag-badge" data-search="Dart">Dart</span>
+                <span class="tag-badge" data-search="Riverpod">Riverpod</span>
+                <span class="tag-badge" data-search="GoRouter">GoRouter</span>
+                <span class="tag-badge" data-search="PDF">PDF Package</span>
+                <span class="tag-badge" data-search="REST API">REST API</span>
+              </div>
+            </div>
+
+            <!-- 4. AOSP Automotive boot optimization / 외주개발 (2023.10 - 2023.12) -->
+            <div class="career-item p-4 bg-amber-50/70 border-2 border-black space-y-2.5"
+              data-techs="android,aosp,java,linux,bootchart"
+              data-keywords="aosp automotive boot optimization 외주개발 preload systemserver log init.rc bootchart 부팅 시간 25% 단축 60초 45초 달성">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ AOSP Automotive boot optimization</h4>
+                </div>
+                <span class="text-xs font-mono font-bold text-zinc-600">2023.10 - 2023.12 | Android (AOSP)</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Java 코드(Preload, SystemServer, Log 등) 분석 부팅 병목 구간 분석 및 최적화로 평균 부팅 시간 단축</p>
+                <p>• init.rc 실행 순서 조정 및 병렬 처리 적용을 통한 부팅 프로세스 개선.</p>
+                <p>• bootchart 기준 평균 부팅 시간 25% 단축 (60초 → 45초 달성).</p>
+              </div>
+
+              <div class="impact-callout p-3 flex items-center gap-2.5 text-xs font-bold text-emerald-900">
+                <i class="fa-solid fa-gauge-high text-base text-emerald-700 shrink-0"></i>
+                <span>성과 지표: bootchart 기준 평균 부팅 시간 <strong
+                    class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">25% 단축 (60초 → 45초
+                    달성)</strong></span>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android (AOSP)</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Linux">Linux Shell Script</span>
+                <span class="tag-badge" data-search="Bootchart">Bootchart</span>
+              </div>
+            </div>
+
+            <!-- 5. AOSP Automotive 시스템 앱 / 외주개발 (2022.12 - 2023.05) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="android,kotlin,java,aidl,carservice,aws,mqtt"
+              data-keywords="aosp automotive 시스템 앱 외주개발 fms carproperty manager vhal aws iot core mqtt 네트워크 음영 지역 메시지 큐 재전송">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ AOSP Automotive 시스템 앱</h4>
+                </div>
+                <span class="text-xs font-mono font-bold text-zinc-600">2022.12 - 2023.05 | Android</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 차량 관리 시스템(FMS) 연동 위한 실시간 차량 데이터 수집 및 전송 안드로이드 시스템 앱(백그라운드 서비스) 개발.</p>
+                <p>• CarProperty Manager 활용 VHAL 데이터 수집 및 AWS IoT Core 연동 MQTT 통신 구현.</p>
+                <p>• 네트워크 음영 지역 고려, 데이터 유실 최소화를 위한 메시지 큐 및 재전송 로직 설계 및 적용.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Kotlin">Kotlin</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="AIDL">AIDL</span>
+                <span class="tag-badge" data-search="CarService">CarService API</span>
+                <span class="tag-badge" data-search="AWS IoT">AWS IoT Core</span>
+                <span class="tag-badge" data-search="MQTT">MQTT</span>
+              </div>
+            </div>
+
+            <!-- 6. 임베디드 보드 개발 QnA 웹 사이트 / 외주개발 (2022.06 - 2022.12) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="java,spring,jpa,querydsl,mysql,aws,git,github actions"
+              data-keywords="임베디드 보드 개발 qna 웹 사이트 외주개발 stack overflow restful api spring rest docs mysql full-text search aws ec2 rds s3 github actions topst.ai">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 임베디드 보드 개발 QnA 웹 사이트</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono font-bold text-zinc-600">2022.06 - 2022.12 | SpringBoot</span>
+                  <a href="https://topst.ai/" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-0.5 hover:text-black">
+                    <span>topst.ai</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Stack Overflow 스타일 Q&A 웹사이트 개발 프로젝트 리딩 및 백엔드 개발 총괄.</p>
+                <p>• Spring Boot 기반 RESTful API 서버 아키텍처 설계 및 구축, Spring REST Docs 활용 API 문서 자동화 및 테스트 환경 구축.</p>
+                <p>• MySQL Full-text search 적용하여 게시글 검색 기능 구현 및 성능 확보.</p>
+                <p>• AWS (EC2, RDS, S3 등) 기반 인프라 설계 및 구축, Github Actions 통한 CI/CD 파이프라인 구축.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+                <span class="tag-badge" data-search="JPA">JPA / QueryDSL</span>
+                <span class="tag-badge" data-search="Spring REST Docs">Spring REST Docs</span>
+                <span class="tag-badge" data-search="MySQL">MySQL Full-Text</span>
+                <span class="tag-badge" data-search="AWS">AWS (EC2, RDS, S3)</span>
+                <span class="tag-badge" data-search="GitHub Actions">GitHub Actions</span>
+              </div>
+            </div>
+
+            <!-- 7. 물류관제서비스 / 외주개발 (2021.11 - 2022.06) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="flutter,dart,java,spring,jpa,mariadb,fcm,javascript"
+              data-keywords="물류관제서비스 외주개발 택배 기사 관리자용 물류 관제 정산 시스템 flutter spring boot 크로스 플랫폼 30% 향상 fcm webview_flutter javascript 브릿지 pg 결제 본인 인증">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 물류관제서비스</h4>
+                </div>
+                <span class="text-xs font-mono font-bold text-zinc-600">2021.11 - 2022.06 | Flutter, SpringBoot</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 택배 기사 및 관리자용 물류 관제/정산 시스템 앱 개발 (Flutter) 및 서버 API 개발 지원 (Spring Boot).</p>
+                <p>• Flutter 기반 크로스 플랫폼(iOS/Android) 앱 아키텍처 직접 설계 및 개발 리딩, 개발 효율성 30% 이상 향상</p>
+                <p>• FCM 푸시 알림 시스템 연동, webview_flutter 활용 JavaScript 브릿지 구현 (외부 PG 결제, 본인 인증 연동).</p>
+              </div>
+
+              <div class="impact-callout p-3 flex items-center gap-2.5 text-xs font-bold text-emerald-900">
+                <i class="fa-solid fa-chart-line text-base text-emerald-700 shrink-0"></i>
+                <span>성과 지표: Flutter 기반 크로스 플랫폼 단일 아키텍처 구축으로 <strong
+                    class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">개발 효율성 30% 이상
+                    향상</strong></span>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Flutter">Flutter</span>
+                <span class="tag-badge" data-search="Dart">Dart</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+                <span class="tag-badge" data-search="JPA">JPA</span>
+                <span class="tag-badge" data-search="MariaDB">MariaDB</span>
+                <span class="tag-badge" data-search="FCM">FCM</span>
+                <span class="tag-badge" data-search="JavaScript Bridge">JavaScript Bridge</span>
+              </div>
+            </div>
+
+            <!-- 8. 대기업 차량관제 연구과제 / 외주개발 (2021.11 - 2022.06) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="android,java,spring,jsp,jquery,mariadb,jenkins"
+              data-keywords="대기업 차량관제 연구과제 외주개발 정보보안 android 앱 개발 jsp 웹사이트 감사 로그 db 저장 본인인증 jenkins ci cd">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 대기업 차량관제 연구과제</h4>
+                </div>
+                <span class="text-xs font-mono font-bold text-zinc-600">2021.11 - 2022.06 | Android, SpringBoot</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 정보보안 강화 및 Android 앱 기능 개발 담당, JSP 기반 웹사이트 개발 지원.</p>
+                <p>• 앱/웹 전반에 걸쳐 사용자 행위 추적 위한 감사 로그 DB 저장 기능 설계 및 구현.</p>
+                <p>• 외부 본인인증 서비스 연동 및 적용, Jenkins 활용 CI/CD 환경 구축 참여.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+                <span class="tag-badge" data-search="JSP">JSP / jQuery</span>
+                <span class="tag-badge" data-search="MariaDB">MariaDB</span>
+                <span class="tag-badge" data-search="Jenkins">Jenkins CI/CD</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- COMPANY 2: 주식회사 이**** (2021.07 - 2021.10) -->
+        <article class="company-card timeline-node bg-white brutal-card p-5 sm:p-7 space-y-4" data-company="easytechfin">
+          <!-- Company Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-3 gap-2">
+            <div>
+              <h3 class="text-lg sm:text-xl font-black font-display uppercase">주식회사 이****</h3>
+              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-0.5 font-mono">
+                📅 2021.07 - 2021.10 (4개월) | 정규직
+              </p>
+            </div>
+            <span
+              class="bg-zinc-100 border-2 border-black px-2.5 py-1 font-mono text-xs font-black uppercase brutal-shadow-sm">
+              FLUTTER DEVELOPER
+            </span>
+          </div>
+
+          <!-- Project: 모바일 주식 자동매매 앱 -->
+          <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+            data-techs="flutter,dart,android,kotlin,provider,rest api,websocket"
+            data-keywords="모바일 주식 자동매매 앱 flutter kotlin 퀀트 투자 getx bloc provider 리팩토링 안정성 유지보수 효율성 증권사 api flutter channel methodchannel eventchannel">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+              <h4 class="text-sm sm:text-base font-black text-blue-900">■ 모바일 주식 자동매매 앱</h4>
+              <span class="text-xs font-mono font-bold text-zinc-600">2021.07 - 2021.11 | Flutter</span>
+            </div>
+
+            <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+              <p>• Flutter 및 네이티브(Kotlin) 기반 퀀트 투자 앱 유지보수 및 기능 개선.</p>
+              <p>• 다수 상태관리 라이브러리(GetX, Bloc 등) 혼용으로 인한 상태관리 복잡도 문제를 진단하고 Provider 기반으로 리팩토링하여 코드 안정성과 유지보수 효율성을 크게 향상, 코드 안정성 및 일관성 확보.</p>
+              <p>• 증권사 API 연동 자동매매 로직 검증 및 오류 수정, 사용자 피드백 기반 기능 개선.</p>
+              <p>• Flutter Channel(Method/Event) 활용 네이티브 모듈 데이터 연동 및 성능 최적화.</p>
+            </div>
+
+            <div class="impact-callout p-3 flex items-center gap-2.5 text-xs font-bold text-emerald-900">
+              <i class="fa-solid fa-code-merge text-base text-emerald-700 shrink-0"></i>
+              <span>성과: 다수 상태관리 혼용 문제를 Provider 단일화로 리팩토링하여 <strong
+                  class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">코드 일관성 및 런타임 안정성
+                  확보</strong></span>
+            </div>
+
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tag-badge" data-search="Flutter">Flutter</span>
+              <span class="tag-badge" data-search="Dart">Dart</span>
+              <span class="tag-badge" data-search="Android">Android</span>
+              <span class="tag-badge" data-search="Kotlin">Kotlin</span>
+              <span class="tag-badge" data-search="Provider">Provider</span>
+              <span class="tag-badge" data-search="REST API">REST API</span>
+              <span class="tag-badge" data-search="WebSocket">WebSocket</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- COMPANY 3: 주식회사 와*** (Y.LABS) (2018.01 - 2021.06) -->
+        <article class="company-card timeline-node bg-white brutal-card p-5 sm:p-7 space-y-5" data-company="ylabs">
+          <!-- Company Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-3 gap-2">
+            <div>
+              <h3 class="text-lg sm:text-xl font-black font-display uppercase">주식회사 와***</h3>
+              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-0.5 font-mono">
+                📅 2018.01 - 2021.06 (3년 6개월) | 정규직
+              </p>
+            </div>
+            <span
+              class="bg-black text-white px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm">
+              ENGINEERING LEAD / FULL-STACK
+            </span>
+          </div>
+
+          <!-- Projects List (9 Projects) -->
+          <div class="space-y-3.5">
+
+            <!-- 1. 개발 문화 개선 및 매니징 -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="git,github,trello,slack,agile"
+              data-keywords="개발 문화 개선 매니징 git-flow github 코드 리뷰 trello slack 애자일 개발 기간 산정 진척 관리">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 개발 문화 개선 및 매니징</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">Tech Lead & Management</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 팀 개발 생산성 향상을 위해 Git-flow 브랜치 전략 및 Github 코드 리뷰 문화를 성공적으로 도입/정착시켜 개발 표준화 및 코드 품질 향상에 기여</p>
+                <p>• Trello 칸반 보드, Slack 연동 통한 개발 프로세스 가시성 및 협업 효율 증대.</p>
+                <p>• 주간 기술 공유 및 회고 미팅 정례화, 애자일 방법론 도입 시도.</p>
+                <p>• 프로젝트 요구사항 분석 기반 개발 기간 산정 및 진척 상황 관리.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Git">Git-flow</span>
+                <span class="tag-badge" data-search="GitHub">GitHub Code Review</span>
+                <span class="tag-badge" data-search="Agile">Agile / Kanban</span>
+              </div>
+            </div>
+
+            <!-- 2. 자사몰 리뷰사이트 (2020.11 - 2020.12) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="flutter,dart,spring,java,jpa,aws,route53,cloudfront"
+              data-keywords="자사몰 리뷰사이트 flutter web spring boot custom paint aws route53 s3 hosting cloudfront ec2 rds">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 자사몰 리뷰사이트</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">2020.11 - 2020.12 | Flutter (Web)</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Flutter Web 기반 반응형 프론트엔드 및 Spring Boot 기반 백엔드 API 서버 전체 설계 및 개발.</p>
+                <p>• Flutter Custom Paint 활용, 디자인 요구사항 맞춘 자체 UI 컴포넌트 제작.</p>
+                <p>• AWS (Route53, S3 Hosting, CloudFront, EC2, RDS) 활용 인프라 설계 및 구축.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Flutter Web">Flutter Web</span>
+                <span class="tag-badge" data-search="Dart">Dart</span>
+                <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="JPA">JPA</span>
+                <span class="tag-badge" data-search="AWS">AWS (S3, CloudFront, EC2, RDS)</span>
+              </div>
+            </div>
+
+            <!-- 3. 지역기반 중고거래 플랫폼 v2 (2020.01 - 2020.06) -->
+            <div class="career-item p-4 bg-cyan-50/70 border-2 border-black space-y-2.5"
+              data-techs="flutter,dart,websocket,fcm,firebase,aws,lambda,api gateway,nodejs"
+              data-keywords="지역기반 중고거래 플랫폼 v2 flutter websocket fcm firebase crashlytics analytics aws lambda api gateway 서버리스 ec2 비용 절감 스크롤 퍼포먼스 nodejs">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 지역기반 중고거래 플랫폼 v2</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">2020.01 - 2020.06 | Flutter</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 기존 네이티브(Android/iOS) 앱을 Flutter 기반 단일 코드로 통합 개발하여 개발 생산성 및 유지보수 효율성 증대.</p>
+                <p>• WebSocket 및 FCM 활용 실시간 채팅 기능 신규 구현.</p>
+                <p>• Firebase Crashlytics, Analytics 도입하여 앱 안정성 모니터링 및 사용자 데이터 분석 기반 마련.</p>
+              </div>
+
+              <div class="impact-callout p-3 flex items-center gap-2.5 text-xs font-bold text-emerald-900">
+                <i class="fa-solid fa-cloud text-base text-emerald-700 shrink-0"></i>
+                <span>성과: AWS Lambda, API Gateway 도입하여 기존 EC2 제거, <strong
+                    class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">유지보수 비용 절감 및 서버리스
+                    아키텍처 전환</strong></span>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Flutter">Flutter</span>
+                <span class="tag-badge" data-search="Dart">Dart</span>
+                <span class="tag-badge" data-search="WebSocket">WebSocket</span>
+                <span class="tag-badge" data-search="FCM">FCM</span>
+                <span class="tag-badge" data-search="Firebase">Firebase</span>
+                <span class="tag-badge" data-search="AWS Lambda">AWS Lambda</span>
+                <span class="tag-badge" data-search="API Gateway">API Gateway</span>
+                <span class="tag-badge" data-search="Node.js">Node.js</span>
+              </div>
+            </div>
+
+            <!-- 4. 사내 재고관리 프로그램 (2019.10 - 2019.12) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5" data-techs="flutter,dart"
+              data-keywords="사내 재고관리 프로그램 flutter 기술 스택 도입 파일럿 프로젝트 중고 상품 qr코드 연동 재고관리">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 사내 재고관리 프로그램</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">2019.10 - 2019.12 | Flutter</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Flutter 기술 스택 도입 위한 파일럿 프로젝트로, 중고 상품 QR코드 연동 재고관리 시스템 기획, 설계, 개발.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Flutter">Flutter</span>
+                <span class="tag-badge" data-search="Dart">Dart</span>
+              </div>
+            </div>
+
+            <!-- 5. 카카오톡 연동 간편 주문 POS 시스템 / 외주개발 (2019.03 - 2019.09) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="android,java,fcm,bluetooth,usb"
+              data-keywords="카카오톡 연동 간편 주문 pos 시스템 외주개발 android 태블릿 pos fcm 알림 대기번호 발급 블루투스 usb 감열 프린터 연동">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 카카오톡 연동 간편 주문 POS 시스템</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono font-bold text-zinc-600">2019.03 - 2019.09 | Android</span>
+                  <a href="https://play.google.com/store/apps/details?id=kr.norder.store.android" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-0.5 hover:text-black">
+                    <span>Google Play</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 태블릿 기반 POS 앱 개발 담당, 디자인 가이드 준수 UI/UX 구현.</p>
+                <p>• FCM 활용 카카오톡 알림 기반 대기번호 발급 기능 구현.</p>
+                <p>• 블루투스/USB 인터페이스 활용 감열 프린터 연동 개발.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="FCM">FCM</span>
+                <span class="tag-badge" data-search="Bluetooth">Bluetooth API</span>
+                <span class="tag-badge" data-search="USB">USB API</span>
+              </div>
+            </div>
+
+            <!-- 6. 국립국악원 주관 국악 반주/장단 플레이 앱 v2 / 외주개발 (2018.12 - 2019.03) -->
+            <div class="career-item p-4 bg-purple-50/70 border-2 border-black space-y-2.5"
+              data-techs="android,java,spring,jpa,aws,cloudfront"
+              data-keywords="국립국악원 주관 국악 반주 장단 플레이 앱 v2 외주개발 django spring boot 마이그레이션 mediaplayer 병렬 로딩 캐싱 음원 로딩 50% 향상 aws s3 cloudfront 캐싱 서버 운영 비용 90% 절감">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 국립국악원 주관 국악 반주/장단 플레이 앱 v2</h4>
+                </div>
+                <span class="text-xs font-mono font-bold text-zinc-600">2018.12 - 2019.03 | SpringBoot</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• 기존 Django 기반 서버를 Spring Boot로 재설계 및 마이그레이션, Android 앱 기능 리뉴얼 담당.</p>
+                <p>• Android MediaPlayer 병렬 로딩 및 캐싱 적용하여 음원 로딩 성능 개선 (기존 앱 대비 50% 이상 속도 향상).</p>
+                <p>• AWS S3 저장 정책 및 CloudFront 캐싱 전략 변경으로 서버 운영 비용 90% 이상 절감.</p>
+              </div>
+
+              <div class="impact-callout p-3 flex items-center gap-2.5 text-xs font-bold text-emerald-900">
+                <i class="fa-solid fa-bolt text-base text-emerald-700 shrink-0"></i>
+                <span>성과 지표: 음원 로딩 속도 <strong
+                    class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">50% 이상 향상</strong>
+                  및 CloudFront 캐싱으로 <strong
+                    class="bg-emerald-200 px-1 border border-emerald-800 text-emerald-950 font-black">서버 운영 비용 90% 이상
+                    절감</strong></span>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+                <span class="tag-badge" data-search="JPA">JPA</span>
+                <span class="tag-badge" data-search="AWS">AWS (EC2, S3, RDS, CloudFront)</span>
+              </div>
+            </div>
+
+            <!-- 7. 지역기반 중고거래 플랫폼 v1 고도화 (2018.03 - 2018.12) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5" data-techs="android,java,aws,rds"
+              data-keywords="지역기반 중고거래 플랫폼 v1 고도화 android 앱 안정성 개선 ios 외주 개발사 협업 지번 주소 행정동 법정동 주소 체계 전환 aws s3 rds">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 지역기반 중고거래 플랫폼 v1 고도화</h4>
+                <span class="text-xs font-mono font-bold text-zinc-600">2018.03 - 2018.12 | Android</span>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 앱 주요 버그 수정 및 안정성 개선, iOS 외주 개발사 협업 및 관리.</p>
+                <p>• 기존 지번 주소 기반 -> 행정동/법정동 주소 체계로 데이터 전환 및 관련 로직 수정.</p>
+                <p>• AWS S3 (이미지 저장), RDS (DB) 도입하여 확장성 및 안정성 확보.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="AWS S3">AWS S3</span>
+                <span class="tag-badge" data-search="RDS">RDS</span>
+              </div>
+            </div>
+
+            <!-- 8. 국립국악원 주관 국악 반주/장단 플레이 앱 v1 / 외주개발 (2018.01 - 2018.03) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5" data-techs="android,java,exoplayer"
+              data-keywords="국립국악원 주관 국악 반주 장단 플레이 앱 v1 외주개발 exoplayer 다중 음원 동시 재생">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <div class="flex items-center gap-2">
+                  <span class="bg-black text-white px-1.5 py-0.5 text-[10px] font-mono font-black">외주개발</span>
+                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 국립국악원 주관 국악 반주/장단 플레이 앱 v1</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono font-bold text-zinc-600">2018.01 - 2018.03 | Android</span>
+                  <a href="https://play.google.com/store/apps/details?id=kr.ylabs.wooang" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-0.5 hover:text-black">
+                    <span>Google Play</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 앱 초기 버전 개발, ExoPlayer 활용 다중 음원 동시 재생 기능 구현.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="ExoPlayer">ExoPlayer</span>
+              </div>
+            </div>
+
+            <!-- 9. 지역기반 중고거래 플랫폼 v1 (2017.12 - 2018.02) -->
+            <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2.5"
+              data-techs="android,java,google maps,aws,route53,rds"
+              data-keywords="지역기반 중고거래 플랫폼 v1 초기 버전 리딩 서버 외주 관리 aws ec2 route53 rds 인프라 행안부 주소 api google maps api geocoding reverse geocoding 위치 기반">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1.5">
+                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 지역기반 중고거래 플랫폼 v1</h4>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono font-bold text-zinc-600">2017.12 - 2018.02 | Android</span>
+                  <a href="https://play.google.com/store/apps/details?id=kr.ylabs.localmarket" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-0.5 hover:text-black">
+                    <span>Google Play</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 앱 초기 버전 개발 리딩 및 서버 파트 외주 개발 관리.</p>
+                <p>• AWS (EC2, Route53, RDS) 활용 초기 인프라 구축.</p>
+                <p>• 행안부 주소 API, Google Maps API 활용 위치 기반(Geocoding/Reverse Geocoding) 서비스 구현.</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Google Maps">Google Maps API</span>
+                <span class="tag-badge" data-search="AWS">AWS (EC2, Route53, RDS)</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: EARLY ENGINEERING RECORDS (2014 - 2017) -->
+    <section id="earlyrecords" class="space-y-4">
+      <!-- Accordion Header & Toggle Button -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-100 border-2 border-black p-4 brutal-shadow-sm">
+        <div class="flex items-center gap-2">
+          <h2
+            class="inline-block bg-black text-white px-3 py-1 text-sm font-black font-display uppercase tracking-wider">
+            📜 초기 경력 사항 (2014 - 2017)
+          </h2>
+          <span class="text-xs font-mono font-bold text-zinc-600 hidden sm:inline">（주）피*** · 주식회사 이***</span>
+        </div>
+
+        <button id="toggle-early-btn" onclick="toggleEarlyRecords()"
+          class="brutal-btn bg-white hover:bg-[#FFE600] text-black px-3 py-1 text-xs font-mono font-black gap-1 self-start sm:self-auto"
+          aria-expanded="true" aria-controls="early-records-content">
+          <span id="early-toggle-text">▼ 접기 (2014 - 2017)</span>
+        </button>
+      </div>
+
+      <!-- Collapsible Container -->
+      <div id="early-records-content" class="early-records-content space-y-4 transition-all duration-300">
+
+        <!-- COMPANY 4: （주）피*** (2016.09 - 2017.01) -->
+        <article class="company-card bg-white brutal-card p-5 space-y-3.5" data-company="peopleroad">
+          <!-- Company Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2.5 gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-black font-display uppercase">（주）피***</h3>
+              <p class="text-xs font-bold text-zinc-600 font-mono">📅 2016.09 - 2017.01 (5개월) | 정규직</p>
+            </div>
+            <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">
+              ANDROID DEVELOPER
+            </span>
+          </div>
+
+          <div class="career-item p-4 bg-zinc-50 border-2 border-black space-y-2"
+            data-techs="android,java,databinding,livedata,retrofit,glide,webview"
+            data-keywords="지인기반 sns e커머스 앱 pg 결제 profiler databinding livedata mvvm 반응형 ui retrofit glide webview">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-1">
+              <h4 class="text-sm font-black text-black">■ 지인기반 SNS & e커머스 앱</h4>
+              <span class="text-xs font-mono font-bold text-zinc-600">2016.09 - 2017.01 | Android</span>
+            </div>
+
+            <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed detail-desc">
+              <p>• Android 앱 개발 담당, 웹뷰 기반 PG 연동 결제 시스템 적용.</p>
+              <p>• Android Studio Profiler 활용 앱 성능 분석 및 최적화 수행.</p>
+              <p>• DataBinding, LiveData 도입하여 MVVM 패턴 기반 코드 구조 개선 및 반응형 UI 구현.</p>
+              <p>• Retrofit, Glide 등 라이브러리 적극 활용하여 개발 생산성 향상.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tag-badge" data-search="Android">Android</span>
+              <span class="tag-badge" data-search="Java">Java</span>
+              <span class="tag-badge" data-search="DataBinding">DataBinding</span>
+              <span class="tag-badge" data-search="LiveData">LiveData</span>
+              <span class="tag-badge" data-search="Retrofit">Retrofit</span>
+              <span class="tag-badge" data-search="Glide">Glide</span>
+              <span class="tag-badge" data-search="WebView">WebView</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- COMPANY 5: 주식회사 이*** (2014.12 - 2016.08) -->
+        <article class="company-card bg-white brutal-card p-5 space-y-3.5" data-company="ezencomms">
+          <!-- Company Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-2.5 gap-2">
+            <div>
+              <h3 class="text-base sm:text-lg font-black font-display uppercase">주식회사 이***</h3>
+              <p class="text-xs font-bold text-zinc-600 font-mono">📅 2014.12 - 2016.08 (1년 9개월) | 정규직</p>
+            </div>
+            <span class="bg-zinc-100 border-2 border-black px-2 py-0.5 text-xs font-bold font-mono">
+              DEVELOPER
+            </span>
+          </div>
+
+          <!-- 8 Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+
+            <!-- 1. 미국판 배달의 민족 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5"
+              data-techs="angularjs,javascript,html,css,rest api"
+              data-keywords="미국판 배달의 민족 angularjs 웹 프론트엔드 해외 pg stripe 결제 rest api">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ 미국판 배달의 민족</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2016.03 - 2016.07 | Angular</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• AngularJS 기반 웹 프론트엔드 개발 담당, 신규 기술 학습 및 요구사항 구현.</p>
+                <p>• 해외 PG(Stripe 등) API 연동 결제 기능 구현.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="AngularJS">AngularJS</span>
+                <span class="tag-badge" data-search="JavaScript">JavaScript</span>
+                <span class="tag-badge" data-search="HTML">HTML / CSS</span>
+                <span class="tag-badge" data-search="REST API">REST API</span>
+              </div>
+            </div>
+
+            <!-- 2. 한국정보인증(KICA) 생체인증(KIDO) 앱 / 외주개발 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5" data-techs="android,java,fido sdk,fcm"
+              data-keywords="한국정보인증 kica 생체인증 kido 앱 외주개발 지문 인증 간편 로그인 공인인증서 java fcm 앱-웹 로그인 상태 동기화">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ 한국정보인증(KICA) 생체인증 앱</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2016.01 - 2016.02 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• 지문 인증 기반 간편 로그인 앱 유지보수.</p>
+                <p>• 협력사 제공 공인인증서 Java 모듈 분석 후 지문 정보 연동 로직 구현.</p>
+                <p>• FCM 활용 앱-웹 간 로그인 상태 동기화 기능 구현.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="FIDO">FIDO SDK</span>
+                <span class="tag-badge" data-search="FCM">FCM</span>
+              </div>
+            </div>
+
+            <!-- 3. BLE 비콘 실내 걸음수 측정앱 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5"
+              data-techs="android,java,bluetooth ble,sensor api"
+              data-keywords="블루투스 4.0 ble 비콘 실내 걸음수 측정앱 ble 비콘 신호 실내 위치 측위 rssi 필터링 패킷 분석 배터리 잔량">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ BLE 비콘 실내 걸음수 측정앱</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2015.10 - 2016.01 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 앱 개발 담당, BLE 비콘 신호 기반 실내 위치 측위 및 걸음수 측정 기능 구현.</p>
+                <p>• 비콘 수신 감도(RSSI) 필터링 등 알고리즘 적용하여 측정 정확도 향상 기여.</p>
+                <p>• 패킷 분석 통해 비콘 매뉴얼 누락된 배터리 잔량 정보 획득 및 앱 기능 활용.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Bluetooth BLE">Bluetooth BLE</span>
+                <span class="tag-badge" data-search="Sensor API">Sensor API</span>
+              </div>
+            </div>
+
+            <!-- 4. NFC 스마트 시설점검 시스템 / 외주개발 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5" data-techs="android,java,nfc"
+              data-keywords="nfc 시설관리공단 스마트 시설점검 시스템 외주개발 nfc 태그 읽기 쓰기 시설물 점검 기록">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ NFC 스마트 시설점검 시스템</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2015.09 - 2015.09 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• Android 앱 개발 담당, NFC 태그 읽기/쓰기 기능 활용 시설물 점검 기록 시스템 구현.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="NFC">NFC</span>
+              </div>
+            </div>
+
+            <!-- 5. BLE 비콘 아이 통학 알림 & GPS 트래킹 앱 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5"
+              data-techs="android,java,bluetooth ble,gps,google maps,jwt,sqlite,webview"
+              data-keywords="블루투스 4.0 ble 비콘 아이 통학 알림 통학 버스 gps 트래킹 앱 학부모 교사 기사 가디언 미국 현지화 패킷 축소 jwt sqlite 캐싱 pg 연동 결제">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ 아이 통학 알림 & GPS 트래킹 앱</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2015.02 - 2015.09 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• 4개 사용자 버전(학부모, 교사, 기사, 가디언) 앱 개발 및 한국/미국 현지화 적용.</p>
+                <p>• 미국 네트워크 환경 고려 통신 패킷 축소 및 SQLite 데이터 캐싱 구현.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Bluetooth BLE">Bluetooth BLE</span>
+                <span class="tag-badge" data-search="GPS">GPS</span>
+              </div>
+            </div>
+
+            <!-- 6. BLE 비콘 대기표 발급 및 광고앱 / 외주개발 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5"
+              data-techs="android,java,bluetooth ble,fcm,retrofit,okhttp,glide"
+              data-keywords="블루투스 4.0 ble 비콘 대기표 발급 광고앱 외주개발 비콘 스캔 fcm 특정 비콘 범위 진입 전면 광고 송출 대기표 발급">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ BLE 비콘 대기표 & 광고앱</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2014.12 - 2015.01 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• 비콘 스캔 통한 정보 수집 및 FCM 연동 전면 광고 송출/대기표 발급 구현.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Bluetooth BLE">Bluetooth BLE</span>
+                <span class="tag-badge" data-search="FCM">FCM</span>
+              </div>
+            </div>
+
+            <!-- 7. 강아지 팬던트 NFC/RFID 연동 서비스 / 유지보수 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5" data-techs="android,java,spring,mysql"
+              data-keywords="강아지 팬던트 nfc rfid 연동 서비스 유지보수 커뮤니티 게시판 spring 서버 db connection 누수 문제 분석 수정 서버 다운 현상 해결">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ 강아지 팬던트 NFC 연동 서비스</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2014.12 - 2015.12 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• Spring 서버 DB Connection 누수 문제 분석 및 수정으로 서버 다운 현상 해결.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+                <span class="tag-badge" data-search="Spring Framework">Spring</span>
+                <span class="tag-badge" data-search="MySQL">MySQL</span>
+              </div>
+            </div>
+
+            <!-- 8. 한국정보인증(KICA) 샵(#)메일 / 유지보수 -->
+            <div class="career-item p-3 bg-zinc-50 border-2 border-black space-y-1.5" data-techs="android,java"
+              data-keywords="한국정보인증 kica 샵메일 샵(#)메일 유지보수 보안 메일 서비스 static 메모리 누수 context singleton 패턴 코드 안정성 개선">
+              <div class="flex justify-between items-start border-b border-black pb-1">
+                <h4 class="text-xs sm:text-sm font-black text-black">■ 한국정보인증(KICA) 샵(#)메일</h4>
+                <span class="text-[10px] font-mono font-bold text-zinc-600">2014.12 - 2016.08 | Android</span>
+              </div>
+              <div class="space-y-1 text-xs text-zinc-800 leading-relaxed detail-desc">
+                <p>• Static 사용으로 인한 메모리 누수 개선, Application Context 기반 Singleton 패턴 적용.</p>
+              </div>
+              <div class="flex flex-wrap gap-1 pt-1">
+                <span class="tag-badge" data-search="Android">Android</span>
+                <span class="tag-badge" data-search="Java">Java</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TECHNICAL STACK (SKILLS) -->
+    <section id="techstack" class="scroll-mt-16 sm:scroll-mt-20 bg-white brutal-card p-5 sm:p-7 space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight">
+            ⚡ 보유 스킬 & 기술 스택 (SKILLS)
+          </h2>
+          <p class="text-xs font-bold text-zinc-600">상용 서비스 기획부터 아키텍처 설계 및 운영까지 직접 다룬 핵심 기술 스택</p>
+        </div>
+        <span class="bg-black text-white px-2.5 py-0.5 font-mono text-xs font-bold uppercase shrink-0 self-start sm:self-auto">
+          VERIFIED SKILLS
+        </span>
+      </div>
+
+      <!-- Verified Skill Badges -->
+      <div class="p-3.5 bg-zinc-100 border-2 border-black space-y-2">
+        <span class="text-xs font-mono font-black text-zinc-700 uppercase">📌 보유 기술 스택:</span>
+        <div class="flex flex-wrap gap-1.5 pt-0.5">
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Android">Android</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Java">Java</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="JavaScript">JavaScript</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="AWS">AWS</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="JPA">JPA</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Spring Boot">Spring Boot</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Flutter">Flutter</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="RDBMS">RDBMS</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Kotlin">Kotlin</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Git">Git</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="JSP">JSP</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Gradle">Gradle</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="Linux">Linux</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="SQL">SQL</span>
+          <span class="tag-badge bg-[#FFE600] text-black font-black" data-search="GitHub">GitHub</span>
+        </div>
+      </div>
+
+      <!-- Domain Matrix Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 text-xs font-mono font-bold">
+        <!-- Mobile & Frontend -->
+        <div class="p-4 bg-blue-50/80 border-2 border-black brutal-shadow-sm space-y-2">
+          <div class="flex items-center justify-between text-blue-800 font-black">
+            <span>📱 MOBILE & FRONTEND</span>
+            <span class="text-[10px] bg-blue-200 px-1 py-0.5 border border-blue-800">CORE</span>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            <span class="tag-badge" data-search="Flutter">Flutter</span>
+            <span class="tag-badge" data-search="Dart">Dart</span>
+            <span class="tag-badge" data-search="Android">Android OS / AOSP</span>
+            <span class="tag-badge" data-search="Java">Java</span>
+            <span class="tag-badge" data-search="Kotlin">Kotlin</span>
+            <span class="tag-badge" data-search="React">React</span>
+            <span class="tag-badge" data-search="JavaScript">JavaScript</span>
+            <span class="tag-badge" data-search="Riverpod">Riverpod</span>
+            <span class="tag-badge" data-search="Provider">Provider</span>
+            <span class="tag-badge" data-search="WebRTC">WebRTC</span>
+          </div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="p-4 bg-emerald-50/80 border-2 border-black brutal-shadow-sm space-y-2">
+          <div class="flex items-center justify-between text-emerald-800 font-black">
+            <span>🌱 BACKEND & DATABASE</span>
+            <span class="text-[10px] bg-emerald-200 px-1 py-0.5 border border-emerald-800">CORE</span>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            <span class="tag-badge" data-search="Spring Boot">Spring Boot</span>
+            <span class="tag-badge" data-search="JPA">JPA / Hibernate</span>
+            <span class="tag-badge" data-search="QueryDSL">QueryDSL</span>
+            <span class="tag-badge" data-search="Spring REST Docs">Spring REST Docs</span>
+            <span class="tag-badge" data-search="MySQL">MySQL Full-Text</span>
+            <span class="tag-badge" data-search="MariaDB">MariaDB</span>
+            <span class="tag-badge" data-search="RDBMS">RDBMS / SQL</span>
+            <span class="tag-badge" data-search="REST API">REST API</span>
+          </div>
+        </div>
+
+        <!-- Cloud & System -->
+        <div class="p-4 bg-purple-50/80 border-2 border-black brutal-shadow-sm space-y-2">
+          <div class="flex items-center justify-between text-purple-800 font-black">
+            <span>☁️ CLOUD & DEVOPS</span>
+            <span class="text-[10px] bg-purple-200 px-1 py-0.5 border border-purple-800">CORE</span>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            <span class="tag-badge" data-search="AWS">AWS (EC2, S3, RDS)</span>
+            <span class="tag-badge" data-search="CloudFront">CloudFront</span>
+            <span class="tag-badge" data-search="Lambda">Lambda / API Gateway</span>
+            <span class="tag-badge" data-search="GitHub Actions">GitHub Actions</span>
+            <span class="tag-badge" data-search="Jenkins">Jenkins CI/CD</span>
+            <span class="tag-badge" data-search="Git">Git / GitHub</span>
+            <span class="tag-badge" data-search="Linux">Linux / Shell</span>
+            <span class="tag-badge" data-search="Gradle">Gradle</span>
+            <span class="tag-badge" data-search="Bootchart">Bootchart Profiling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: OPEN SOURCE & PACKAGES -->
+    <section id="opensource" class="scroll-mt-16 sm:scroll-mt-20 space-y-4">
+      <div class="flex items-center gap-2 border-b-2 border-black pb-2">
+        <h2
+          class="inline-block bg-black text-white px-3.5 py-1 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
+          🌐 오픈소스 & 배포 패키지 (OPEN SOURCE & PACKAGES)
+        </h2>
+      </div>
+
+      <!-- Open Source 1: Immich Contribution -->
+      <article class="career-item bg-[#70E1FF] brutal-card brutal-card-hover p-5 sm:p-6 space-y-3.5"
+        data-techs="flutter,android,dart,git"
+        data-keywords="오픈소스 모바일 소스 개선에 기여 immich immich-app commits flutter dart global">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-2.5">
           <div>
             <div class="flex items-center gap-2">
-              <span class="bg-black text-white px-2 py-0.5 font-mono text-[10px] font-black uppercase">CORE MOBILE
-                CONTRIBUTOR</span>
+              <span class="bg-black text-white px-1.5 py-0.5 font-mono text-[10px] font-black uppercase">OPEN SOURCE CONTRIBUTION</span>
               <span class="text-xs font-mono font-bold text-zinc-800">immich-app / immich</span>
             </div>
-            <h3 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight text-black mt-1">
-              🚀 Immich - High Performance Photo & Video Backup Solution
+            <h3 class="text-base sm:text-lg font-black font-display uppercase tracking-tight text-black mt-1">
+              🚀 오픈소스, 모바일 소스 개선에 기여
             </h3>
           </div>
 
           <a href="https://github.com/immich-app/immich/commits?author=xpwmaosldk" target="_blank"
             rel="noopener noreferrer"
-            class="brutal-btn bg-white hover:bg-black hover:text-white px-4 py-2 font-mono text-xs font-black gap-1.5 shrink-0">
+            class="brutal-btn bg-white hover:bg-black hover:text-white px-3.5 py-1.5 font-mono text-xs font-black gap-1 shrink-0"
+            aria-label="Immich 기여 커밋 목록 보기">
             <span>VIEW COMMITS</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
 
         <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
-          글로벌 대형 오픈소스 자체 호스팅 백업 및 사진 관리 플랫폼인 <strong class="bg-white px-1.5 py-0.5 border border-black">Immich</strong>
-          프로젝트의 코어 모바일 애플리케이션 최적화 및 유지보수에 직접 기여했습니다. 프로덕션 레벨의 모바일 아키텍처를 심층 분석하여 구조 개선안을 제시하고 글로벌 엔지니어 커뮤니티와 긴밀히 협업하여 코드
-          품질과 퍼포먼스를 향상했습니다.
+          글로벌 오픈소스 사진/영상 백업 솔루션인 <strong>Immich</strong> 모바일 앱의 소스 코드 개선 및 성능 최적화에 기여했습니다.
         </p>
 
         <div class="flex flex-wrap gap-1.5">
-          <span class="tag-badge">Flutter</span>
-          <span class="tag-badge">Dart</span>
-          <span class="tag-badge">Mobile Architecture</span>
-          <span class="tag-badge">Open Source Collaboration</span>
+          <span class="tag-badge" data-search="Flutter">Flutter</span>
+          <span class="tag-badge" data-search="Dart">Dart</span>
+          <span class="tag-badge" data-search="Open Source">Open Source Contribution</span>
         </div>
       </article>
 
-      <!-- Distributed Packages Grid -->
-      <div class="bg-white brutal-card p-6 space-y-4">
-        <div class="flex items-center justify-between">
-          <h3 class="text-base sm:text-lg font-black font-display uppercase tracking-tight">
-            📦 DISTRIBUTED OPEN SOURCE PACKAGES (PUB.DEV)
+      <!-- Packages Grid: pub.dev -->
+      <div class="bg-white brutal-card p-5 sm:p-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b-2 border-black pb-2">
+          <h3 class="text-base font-black font-display uppercase tracking-tight">
+            📦 PUB.DEV 공식 배포 패키지
           </h3>
-          <span class="text-xs font-mono font-bold text-zinc-500">OFFICIAL REPOSITORIES</span>
+          <span class="text-xs font-mono font-bold text-zinc-500">FLUTTER / DART PACKAGES</span>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono font-bold">
 
-          <!-- Package 1 -->
-          <a href="https://pub.dev/packages/number_pagination" target="_blank" rel="noopener noreferrer"
-            class="career-item p-4 bg-zinc-50 brutal-border hover:bg-[#FFE600]/20 transition flex flex-col justify-between space-y-3 group"
-            data-techs="flutter,web">
-            <div class="space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-blue-700 font-black text-sm flex items-center gap-1 group-hover:underline">
-                  <i class="fa-solid fa-box-archive"></i> number_pagination
-                </span>
-                <span class="bg-zinc-200 border border-black px-1.5 py-0.5 text-[10px]">pub.dev</span>
-              </div>
-              <p class="text-zinc-700 font-sans font-medium text-xs leading-relaxed">
-                Flutter Web 환경에서 대용량 데이터 렌더링 시 무한 스크롤 방식의 메모리 부하와 성능 저하를 방지하기 위해 설계된 번호 지정형 고성능 넘버 페이징 위젯 패키지입니다.
-              </p>
-            </div>
-            <div class="flex items-center justify-between pt-2 border-t border-zinc-200 text-[11px] text-zinc-600">
-              <span>Flutter · Dart</span>
-              <span class="text-blue-600 font-bold group-hover:translate-x-1 transition">View Package ↗</span>
-            </div>
-          </a>
-
-          <!-- Package 2 -->
-          <a href="https://pub.dev/packages/single_centered_multi_child_layout" target="_blank"
-            rel="noopener noreferrer"
-            class="career-item p-4 bg-zinc-50 brutal-border hover:bg-[#70E1FF]/20 transition flex flex-col justify-between space-y-3 group"
-            data-techs="flutter">
-            <div class="space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-blue-700 font-black text-sm flex items-center gap-1 group-hover:underline">
-                  <i class="fa-solid fa-box-archive"></i> single_centered_multi_child_layout
-                </span>
-                <span class="bg-zinc-200 border border-black px-1.5 py-0.5 text-[10px]">pub.dev</span>
-              </div>
-              <p class="text-zinc-700 font-sans font-medium text-xs leading-relaxed">
-                다중 정렬 제한이 걸린 복잡한 UI 캔버스 트리 내에서 특정 자식 위젯 컬렉션을 스크린 정중앙에 강제 정렬/렌더링하기 위한 커스텀 레이아웃 확장 엔진 패키지입니다.
-              </p>
-            </div>
-            <div class="flex items-center justify-between pt-2 border-t border-zinc-200 text-[11px] text-zinc-600">
-              <span>Flutter · Custom Layout</span>
-              <span class="text-blue-600 font-bold group-hover:translate-x-1 transition">View Package ↗</span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: TECHNICAL STACK CLASSIFICATION MATRIX -->
-    <section id="techstack" class="bg-white brutal-border-thick p-6 sm:p-8 brutal-shadow-lg space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-3">
-        <div>
-          <h2 class="text-xl sm:text-2xl font-black font-display uppercase tracking-tight">
-            ⚡ TECHNICAL STACK CLASSIFICATION
-          </h2>
-          <p class="text-xs font-bold text-zinc-600">9년 8개월간 프로덕션 레벨에서 검증된 핵심 및 응용 기술 스택</p>
-        </div>
-        <span class="bg-black text-white px-3 py-1 font-mono text-xs font-bold uppercase shrink-0">PRODUCTION
-          READY</span>
-      </div>
-
-      <!-- CORE STACK BLOCK -->
-      <div class="space-y-3">
-        <div class="flex items-center gap-2">
-          <span class="bg-black text-white px-3 py-0.5 font-mono text-xs font-black uppercase tracking-wider">
-            PRIMARY CORE STACK (주력 스택)
-          </span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono font-bold">
-
-          <!-- Frontend / App -->
-          <div class="p-4 bg-blue-50/80 brutal-border space-y-2">
-            <div class="flex items-center justify-between text-blue-700 font-black">
-              <span>📱 FRONTEND & APP</span>
-              <span class="text-[10px] bg-blue-200 px-1.5 py-0.5 border border-blue-800">CORE</span>
-            </div>
-            <p class="text-zinc-800 font-sans font-semibold text-xs leading-relaxed">
-              Flutter, Dart, Android Native, Java, Kotlin, JSP, Modern JavaScript, HTML5/CSS3
-            </p>
-          </div>
-
-          <!-- Backend -->
-          <div class="p-4 bg-emerald-50/80 brutal-border space-y-2">
-            <div class="flex items-center justify-between text-emerald-700 font-black">
-              <span>🌱 BACKEND & DATABASE</span>
-              <span class="text-[10px] bg-emerald-200 px-1.5 py-0.5 border border-emerald-800">CORE</span>
-            </div>
-            <p class="text-zinc-800 font-sans font-semibold text-xs leading-relaxed">
-              Spring Boot, JPA/Hibernate, MySQL, MariaDB, REST API Architecture, Firebase Ecosystem
-            </p>
-          </div>
-
-          <!-- Infra / DevOps -->
-          <div class="p-4 bg-purple-50/80 brutal-border space-y-2">
-            <div class="flex items-center justify-between text-purple-700 font-black">
-              <span>☁️ CLOUD & DEVOPS</span>
-              <span class="text-[10px] bg-purple-200 px-1.5 py-0.5 border border-purple-800">CORE</span>
-            </div>
-            <p class="text-zinc-800 font-sans font-semibold text-xs leading-relaxed">
-              AWS (EC2, S3, RDS, CloudFront, Lambda, API Gateway, Route53), Git, GitHub Actions, Jenkins CI/CD
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- EXPERIENCED STACK BLOCK -->
-      <div class="space-y-3 pt-2">
-        <div class="flex items-center gap-2">
-          <span
-            class="bg-zinc-200 text-black border-2 border-black px-3 py-0.5 font-mono text-xs font-black uppercase tracking-wider">
-            EXPERIENCED & SPECIALIZED STACK (응용 및 전문 스택)
-          </span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono font-bold">
-          <div class="p-4 bg-zinc-50 brutal-border space-y-1.5">
-            <span class="text-zinc-700">[WEB & STATE MGMT]</span>
-            <p class="text-zinc-800 font-sans font-medium text-xs">React, Vue, AngularJS, Riverpod, Provider, GetX,
-              Bloc, TailwindCSS</p>
-          </div>
-
-          <div class="p-4 bg-zinc-50 brutal-border space-y-1.5">
-            <span class="text-zinc-700">[ADVANCED BACKEND / DATA]</span>
-            <p class="text-zinc-800 font-sans font-medium text-xs">QueryDSL, Spring REST Docs, Swagger, Node.js, SQLite,
-              WebSocket, MQTT, AWS IoT Core</p>
-          </div>
-
-          <div class="p-4 bg-zinc-50 brutal-border space-y-1.5">
-            <span class="text-zinc-700">[EMBEDDED & PLATFORM]</span>
-            <p class="text-zinc-800 font-sans font-medium text-xs">AOSP Automotive, Linux, MacOS, Bluetooth BLE, NFC,
-              Hardware SDK Interfacing</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: PROFESSIONAL WORK HISTORY -->
-    <section id="experience" class="space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div class="flex items-center gap-2">
-          <h2
-            class="inline-block bg-black text-white px-4 py-1.5 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
-            💼 PROFESSIONAL WORK HISTORY
-          </h2>
-          <span class="text-xs font-mono font-bold text-zinc-500">2018 - 2025</span>
-        </div>
-        <span class="text-xs font-mono font-bold text-zinc-600">총 경력 9년 8개월 중 메인 테크 리딩 & 풀스택 경력</span>
-      </div>
-
-      <div class="space-y-8">
-
-        <!-- COMPANY 1: F.LAB (주식회사 파***) -->
-        <article class="bg-white brutal-card p-6 sm:p-8 space-y-6" data-company="flab">
-          <!-- Company Header -->
+          <!-- Package 1: number_pagination -->
           <div
-            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-4 border-black pb-4 gap-3">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="bg-[#FFE600] border-2 border-black px-2 py-0.5 text-xs font-mono font-black">LATEST
-                  ROLE</span>
-                <h3 class="text-xl sm:text-2xl font-black font-display uppercase">주식회사 파***</h3>
+            class="career-item p-4 bg-zinc-50 border-2 border-black hover:bg-[#FFE600]/15 transition flex flex-col justify-between space-y-3 group"
+            data-techs="flutter,web,dart"
+            data-keywords="flutter web을 위한 무한 스크롤이 아닌 넘버페이징 패키지 개발 number_pagination pub.dev package">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <h4 class="text-sm font-black">
+                  <a href="https://pub.dev/packages/number_pagination" target="_blank" rel="noopener noreferrer"
+                    class="text-blue-700 flex items-center gap-1 group-hover:underline">
+                    <i class="fa-solid fa-box-archive"></i> number_pagination
+                  </a>
+                </h4>
+                <span class="bg-zinc-200 border border-black px-1.5 py-0.5 text-[10px]">pub.dev</span>
               </div>
-              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-1 font-mono">
-                📅 2021.11 - 2025.06 (3년 8개월) // 정규직
+              <p class="text-zinc-800 font-sans font-medium text-xs leading-relaxed">
+                <strong>Flutter web을 위한 넘버페이징 패키지</strong><br>
+                웹 브라우저 환경에서 대규모 리스트 데이터를 깔끔하고 직관적으로 탐색할 수 있는 번호 기반 페이지네이션 컴포넌트입니다.
               </p>
             </div>
-            <div class="flex items-center gap-2">
+
+            <div class="space-y-2 pt-2 border-t border-zinc-200">
+              <div
+                class="flex items-center justify-between gap-1 bg-zinc-100 p-1.5 border border-zinc-300 font-mono text-[11px]">
+                <code class="text-zinc-800 truncate">flutter pub add number_pagination</code>
+                <button onclick="copyPubCommand(this, 'flutter pub add number_pagination')"
+                  class="px-2 py-0.5 bg-white hover:bg-black hover:text-white border border-black text-[10px] font-bold shrink-0 transition"
+                  title="설치 명령어 복사">
+                  <i class="fa-regular fa-copy"></i> <span>복사</span>
+                </button>
+              </div>
+              <div class="flex items-center justify-between text-[11px] text-zinc-600 pt-0.5">
+                <div class="flex gap-1">
+                  <span class="tag-badge" data-search="Flutter">Flutter</span>
+                  <span class="tag-badge" data-search="Dart">Dart</span>
+                </div>
+                <a href="https://pub.dev/packages/number_pagination" target="_blank" rel="noopener noreferrer"
+                  class="text-blue-600 font-bold hover:underline flex items-center gap-1">
+                  <span>pub.dev ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2: single_centered_multi_child_layout -->
+          <div
+            class="career-item p-4 bg-zinc-50 border-2 border-black hover:bg-[#70E1FF]/15 transition flex flex-col justify-between space-y-3 group"
+            data-techs="flutter,dart"
+            data-keywords="특정 위젯만 정중앙에 정렬하기 위한 layout 컴포넌트 single_centered_multi_child_layout pub.dev package">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <h4 class="text-sm font-black">
+                  <a href="https://pub.dev/packages/single_centered_multi_child_layout" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-700 flex items-center gap-1 group-hover:underline">
+                    <i class="fa-solid fa-box-archive"></i> single_centered_multi_child_layout
+                  </a>
+                </h4>
+                <span class="bg-zinc-200 border border-black px-1.5 py-0.5 text-[10px]">pub.dev</span>
+              </div>
+              <p class="text-zinc-800 font-sans font-medium text-xs leading-relaxed">
+                <strong>특정 위젯만 정중앙에 정렬하는 Layout</strong><br>
+                복잡한 다중 자식 위젯 트리 구조에서 특정 타깃 위젯만을 정확히 화면 정중앙에 정렬하여 배치할 수 있는 커스텀 레이아웃 컴포넌트입니다.
+              </p>
+            </div>
+
+            <div class="space-y-2 pt-2 border-t border-zinc-200">
+              <div
+                class="flex items-center justify-between gap-1 bg-zinc-100 p-1.5 border border-zinc-300 font-mono text-[11px]">
+                <code class="text-zinc-800 truncate">flutter pub add single_centered_multi_child_layout</code>
+                <button onclick="copyPubCommand(this, 'flutter pub add single_centered_multi_child_layout')"
+                  class="px-2 py-0.5 bg-white hover:bg-black hover:text-white border border-black text-[10px] font-bold shrink-0 transition"
+                  title="설치 명령어 복사">
+                  <i class="fa-regular fa-copy"></i> <span>복사</span>
+                </button>
+              </div>
+              <div class="flex items-center justify-between text-[11px] text-zinc-600 pt-0.5">
+                <div class="flex gap-1">
+                  <span class="tag-badge" data-search="Flutter">Flutter</span>
+                  <span class="tag-badge" data-search="Dart">Dart</span>
+                </div>
+                <a href="https://pub.dev/packages/single_centered_multi_child_layout" target="_blank"
+                  rel="noopener noreferrer" class="text-blue-600 font-bold hover:underline flex items-center gap-1">
+                  <span>pub.dev ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: LIVE SANDBOX & DEPLOYED APPS -->
+    <section id="projects" class="scroll-mt-16 sm:scroll-mt-20 space-y-4">
+      <div class="flex items-center gap-2 border-b-2 border-black pb-2">
+        <h2
+          class="inline-block bg-black text-white px-3.5 py-1 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
+          🚀 LIVE WEB APPLICATIONS
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- 3D Lotto Simulator -->
+        <article
+          class="career-item bg-[#94FF98] brutal-card brutal-card-hover p-5 sm:p-6 flex flex-col justify-between space-y-4"
+          data-techs="flutter,web,flame,forge2d,canvas,dart"
+          data-keywords="3d lotto simulator 로또 시뮬레이터 flame forge2d physics canvas flutter web 60fps 물리엔진">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span
+                    class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-2 py-0.5 inline-block">
+                    PHYSICS 3D SIMULATION
+                  </span>
+                  <span
+                    class="inline-flex items-center gap-1 bg-black text-[#94FF98] text-[10px] font-mono font-bold px-2 py-0.5 border border-black">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#94FF98] neo-pulse-dot"></span> LIVE
+                  </span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight text-black">🔮 3D LOTTO SIMULATOR</h3>
+              </div>
               <span
-                class="bg-black text-white px-3 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm">
-                CORE FULL-STACK SENIOR
+                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
+                FLUTTER
               </span>
             </div>
-          </div>
 
-          <!-- Projects List -->
-          <div class="space-y-4">
-
-            <!-- 1. AOSP Automotive Boot Optimization (외주개발) - Highlight -->
-            <div class="career-item p-4 sm:p-5 bg-amber-50/70 brutal-border space-y-3" data-techs="android">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">OUTSOURCING</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ AOSP Automotive Boot Optimization (차량용
-                    안드로이드 부팅 최적화)</h4>
-                </div>
-                <span class="text-xs font-mono font-bold text-zinc-600">AOSP Automotive</span>
-              </div>
-
-              <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                차량용 AOSP OS의 부팅 병목 구간을 정밀 진단하기 위해 Preload, SystemServer, 커널 로그 및 Bootchart 데이터를 심층 분석. init.rc 서비스 실행 순서
-                조정 및 비동기/병렬 처리를 최적화 설계.
-              </p>
-
-              <!-- Metric Callout -->
-              <div class="p-3 bg-white brutal-border-sm flex items-center gap-2.5 text-xs font-bold text-emerald-800">
-                <i class="fa-solid fa-gauge-high text-base text-emerald-600"></i>
-                <span>핵심 성과: Bootchart 측정 기준 평균 부팅 시간을 <strong
-                    class="bg-emerald-100 px-1 border border-emerald-800 text-emerald-900">25% 단축 (60초 → 45초
-                    달성)</strong>하여 차량 탑재 성능 기준 만족.</span>
-              </div>
-
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="tag-badge">AOSP automotive</span>
-                <span class="tag-badge">Android OS</span>
-                <span class="tag-badge">Java</span>
-                <span class="tag-badge">Linux Shell Script</span>
-                <span class="tag-badge">Bootchart Profiling</span>
-              </div>
-            </div>
-
-            <!-- 2. AOSP Automotive 시스템 앱 (외주개발) -->
-            <div class="career-item p-4 sm:p-5 bg-zinc-50 brutal-border space-y-3" data-techs="android,aws">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">OUTSOURCING</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ AOSP Automotive 시스템 앱 개발 (FMS 관제 연동)</h4>
-                </div>
-                <span class="text-xs font-mono font-bold text-zinc-600">Android & IoT</span>
-              </div>
-
-              <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                차량 관리 시스템(FMS) 연동을 위한 백그라운드 서비스 데이터 수집 시스템 앱 개발. CarProperty Manager를 활용한 VHAL(차량 하드웨어 추상화 계층) 데이터 수집 및
-                AWS IoT Core 연동 MQTT 양방향 통신 구현. 네트워크 음영 지역 대비 데이터 유실을 방지하기 위한 로컬 메시지 큐 및 재전송 파이프라인 설계.
-              </p>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">AOSP (Android)</span>
-                <span class="tag-badge">Kotlin</span>
-                <span class="tag-badge">Java</span>
-                <span class="tag-badge">AIDL</span>
-                <span class="tag-badge">CarService API</span>
-                <span class="tag-badge">AWS IoT Core</span>
-                <span class="tag-badge">MQTT</span>
-              </div>
-            </div>
-
-            <!-- 3. 임베디드 보드 개발 QnA 웹 사이트 (외주개발) -->
-            <div class="career-item p-4 sm:p-5 bg-zinc-50 brutal-border space-y-3" data-techs="spring,aws">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">LEAD ARCHITECT</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 임베디드 보드 개발 QnA 플랫폼 설계 & 개발</h4>
-                </div>
-                <a href="https://topst.ai/" target="_blank" rel="noopener noreferrer"
-                  class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-1 hover:text-black">
-                  <span>topst.ai</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                </a>
-              </div>
-
-              <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                Stack Overflow 스타일의 기술 Q&A 플랫폼 백엔드 아키텍처 설계 및 프로젝트 리딩. Spring REST Docs 기반 API 명세 자동화 및 테스트 주도 환경 구축,
-                MySQL Full-text search 기반 기술 문서 고속 검색 엔진 탑재, GitHub Actions 기반 무중단 CI/CD 배포 파이프라인 구축.
-              </p>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">Spring Boot</span>
-                <span class="tag-badge">Java</span>
-                <span class="tag-badge">JPA / QueryDSL</span>
-                <span class="tag-badge">Spring REST Docs</span>
-                <span class="tag-badge">MySQL Full-Text</span>
-                <span class="tag-badge">AWS</span>
-                <span class="tag-badge">GitHub Actions</span>
-              </div>
-            </div>
-
-            <!-- 4. 물류관제서비스 & 대기업 차량관제 연구과제 (외주개발) -->
-            <div class="career-item p-4 sm:p-5 bg-zinc-50 brutal-border space-y-3" data-techs="flutter,spring">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">OUTSOURCING</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 물류 관제 & 대기업 차량 관제 시스템 플랫폼</h4>
-                </div>
-                <span class="text-xs font-mono font-bold text-zinc-600">Cross Platform & Backend</span>
-              </div>
-
-              <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                택배 기사 및 관제 관리자용 실시간 물류 관제/정산 앱 프론트엔드(Flutter) 및 백엔드 API 연동 지원. Flutter 기반 단일 크로스 플랫폼 아키텍처를 직접 설계하여
-                안드로이드/iOS 개발 효율성을 30% 이상 향상. FCM 푸시 알림 및 JavaScript Bridge를 통한 PG사 결제/본인인증 웹뷰 연동, 사용자 행위 추적 감사 로그 시스템
-                구축.
-              </p>
-
-              <!-- Metric Callout -->
-              <div class="p-3 bg-white brutal-border-sm flex items-center gap-2.5 text-xs font-bold text-emerald-800">
-                <i class="fa-solid fa-chart-line text-base text-emerald-600"></i>
-                <span>핵심 성과: 크로스 플랫폼 단일 아키텍처 도입으로 <strong
-                    class="bg-emerald-100 px-1 border border-emerald-800 text-emerald-900">개발 생산성 30% 이상 향상</strong> 및
-                  모바일/서버 감사 로그 완비.</span>
-              </div>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">Flutter</span>
-                <span class="tag-badge">Dart</span>
-                <span class="tag-badge">Spring Boot</span>
-                <span class="tag-badge">JPA</span>
-                <span class="tag-badge">MariaDB</span>
-                <span class="tag-badge">FCM</span>
-                <span class="tag-badge">JavaScript Bridge</span>
-                <span class="tag-badge">Jenkins</span>
-              </div>
-            </div>
-
-            <!-- 5. 글로벌향 eSignature 전자 계약 -->
-            <div class="career-item p-4 sm:p-5 bg-zinc-50 brutal-border space-y-3" data-techs="flutter,web">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <h4 class="text-sm sm:text-base font-black text-blue-900">■ 글로벌 eSignature 전자 계약 플랫폼</h4>
-                <span class="text-xs font-mono font-bold text-zinc-600">Flutter Web</span>
-              </div>
-
-              <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                Flutter Web 기반 고반응형 UI/UX 개발 전담. PDF 캔버스 위에 서명, 텍스트 입력, 도장 이미지, 체크박스 등 커스텀 오버레이 배치 및 실시간 위치 동기화 기능 구현.
-                Riverpod 상태 관리와 GoRouter를 연동하여 복잡한 다단계 계약 플로우 최적화.
-              </p>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">Flutter Web</span>
-                <span class="tag-badge">Dart</span>
-                <span class="tag-badge">Riverpod</span>
-                <span class="tag-badge">GoRouter</span>
-                <span class="tag-badge">PDF Engine</span>
-                <span class="tag-badge">REST API</span>
-              </div>
-            </div>
-
-            <!-- 6. 스마트 수업 시스템 & 사내 메신저 통합 시스템 (Combined Mini Row) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="career-item p-4 bg-zinc-50 brutal-border space-y-2" data-techs="react,web">
-                <h4 class="text-sm font-black text-blue-900">■ WebRTC 스마트 화상 수업 시스템</h4>
-                <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                  WebRTC 기반 실시간 비디오 스트리밍 및 화면 공유 기능 React 프로젝트 유지보수, 글로벌 현지화 다국어 적용 및 다국적 팀 협업 UI/UX 개선.
-                </p>
-                <div class="flex flex-wrap gap-1 pt-1">
-                  <span class="tag-badge">React</span>
-                  <span class="tag-badge">WebRTC</span>
-                  <span class="tag-badge">JavaScript</span>
-                </div>
-              </div>
-
-              <div class="career-item p-4 bg-zinc-50 brutal-border space-y-2" data-techs="spring,aws">
-                <h4 class="text-sm font-black text-blue-900">■ 사내 메신저 정보 통합 & CI/CD 연동</h4>
-                <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                  업무 효율성 증진을 위해 사내 정보 검색 및 GitHub Actions / Jenkins CI/CD 빌드 알림, GeekNews/요즘IT RSS 뉴스피드 봇 연동 시스템 개발.
-                </p>
-                <div class="flex flex-wrap gap-1 pt-1">
-                  <span class="tag-badge">Git / GitHub Actions</span>
-                  <span class="tag-badge">Jenkins</span>
-                  <span class="tag-badge">RSS / REST API</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- COMPANY 2: EASY TECH FIN (주식회사 이****) -->
-        <article class="bg-white brutal-card p-6 sm:p-8 space-y-4" data-company="easytech">
-          <div
-            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-4 border-black pb-4 gap-3">
-            <div>
-              <h3 class="text-xl sm:text-2xl font-black font-display uppercase">주식회사 이****</h3>
-              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-1 font-mono">
-                📅 2021.07 - 2021.10 // 정규직
-              </p>
-            </div>
-            <span
-              class="bg-zinc-100 border-2 border-black px-3 py-1 font-mono text-xs font-black uppercase brutal-shadow-sm">
-              QUANT FLUTTER ENGINEER
-            </span>
-          </div>
-
-          <div class="career-item p-4 sm:p-5 bg-zinc-50 brutal-border space-y-3" data-techs="flutter,android">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-              <h4 class="text-sm sm:text-base font-black text-blue-900">■ 모바일 퀀트 주식 자동매매 플랫폼</h4>
-              <span class="text-xs font-mono font-bold text-zinc-600">FinTech & Trading</span>
-            </div>
-
-            <p class="text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-              GetX, Bloc 등 복잡하게 혼용되던 상태 관리 레이어를 Provider 기반 단일 아키텍처로 전면 리팩토링하여 코드 안정성과 유지보수성을 극대화. 증권사 오픈 API 연동 자동 주문
-              로직 검증 및 WebSocket 실시간 시세 처리, Flutter Platform Channel(Method/Event)을 활용한 네이티브 안드로이드 모듈 고속 데이터 연동 수행.
+            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
+              Flame 2D & Forge2D 물리 엔진 레이어를 결합하여 웹 브라우저 캔버스 환경에서 60fps 고프레임으로 구동되는 3D 로또 볼 믹싱 및 물리 충돌 시뮬레이션을 구현한 웹 애플리케이션입니다.
             </p>
 
-            <div class="flex flex-wrap gap-1.5">
-              <span class="tag-badge">Flutter</span>
-              <span class="tag-badge">Dart</span>
-              <span class="tag-badge">Android Native (Kotlin)</span>
-              <span class="tag-badge">Provider</span>
-              <span class="tag-badge">WebSocket</span>
-              <span class="tag-badge">Securities Trading API</span>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tag-badge" data-search="Flutter">Flutter Web</span>
+              <span class="tag-badge" data-search="Dart">Dart</span>
+              <span class="tag-badge" data-search="Flame">Flame Engine</span>
+              <span class="tag-badge" data-search="Forge2D">Forge2D Physics</span>
             </div>
           </div>
+
+          <a href="https://xpwmaosldk.github.io/LotteryPredictor" target="_blank" rel="noopener noreferrer"
+            class="w-full text-center bg-white hover:bg-black hover:text-[#94FF98] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5"
+            aria-label="3D Lotto Simulator 라이브 사이트 새 창으로 열기">
+            <span>LAUNCH LIVE SITE</span> <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </a>
         </article>
 
-        <!-- COMPANY 3: YLABS (주식회사 와***) -->
-        <article class="bg-white brutal-card p-6 sm:p-8 space-y-6" data-company="ylabs">
-          <div
-            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-4 border-black pb-4 gap-3">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="bg-[#70E1FF] border-2 border-black px-2 py-0.5 text-xs font-mono font-black">LEADERSHIP
-                  ROLE</span>
-                <h3 class="text-xl sm:text-2xl font-black font-display uppercase">주식회사 와***</h3>
+        <!-- Horse Race Predictor -->
+        <article
+          class="career-item bg-[#FF94E7] brutal-card brutal-card-hover p-5 sm:p-6 flex flex-col justify-between space-y-4"
+          data-techs="react,web,typescript,recharts"
+          data-keywords="horse race predictor 경마 예측 react typescript recharts kra indexeddb vite 데이터 시각화">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span
+                    class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-2 py-0.5 inline-block">
+                    DATA VISUALIZATION
+                  </span>
+                  <span
+                    class="inline-flex items-center gap-1 bg-black text-[#FF94E7] text-[10px] font-mono font-bold px-2 py-0.5 border border-black">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FF94E7] neo-pulse-dot"></span> LIVE
+                  </span>
+                </div>
+                <h3 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight text-black">🐎 HORSE RACE PREDICTOR</h3>
               </div>
-              <p class="text-xs sm:text-sm font-bold text-zinc-600 mt-1 font-mono">
-                📅 2018.01 - 2021.06 (3년 6개월) // 정규직
-              </p>
+              <span
+                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
+                REACT
+              </span>
             </div>
-            <span
-              class="bg-black text-white px-3 py-1 font-mono text-xs font-black uppercase tracking-wider brutal-shadow-sm">
-              ENGINEERING LEAD
-            </span>
+
+            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
+              한국마사회(KRA) 공공 데이터 API와 연동하여 경주 일정, 출전마 전적, 주로 상태 등을 정밀 분석하고 순위 예측 알고리즘 및 레이더 차트 데이터 시각화를 구현한 웹 애플리케이션입니다.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tag-badge" data-search="React">React 18</span>
+              <span class="tag-badge" data-search="TypeScript">TypeScript</span>
+              <span class="tag-badge" data-search="Recharts">Recharts</span>
+              <span class="tag-badge" data-search="Vite">Vite</span>
+            </div>
           </div>
 
-          <div class="space-y-4">
-
-            <!-- 1. 지역기반 중고거래 플랫폼 V1 & V2 - Highlight -->
-            <div class="career-item p-4 sm:p-5 bg-cyan-50/70 brutal-border space-y-3" data-techs="flutter,android,aws">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">CORE PRODUCT</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 지역기반 중고거래 플랫폼 V1 고도화 & V2 Flutter 통합 전환
-                  </h4>
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=kr.ylabs.localmarket" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-1 hover:text-black">
-                  <span>Google Play</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                </a>
-              </div>
-
-              <div class="space-y-2 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                <p>
-                  <strong>[V1 고도화]</strong> 레거시 안드로이드 앱의 런타임 예외 처리 및 안정화 주도. 기존 지번 주소를 행정동/법정동 동 단위 체계로 원활하게 마이그레이션하고 공간
-                  복잡도를 축소하는 주소 매핑 백엔드 수정. AWS S3/RDS 클라우드 인프라 최초 도입 및 Google Maps Geocoding 핵심 위치 서비스 구현.
-                </p>
-                <p>
-                  <strong>[V2 통합 전환]</strong> 분리 운영되던 네이티브(Android/iOS) 모바일 앱을 Flutter 기반 단일 코드베이스로 완전 통합 재구축.
-                  WebSocket과 FCM 푸시를 결합한 실시간 양방향 채팅 허브 모듈 신규 설계.
-                </p>
-              </div>
-
-              <!-- Metric Callout -->
-              <div class="p-3 bg-white brutal-border-sm flex items-center gap-2.5 text-xs font-bold text-emerald-800">
-                <i class="fa-solid fa-cloud text-base text-emerald-600"></i>
-                <span>핵심 성과: 백엔드 인프라를 AWS Lambda & API Gateway 완전 서버리스(Serverless) 아키텍처로 전환하여 <strong
-                    class="bg-emerald-100 px-1 border border-emerald-800 text-emerald-900">기존 상시 가동 EC2 비용 제거 및 고정 운영비
-                    대폭 절감</strong> 달성.</span>
-              </div>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">Flutter</span>
-                <span class="tag-badge">Dart</span>
-                <span class="tag-badge">Android Native</span>
-                <span class="tag-badge">WebSocket</span>
-                <span class="tag-badge">FCM</span>
-                <span class="tag-badge">AWS Lambda</span>
-                <span class="tag-badge">API Gateway</span>
-                <span class="tag-badge">RDS</span>
-                <span class="tag-badge">Node.js</span>
-              </div>
-            </div>
-
-            <!-- 2. 국악 반주/장단 플레이 서비스 V1 & V2 - Highlight -->
-            <div class="career-item p-4 sm:p-5 bg-purple-50/70 brutal-border space-y-3" data-techs="android,spring,aws">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-black pb-2">
-                <div class="flex items-center gap-2">
-                  <span class="bg-black text-white px-2 py-0.5 text-[10px] font-mono font-black">MEDIA ENGINE</span>
-                  <h4 class="text-sm sm:text-base font-black text-blue-900">■ 국악 반주/장단 멀티트랙 플레이 서비스 V1 & V2 마이그레이션</h4>
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=kr.ylabs.wooang" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-xs font-mono font-bold text-blue-600 underline flex items-center gap-1 hover:text-black">
-                  <span>Google Play</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                </a>
-              </div>
-
-              <div class="space-y-2 text-xs sm:text-sm font-medium text-zinc-800 leading-relaxed">
-                <p>
-                  <strong>[V1 클라이언트]</strong> 안드로이드 ExoPlayer 미디어 코어를 심층 제어하여 다양한 전통 국악 악기의 다중 음원 스트림 동시 병렬 재생 아키텍처 구현.
-                </p>
-                <p>
-                  <strong>[V2 서버 마이그레이션]</strong> 기존 Django 백엔드를 Spring Boot 컴포넌트 아키텍처로 전면 재설계. Android MediaPlayer 가상
-                  병렬 로딩 및 인메모리 바이너리 캐싱 정책으로 초기 음원 로딩 속도를 50% 이상 단축.
-                </p>
-              </div>
-
-              <!-- Metric Callout -->
-              <div class="p-3 bg-white brutal-border-sm flex items-center gap-2.5 text-xs font-bold text-emerald-800">
-                <i class="fa-solid fa-bolt text-base text-emerald-600"></i>
-                <span>핵심 성과: AWS CloudFront 분산 엣지 캐싱 전략 적용으로 미디어 대역폭 누수를 차단, <strong
-                    class="bg-emerald-100 px-1 border border-emerald-800 text-emerald-900">클라우드 서버 운영 비용을 기존 대비 90% 이상
-                    절감</strong>.</span>
-              </div>
-
-              <div class="flex flex-wrap gap-1.5">
-                <span class="tag-badge">Android Java</span>
-                <span class="tag-badge">ExoPlayer</span>
-                <span class="tag-badge">Spring Boot</span>
-                <span class="tag-badge">JPA</span>
-                <span class="tag-badge">AWS S3</span>
-                <span class="tag-badge">CloudFront</span>
-                <span class="tag-badge">EC2 / RDS</span>
-              </div>
-            </div>
-
-            <!-- 3. 개발 문화 개선 & 자사몰 리뷰 & POS 파일럿 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="career-item p-4 bg-zinc-50 brutal-border space-y-2" data-techs="spring,flutter,web">
-                <h4 class="text-sm font-black text-blue-900">■ Flutter Web 자사몰 리뷰 플랫폼</h4>
-                <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                  Flutter Web + Spring Boot 풀스택 설계. Flutter Custom Paint 모듈을 응용하여 브라우저 독립적 커스텀 UI 컴포넌트 렌더링 제작 및 AWS 클라우드
-                  배포.
-                </p>
-                <div class="flex flex-wrap gap-1 pt-1">
-                  <span class="tag-badge">Flutter Web</span>
-                  <span class="tag-badge">Custom Paint</span>
-                  <span class="tag-badge">Spring Boot</span>
-                  <span class="tag-badge">AWS S3/CloudFront</span>
-                </div>
-              </div>
-
-              <div class="career-item p-4 bg-zinc-50 brutal-border space-y-2" data-techs="aws">
-                <h4 class="text-sm font-black text-blue-900">■ 테크 매니징 & 개발 표준화 구축</h4>
-                <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                  Git-flow 브랜치 전략 및 GitHub 상호 코드 리뷰 문화 도입, Trello/Slack 파이프라인 연동, 정례 기술 공유 세션 및 스프린트 일정 추정 리스크 매니지먼트 총괄.
-                </p>
-                <div class="flex flex-wrap gap-1 pt-1">
-                  <span class="tag-badge">Git-flow</span>
-                  <span class="tag-badge">Code Review</span>
-                  <span class="tag-badge">Agile / Scrum</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <a href="https://xpwmaosldk.github.io/HorseRacePredictor" target="_blank" rel="noopener noreferrer"
+            class="w-full text-center bg-white hover:bg-black hover:text-[#FF94E7] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5"
+            aria-label="Horse Race Predictor 라이브 사이트 새 창으로 열기">
+            <span>LAUNCH LIVE SITE</span> <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </a>
         </article>
 
       </div>
     </section>
 
-    <!-- SECTION: EARLY ENGINEERING RECORDS (2014 - 2017) ACCORDION -->
-    <section id="earlyrecords" class="space-y-4">
-      <!-- Accordion Header & Toggle Button -->
-      <div
-        class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-zinc-100 brutal-border p-4 brutal-shadow-sm">
-        <div class="flex items-center gap-2">
-          <h2
-            class="inline-block bg-black text-white px-3 py-1 text-sm font-black font-display uppercase tracking-wider">
-            📜 EARLY ENGINEERING RECORDS (2014 - 2017)
-          </h2>
-          <span class="text-xs font-mono font-bold text-zinc-600 hidden sm:inline">2개사 · 6개 프로젝트</span>
-        </div>
-
-        <button id="toggle-early-btn" onclick="toggleEarlyRecords()"
-          class="brutal-btn bg-white hover:bg-[#FFE600] text-black px-3.5 py-1.5 text-xs font-mono font-black gap-1.5 self-start sm:self-auto">
-          <span id="early-toggle-text">▼ 접기 / 펼치기</span>
-        </button>
+    <!-- SECTION: EDUCATION & TRAINING -->
+    <section id="education" class="scroll-mt-16 sm:scroll-mt-20 bg-white brutal-card p-5 sm:p-7 space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-3">
+        <h2 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight">
+          🎓 학력 및 교육 사항 (EDUCATION & TRAINING)
+        </h2>
+        <span class="bg-black text-white px-2.5 py-0.5 font-mono text-xs font-bold uppercase shrink-0 self-start sm:self-auto">RESUME RECORDS</span>
       </div>
 
-      <!-- Collapsible Container -->
-      <div id="early-records-content" class="early-records-content space-y-6 transition-all duration-300">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-        <!-- COMPANY 4: PEOPLEROAD (주식회사 피***) -->
-        <article class="bg-white brutal-card p-6 space-y-4" data-company="peopleroad">
-          <div
-            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-3 gap-2">
-            <div>
-              <h3 class="text-lg font-black font-display uppercase">주식회사 피***</h3>
-              <p class="text-xs font-bold text-zinc-500 font-mono">📅 2016.09 - 2017.01 // 정규직</p>
-            </div>
-            <span class="bg-zinc-100 border-2 border-black px-2.5 py-0.5 text-xs font-bold font-mono">
-              ANDROID ENGINEER
-            </span>
+        <!-- Education -->
+        <div class="p-4 bg-zinc-50 border-2 border-black space-y-2.5">
+          <div class="flex items-center gap-2 border-b border-black pb-1.5">
+            <span class="text-base">🏛</span>
+            <h3 class="text-sm font-black font-display uppercase">학력 (Education)</h3>
           </div>
 
-          <div class="space-y-3">
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="android">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ 지인기반 SNS & e커머스 앱 고도화</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                웹뷰 기반 전자결제(PG) 연동 결제 파이프라인 안전 적용. Android Studio Profiler를 활용한 메모리 및 CPU 프로파일링으로 UI 렌더링 병목 구간 최적화.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">Android Java</span>
-                <span class="tag-badge">WebView</span>
-                <span class="tag-badge">PG Interfacing</span>
-                <span class="tag-badge">Profiler</span>
-              </div>
+          <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-900">
+            <div class="font-bold text-black flex items-center justify-between">
+              <span>강**대학교(춘천)</span>
+              <span class="font-mono text-xs text-zinc-600">2006.03 - 2007.07</span>
             </div>
-
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="android">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ MVVM 아키텍처 리팩토링 & 반응형 UI 전환</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                DataBinding 및 LiveData 구조를 선제 도입하여 기존 명령형 아키텍처를 선언형 MVVM 패턴으로 혁신하고 결합도 완화. Retrofit, Glide 비동기 캐싱 모듈 탑재.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">MVVM</span>
-                <span class="tag-badge">DataBinding</span>
-                <span class="tag-badge">LiveData</span>
-                <span class="tag-badge">Retrofit</span>
-                <span class="tag-badge">Glide</span>
-              </div>
+            <div class="flex items-center gap-2 text-zinc-700 text-xs">
+              <span class="bg-zinc-200 border border-black px-1.5 py-0.5 font-mono font-bold text-[10px]">중퇴</span>
+              <span>컴퓨터정보통신공학부</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <!-- COMPANY 5: EZENCOMMS (주식회사 이***) -->
-        <article class="bg-white brutal-card p-6 space-y-4" data-company="ezencomms">
-          <div
-            class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-black pb-3 gap-2">
-            <div>
-              <h3 class="text-lg font-black font-display uppercase">주식회사 이***</h3>
-              <p class="text-xs font-bold text-zinc-500 font-mono">📅 2014.12 - 2016.08 (1년 9개월) // 정규직</p>
-            </div>
-            <span class="bg-zinc-100 border-2 border-black px-2.5 py-0.5 text-xs font-bold font-mono">
-              FULL-STACK JUNIOR
-            </span>
+        <!-- Training -->
+        <div class="p-4 bg-zinc-50 border-2 border-black space-y-2.5">
+          <div class="flex items-center gap-2 border-b border-black pb-1.5">
+            <span class="text-base">📜</span>
+            <h3 class="text-sm font-black font-display uppercase">교육 수료 (Training)</h3>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-            <!-- 1. 배달 웹 서비스 -->
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="react,web">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ 글로벌 음식 배달 웹 서비스 개발</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                AngularJS 기반 웹 프론트엔드 핵심 모듈 개발 및 글로벌 통화 결제를 위한 Stripe 결제 대행사 REST API 웹 연동 구현.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">AngularJS</span>
-                <span class="tag-badge">JavaScript</span>
-                <span class="tag-badge">Stripe API</span>
-              </div>
+          <div class="space-y-1 text-xs sm:text-sm font-medium text-zinc-900">
+            <div class="font-bold text-black flex items-center justify-between">
+              <span>국비 자바개발자 교육과정 (6개월)</span>
+              <span class="font-mono text-xs text-zinc-600">2014.03</span>
             </div>
-
-            <!-- 2. 생체인증 FIDO -->
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="android">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ 생체인증 FIDO 보안 모듈 & 메모리 최적화</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                한국정보인증(KICA) 생체 지문 인증 연동 보안 모듈 구현. 앱 유지보수 중 Static 남용으로 인한 메모리 누수를 Thread-safe Singleton 패턴으로 리팩토링.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">Android Java</span>
-                <span class="tag-badge">FIDO SDK</span>
-                <span class="tag-badge">Thread-Safe Singleton</span>
-              </div>
+            <div class="flex items-center gap-2 text-zinc-700 text-xs">
+              <span class="bg-zinc-200 border border-black px-1.5 py-0.5 font-mono font-bold text-[10px]">수료</span>
+              <span>JSP, DB 등 실무 교육</span>
             </div>
-
-            <!-- 3. BLE 비콘 & 하드웨어 -->
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="android">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ BLE 비콘 신호 보정 & 하드웨어 역엔지니어링</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                BLE 4.0 무선 신호(RSSI) 필터링 보정 알고리즘 설계. 비콘 패킷 저레벨 역엔지니어링을 통해 배터리 잔량 필드를 추출하여 관제 연동. 통학버스 GPS 추적 모듈 구축.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">Bluetooth BLE</span>
-                <span class="tag-badge">Sensor API</span>
-                <span class="tag-badge">Packet Analysis</span>
-                <span class="tag-badge">SQLite</span>
-              </div>
-            </div>
-
-            <!-- 4. 스마트 시설점검 -->
-            <div class="career-item p-3.5 bg-zinc-50 brutal-border space-y-1.5" data-techs="android,spring">
-              <h4 class="text-xs sm:text-sm font-black text-black">■ 스마트 NFC 시설점검 & DB 커넥션 풀 누수 해결</h4>
-              <p class="text-xs font-medium text-zinc-700 leading-relaxed">
-                NFC 태그 기반 실시간 시설물 점검 기록 앱 구현. 백엔드 Spring Framework 구동 단의 JDBC DB Connection Pool 누수 결함을 추적 및 해결하여 장애 예방.
-              </p>
-              <div class="flex flex-wrap gap-1 pt-1">
-                <span class="tag-badge">NFC API</span>
-                <span class="tag-badge">Spring Framework</span>
-                <span class="tag-badge">MySQL</span>
-                <span class="tag-badge">JDBC Connection Pool</span>
-              </div>
-            </div>
-
           </div>
-        </article>
+        </div>
 
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact" class="bg-black text-white p-6 sm:p-8 brutal-border-thick brutal-shadow-lg space-y-6">
+    <footer id="contact" class="bg-black text-white p-6 sm:p-7 brutal-card space-y-5">
       <div
-        class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-zinc-700 pb-6">
-        <div class="space-y-1">
-          <span class="font-display font-black text-lg text-[#FFE600] uppercase tracking-tight">LET'S BUILD GREAT
-            PRODUCTS</span>
-          <p class="text-xs text-zinc-400 font-mono">Senior Full-Stack Architect & Engineering Lead Portfolio</p>
+        class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-zinc-700 pb-5">
+        <div class="space-y-0.5">
+          <span class="font-display font-black text-lg text-[#FFE600] uppercase tracking-tight">SENIOR FULL-STACK DEVELOPER</span>
+          <p class="text-xs text-zinc-400 font-mono">Mobile & Cloud Architecture Specialist</p>
         </div>
 
-        <div class="flex flex-wrap gap-3 font-mono text-xs font-bold">
-          <a href="mailto:xpwmaosldk@gmail.com"
-            class="brutal-btn bg-[#FFE600] text-black px-4 py-2 hover:bg-white transition gap-1.5">
+        <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+          <button onclick="copyEmailToClipboard(this)"
+            class="brutal-btn bg-[#FFE600] text-black px-3 py-1.5 hover:bg-white transition gap-1.5">
             <i class="fa-regular fa-envelope"></i>
-            <span>EMAIL ME</span>
-          </a>
+            <span>xpwmaosldk@gmail.com</span>
+          </button>
           <a href="https://github.com/xpwmaosldk" target="_blank" rel="noopener noreferrer"
-            class="brutal-btn bg-zinc-800 text-white hover:bg-white hover:text-black px-4 py-2 border-white transition gap-1.5">
+            class="brutal-btn bg-zinc-800 text-white hover:bg-white hover:text-black px-3 py-1.5 border-white transition gap-1.5">
             <i class="fa-brands fa-github"></i>
             <span>GITHUB</span>
           </a>
@@ -1250,7 +1980,7 @@
       </div>
 
       <div class="flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-zinc-400 gap-2">
-        <span>© 2026 xpwmaosldk. Handcrafted with Neo-Brutalism & Performance in Mind.</span>
+        <span>© 2026 xpwmaosldk. All rights reserved.</span>
         <a href="#" class="text-[#FFE600] hover:underline flex items-center gap-1">
           <span>Back to top</span> <i class="fa-solid fa-arrow-up text-[10px]"></i>
         </a>
@@ -1259,37 +1989,85 @@
 
   </main>
 
-  <!-- FLOATING ACTION: BACK TO TOP BUTTON -->
-  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-    class="fixed bottom-6 right-6 z-50 bg-[#FFE600] text-black brutal-border-sm p-3.5 brutal-shadow brutal-btn rounded-none opacity-0 pointer-events-none transition-all duration-200"
-    aria-label="맨 위로 이동">
-    <i class="fa-solid fa-arrow-up text-base font-black"></i>
-  </button>
+  <!-- FLOATING ACTION CONTROLS -->
+  <aside id="floating-quick-bar" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 no-print" aria-label="빠른 실행 도구">
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="bg-[#FFE600] text-black border-2 border-black p-3 brutal-shadow brutal-btn rounded-none opacity-0 pointer-events-none transition-all duration-200"
+      aria-label="페이지 맨 위로 이동" title="맨 위로 이동">
+      <i class="fa-solid fa-arrow-up text-sm font-black"></i>
+    </button>
+  </aside>
 
-  <!-- TOAST NOTIFICATION FOR EMAIL COPY -->
+  <!-- TOAST NOTIFICATION -->
   <div id="copy-toast"
-    class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-black text-[#FFE600] border-2 border-white px-5 py-3 brutal-shadow-lg text-xs font-mono font-black flex items-center gap-2 rounded shadow-2xl opacity-0 pointer-events-none">
-    <i class="fa-solid fa-check-circle text-emerald-400 text-sm"></i>
-    <span id="toast-message">이메일 주소(xpwmaosldk@gmail.com)가 복사되었습니다!</span>
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-black text-[#FFE600] border-2 border-white px-4 py-2.5 brutal-shadow-lg text-xs font-mono font-black flex items-center gap-2 rounded shadow-2xl opacity-0 pointer-events-none"
+    role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+    <span id="toast-message">클립보드에 복사되었습니다!</span>
   </div>
 
   <!-- INTERACTIVE SCRIPTS -->
   <script>
-    // 1. Email Clipboard Copy with Toast Feedback
-    function copyEmailToClipboard() {
-      const email = 'xpwmaosldk@gmail.com';
-      navigator.clipboard.writeText(email).then(() => {
-        showToast('이메일 주소(xpwmaosldk@gmail.com)가 클립보드에 복사되었습니다! ✓');
-      }).catch(err => {
-        // Fallback for older browsers
-        const textarea = document.createElement('textarea');
-        textarea.value = email;
-        document.body.appendChild(textarea);
-        textarea.select();
+    // State Management
+    let currentCategory = 'all';
+    let currentSearchQuery = '';
+    let isHideUnmatched = false;
+    let isTldrMode = false;
+    let toastTimeout = null;
+
+    // 1. Universal Clipboard Copy
+    function copyToClipboard(text, successMsg, triggerBtn) {
+      const applyBtnSuccess = () => {
+        if (triggerBtn) {
+          const origHtml = triggerBtn.innerHTML;
+          triggerBtn.classList.add('copy-success');
+          triggerBtn.innerHTML = `<i class="fa-solid fa-check"></i> <span>복사 완료!</span>`;
+          setTimeout(() => {
+            triggerBtn.classList.remove('copy-success');
+            triggerBtn.innerHTML = origHtml;
+          }, 2000);
+        }
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMsg);
+          applyBtnSuccess();
+        }).catch(() => {
+          fallbackCopy(text, successMsg, triggerBtn);
+        });
+      } else {
+        fallbackCopy(text, successMsg, triggerBtn);
+      }
+    }
+
+    function fallbackCopy(text, successMsg, triggerBtn) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-999999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
         document.execCommand('copy');
-        document.body.removeChild(textarea);
-        showToast('이메일 주소(xpwmaosldk@gmail.com)가 복사되었습니다! ✓');
-      });
+        showToast(successMsg);
+        if (triggerBtn) {
+          triggerBtn.classList.add('copy-success');
+          setTimeout(() => triggerBtn.classList.remove('copy-success'), 2000);
+        }
+      } catch (err) {
+        showToast('복사에 실패했습니다. 직접 복사해 주세요.');
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function copyEmailToClipboard(btn) {
+      copyToClipboard('xpwmaosldk@gmail.com', '이메일 주소(xpwmaosldk@gmail.com)가 복사되었습니다! ✓', btn);
+    }
+
+    function copyPubCommand(btn, cmd) {
+      copyToClipboard(cmd, `패키지 설치 명령어("${cmd}")가 복사되었습니다! ✓`, btn);
     }
 
     function showToast(msg) {
@@ -1297,14 +2075,40 @@
       const toastMsg = document.getElementById('toast-message');
       toastMsg.innerText = msg;
       toast.classList.add('show');
-      setTimeout(() => {
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
         toast.classList.remove('show');
-      }, 2500);
+      }, 2600);
     }
 
-    // 2. Interactive Tech Stack Filter Logic
+    // 2. View Mode Toggle (TL;DR Summary Mode vs Detailed Technical Mode)
+    function toggleViewMode() {
+      isTldrMode = !isTldrMode;
+      const body = document.body;
+      const icon = document.getElementById('view-mode-icon');
+      const text = document.getElementById('view-mode-text');
+      const btn = document.getElementById('view-mode-toggle');
+
+      if (isTldrMode) {
+        body.classList.add('tldr-mode');
+        if (icon) icon.innerText = '📋';
+        if (text) text.innerText = '상세 모드';
+        if (btn) { btn.classList.add('bg-[#FFE600]'); btn.classList.remove('bg-zinc-100'); }
+        showToast('⚡ 요약 모드(TL;DR)가 활성화되었습니다.');
+      } else {
+        body.classList.remove('tldr-mode');
+        if (icon) icon.innerText = '⚡';
+        if (text) text.innerText = 'TL;DR 요약';
+        if (btn) { btn.classList.remove('bg-[#FFE600]'); btn.classList.add('bg-zinc-100'); }
+        showToast('📋 상세 모드가 활성화되었습니다.');
+      }
+    }
+
+    // 3. Interactive Omni-Search and Category Filter Engine
     function applyTechFilter(techKey) {
-      // Update Active Button State
+      currentCategory = techKey;
+
       const buttons = document.querySelectorAll('.filter-chip');
       buttons.forEach(btn => {
         if (btn.getAttribute('data-tech') === techKey) {
@@ -1314,21 +2118,85 @@
         }
       });
 
+      runUnifiedFilter();
+    }
+
+    function handleSearchInput(val) {
+      currentSearchQuery = val.trim().toLowerCase();
+      const clearBtn = document.getElementById('search-clear-btn');
+      if (currentSearchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+        clearBtn.classList.add('flex');
+      } else {
+        clearBtn.classList.add('hidden');
+        clearBtn.classList.remove('flex');
+      }
+      runUnifiedFilter();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('tech-search-input');
+      input.value = '';
+      currentSearchQuery = '';
+      document.getElementById('search-clear-btn').classList.add('hidden');
+      document.getElementById('search-clear-btn').classList.remove('flex');
+      runUnifiedFilter();
+      input.focus();
+    }
+
+    function toggleHideUnmatched(checked) {
+      isHideUnmatched = checked;
+      if (isHideUnmatched) {
+        document.body.classList.add('filter-hide-unmatched');
+      } else {
+        document.body.classList.remove('filter-hide-unmatched');
+      }
+    }
+
+    function focusSearchInput() {
+      const searchBar = document.getElementById('tech-filter-bar');
+      const searchInput = document.getElementById('tech-search-input');
+      if (searchBar && searchInput) {
+        searchBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => searchInput.focus(), 300);
+      }
+    }
+
+    function runUnifiedFilter() {
       const items = document.querySelectorAll('.career-item');
       const statusText = document.getElementById('filter-status-text');
 
-      if (techKey === 'all') {
+      const isAllCategory = currentCategory === 'all';
+      const hasSearch = currentSearchQuery.length > 0;
+
+      if (isAllCategory && !hasSearch) {
         items.forEach(item => {
           item.classList.remove('item-highlight', 'item-dimmed');
         });
+        document.querySelectorAll('.company-card').forEach(card => card.classList.remove('company-no-match'));
         if (statusText) statusText.innerText = '';
         return;
       }
 
       let matchCount = 0;
       items.forEach(item => {
-        const itemTechs = (item.getAttribute('data-techs') || '').split(',');
-        if (itemTechs.includes(techKey)) {
+        const itemTechs = (item.getAttribute('data-techs') || '').toLowerCase().split(',');
+        const itemKeywords = (item.getAttribute('data-keywords') || '').toLowerCase();
+        const itemContent = item.textContent.toLowerCase();
+
+        let categoryMatch = isAllCategory;
+        if (!isAllCategory) {
+          categoryMatch = itemTechs.some(t => t.includes(currentCategory));
+        }
+
+        let queryMatch = true;
+        if (hasSearch) {
+          queryMatch = itemTechs.some(t => t.includes(currentSearchQuery)) ||
+            itemKeywords.includes(currentSearchQuery) ||
+            itemContent.includes(currentSearchQuery);
+        }
+
+        if (categoryMatch && queryMatch) {
           item.classList.add('item-highlight');
           item.classList.remove('item-dimmed');
           matchCount++;
@@ -1338,46 +2206,121 @@
         }
       });
 
+      document.querySelectorAll('.company-card').forEach(card => {
+        const hasMatchedChild = card.querySelectorAll('.career-item.item-highlight').length > 0;
+        if (!isAllCategory || hasSearch) {
+          if (hasMatchedChild) {
+            card.classList.remove('company-no-match');
+          } else {
+            card.classList.add('company-no-match');
+          }
+        } else {
+          card.classList.remove('company-no-match');
+        }
+      });
+
       const techLabels = {
         flutter: 'Flutter / Dart',
         spring: 'Spring Boot / Java',
         android: 'Android / AOSP',
-        aws: 'AWS / Infra',
+        aws: 'AWS / DevOps',
         react: 'React / Web'
       };
 
+      let filterDesc = [];
+      if (!isAllCategory) filterDesc.push(`기술: ${techLabels[currentCategory] || currentCategory}`);
+      if (hasSearch) filterDesc.push(`검색어: "${currentSearchQuery}"`);
+
       if (statusText) {
-        statusText.innerText = `🔍 ${techLabels[techKey] || techKey} 관련 ${matchCount}개 항목 하이라이트 중`;
+        statusText.innerText = `🔍 ${filterDesc.join(' + ')} (${matchCount}개 매칭)`;
       }
     }
 
-    // 3. Early Records Accordion Toggle
+    // 4. Dynamic Tag Badge Click Handler
+    function setupInteractiveTagBadges() {
+      document.querySelectorAll('.tag-badge').forEach(badge => {
+        badge.setAttribute('title', '클릭하여 이 기술로 실시간 검색');
+        badge.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const searchVal = badge.getAttribute('data-search') || badge.innerText.trim();
+          const searchInput = document.getElementById('tech-search-input');
+          if (searchInput) {
+            searchInput.value = searchVal;
+            focusSearchInput();
+            handleSearchInput(searchVal);
+            showToast(`"${searchVal}" 기술 스택으로 필터링되었습니다 🔍`);
+          }
+        });
+      });
+    }
+
+    // 5. Early Records Accordion Toggle
     let isEarlyOpen = true;
     function toggleEarlyRecords() {
       const content = document.getElementById('early-records-content');
       const toggleText = document.getElementById('early-toggle-text');
+      const toggleBtn = document.getElementById('toggle-early-btn');
 
       if (isEarlyOpen) {
         content.classList.add('hidden');
         toggleText.innerText = '▲ 펼쳐보기 (2014 - 2017)';
+        toggleBtn.setAttribute('aria-expanded', 'false');
         isEarlyOpen = false;
       } else {
         content.classList.remove('hidden');
         toggleText.innerText = '▼ 접기 (2014 - 2017)';
+        toggleBtn.setAttribute('aria-expanded', 'true');
         isEarlyOpen = true;
       }
     }
 
-    // 4. Back to Top Button Visibility
-    window.addEventListener('scroll', () => {
+    // 6. Keyboard Shortcut Listeners (Cmd+K / Ctrl+K / Esc)
+    function setupKeyboardShortcuts() {
+      window.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          focusSearchInput();
+        }
+        if (e.key === 'Escape') {
+          const searchInput = document.getElementById('tech-search-input');
+          if (document.activeElement === searchInput || currentSearchQuery.length > 0) {
+            clearSearch();
+          }
+        }
+      });
+    }
+
+    // 7. Scroll Progress Bar & Back to Top
+    function setupScrollFeatures() {
+      const progressBar = document.getElementById('scroll-progress');
       const btt = document.getElementById('back-to-top');
-      if (window.scrollY > 400) {
-        btt.classList.remove('opacity-0', 'pointer-events-none');
-        btt.classList.add('opacity-100', 'pointer-events-auto');
-      } else {
-        btt.classList.add('opacity-0', 'pointer-events-none');
-        btt.classList.remove('opacity-100', 'pointer-events-auto');
+
+      function handleScroll() {
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = window.innerHeight;
+        const docHeight = scrollHeight - clientHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        if (progressBar) progressBar.style.width = progress + '%';
+
+        if (scrollTop > 400) {
+          btt.classList.remove('opacity-0', 'pointer-events-none');
+          btt.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+          btt.classList.add('opacity-0', 'pointer-events-none');
+          btt.classList.remove('opacity-100', 'pointer-events-auto');
+        }
       }
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    }
+
+    // Initialization on DOM Ready
+    document.addEventListener('DOMContentLoaded', () => {
+      setupInteractiveTagBadges();
+      setupKeyboardShortcuts();
+      setupScrollFeatures();
     });
   </script>
 
