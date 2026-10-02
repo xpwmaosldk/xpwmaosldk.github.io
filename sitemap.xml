@@ -24,4 +24,10 @@
    <changefreq>always</changefreq>
    <priority>0.6400</priority>
 </url>
+<url>
+   <loc>https://xpwmaosldk.github.io/Autotrade/</loc>
+   <lastmod>2026-10-02T14:45:00+00:00</lastmod>
+   <changefreq>always</changefreq>
+   <priority>0.8000</priority>
+</url>
 </urlset>

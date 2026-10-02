@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest.json",
+  "name": "풀스택 개발자 xpwmaosldk | 이력서 & 포트폴리오",
+  "short_name": "xpwmaosldk",
+  "description": "9년 8개월 차 시니어 풀스택 개발자 xpwmaosldk의 인터랙티브 이력서 & 포트폴리오. Flutter, Spring Boot, Android, AWS.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#F8F7F2",
+  "theme_color": "#FFE600",
+  "orientation": "portrait-primary",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": [
+    "portfolio",
+    "resume",
+    "productivity",
+    "developer"
+  ],
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "주요 경력 (Career)",
+      "short_name": "경력",
+      "description": "시니어 풀스택 개발자 경력 타임라인 보기",
+      "url": "./index.html#career",
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "기술 스택 (Skills)",
+      "short_name": "기술스택",
+      "description": "Flutter, Spring Boot, Android 등 기술 스택 보기",
+      "url": "./index.html#skills",
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "프로젝트 (Projects)",
+      "short_name": "프로젝트",
+      "description": "오픈소스 패키지 및 대표 프로젝트 보기",
+      "url": "./index.html#projects",
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "연락처 (Contact)",
+      "short_name": "연락처",
+      "description": "이메일 및 GitHub 프로필 확인",
+      "url": "./index.html#contact",
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

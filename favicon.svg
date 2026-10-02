@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Hard Drop Shadow for Document (Black, dx=7, dy=7) -->
+  <path d="M 28 16 
+           L 74 16 
+           L 100 42 
+           L 100 114 
+           L 28 114 Z" 
+        fill="#000000" 
+        transform="translate(7, 7)" />
+
+  <!-- Main Resume Document Body (#FFE600 with bold black stroke) -->
+  <path d="M 28 16 
+           L 74 16 
+           L 100 42 
+           L 100 114 
+           L 28 114 Z" 
+        fill="#FFE600" 
+        stroke="#000000" 
+        stroke-width="6.5" 
+        stroke-linejoin="round" />
+
+  <!-- Folded Corner Flap (Top-Right, White fill with black stroke) -->
+  <path d="M 74 16 
+           L 74 42 
+           L 100 42 Z" 
+        fill="#FFFFFF" 
+        stroke="#000000" 
+        stroke-width="5.5" 
+        stroke-linejoin="round" />
+
+  <!-- Developer Code Brackets: < / > (Senior Full-Stack Developer Symbol) -->
+  <!-- Left Bracket: < -->
+  <polyline points="47,53 37,64 47,75" 
+            fill="none" 
+            stroke="#111111" 
+            stroke-width="6.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+
+  <!-- Center Slash: / -->
+  <line x1="68" y1="50" x2="60" y2="78" 
+        stroke="#111111" 
+        stroke-width="6.5" 
+        stroke-linecap="round" />
+
+  <!-- Right Bracket: > -->
+  <polyline points="81,53 91,64 81,75" 
+            fill="none" 
+            stroke="#111111" 
+            stroke-width="6.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+
+  <!-- Resume Summary Accent Lines -->
+  <!-- Line 1: Main Experience Bar -->
+  <rect x="38" y="88" width="52" height="6.5" rx="3.25" fill="#111111" />
+  <!-- Line 2: Skills / Projects Accent Bar -->
+  <rect x="38" y="99" width="34" height="6.5" rx="3.25" fill="#111111" />
+</svg>

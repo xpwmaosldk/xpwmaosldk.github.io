@@ -57,9 +57,17 @@
   }
   </script>
 
-  <!-- Favicon (Inline SVG Neo-Brutalist Icon) -->
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FFE600' stroke='%23000' stroke-width='3' rx='4'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='900' text-anchor='middle' fill='%23000'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+  <!-- Favicons & App Icons -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+  <!-- PWA Web App Manifest & Mobile Integration -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="xpwmaosldk">
 
   <!-- Web Fonts: Pretendard (Korean) + Space Grotesk + JetBrains Mono -->
   <link rel="stylesheet" as="style" crossorigin
@@ -117,6 +125,7 @@
       background-size: 24px 24px;
       background-position: 0 0, 12px 12px;
       color: #111;
+      overflow-x: hidden;
     }
 
     /* Accessibility Focus Styles */
@@ -127,7 +136,7 @@
       color: #000 !important;
     }
 
-    /* Clean Horizontal Scrollbar */
+    /* Clean Horizontal Scrollbar with Smooth Touch */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -135,6 +144,7 @@
     .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
     }
 
     /* Neo-Brutalist Cards */
@@ -148,6 +158,17 @@
     .brutal-card-hover:hover {
       transform: translate(-2px, -2px);
       box-shadow: 6px 6px 0px #000;
+    }
+
+    @media (max-width: 640px) {
+      .brutal-card {
+        box-shadow: 3px 3px 0px #000;
+      }
+
+      .brutal-card-hover:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 4px 4px 0px #000;
+      }
     }
 
     /* Tactile Buttons */
@@ -447,7 +468,7 @@
 
     <!-- Row 1: Section Navigation Links + ScrollSpy -->
     <div
-      class="max-w-5xl mx-auto flex items-center justify-start sm:justify-center gap-1 overflow-x-auto no-scrollbar py-0.5">
+      class="max-w-5xl mx-auto flex items-center justify-start sm:justify-center gap-1 overflow-x-auto no-scrollbar py-0.5 px-2">
       <a href="#main-content" class="nav-tab active flex items-center gap-1 shrink-0 font-black text-black"
         data-section="main-content">
         <span>⚡ xpwmaosldk</span>
@@ -468,11 +489,18 @@
       <a href="#education" class="nav-tab flex items-center gap-1 shrink-0" data-section="education">
         <span>🎓 학력</span>
       </a>
+      <!-- PWA Install Navigation Action (Visible when installable) -->
+      <button id="nav-pwa-install-btn" onclick="installPWA()"
+        class="hidden nav-tab brutal-btn bg-[#FFE600] text-black px-2 py-0.5 text-xs font-black shrink-0 border border-black shadow-[1.5px_1.5px_0px_#000] hover:bg-[#FFD700] ml-1"
+        title="포트폴리오 앱으로 설치">
+        <i class="fa-solid fa-download text-[10px]"></i>
+        <span>앱 설치</span>
+      </button>
     </div>
 
     <!-- Row 2: Tech Stack Filter Chips -->
     <div
-      class="max-w-5xl mx-auto flex items-center justify-start sm:justify-center gap-1.5 overflow-x-auto no-scrollbar font-mono text-xs font-bold pt-0.5 border-t border-zinc-200">
+      class="max-w-5xl mx-auto flex items-center justify-start sm:justify-center gap-1.5 overflow-x-auto no-scrollbar font-mono text-xs font-bold pt-0.5 px-2 border-t border-zinc-200">
       <span class="text-[10.5px] font-black text-black uppercase tracking-wider shrink-0 mr-1 hidden sm:inline">
         STACK:
       </span>
@@ -551,39 +579,39 @@
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 pt-2">
         <!-- KPI 1 -->
         <div
-          class="p-3.5 sm:p-4 bg-zinc-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
+          class="p-3 sm:p-4 bg-zinc-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
           <span class="text-[11px] font-mono font-bold text-zinc-500 uppercase tracking-wider block truncate">총 개발
             경력</span>
-          <div class="text-lg sm:text-xl md:text-2xl font-black font-mono text-black whitespace-nowrap">9년 8개월</div>
-          <p class="text-xs text-zinc-600 font-medium leading-snug">기획·설계부터 배포·운영 완결</p>
+          <div class="text-base sm:text-xl md:text-2xl font-black font-mono text-black break-keep">9년 8개월</div>
+          <p class="text-xs text-zinc-600 font-medium leading-snug break-keep">기획·설계부터 배포·운영 완결</p>
         </div>
 
         <!-- KPI 2 -->
         <div
-          class="p-3.5 sm:p-4 bg-purple-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
+          class="p-3 sm:p-4 bg-purple-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
           <span class="text-[11px] font-mono font-bold text-purple-800 uppercase tracking-wider block truncate">다양한 도메인
             실무</span>
-          <div class="text-lg sm:text-xl md:text-2xl font-black font-mono text-purple-900 whitespace-nowrap">27개 프로젝트
+          <div class="text-base sm:text-xl md:text-2xl font-black font-mono text-purple-900 break-keep">27개 프로젝트
           </div>
-          <p class="text-xs text-zinc-600 font-medium leading-snug">핀테크·커머스·에듀·IoT·차량</p>
+          <p class="text-xs text-zinc-600 font-medium leading-snug break-keep">핀테크·커머스·에듀·IoT·차량</p>
         </div>
 
         <!-- KPI 3 -->
         <div
-          class="p-3.5 sm:p-4 bg-blue-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
+          class="p-3 sm:p-4 bg-blue-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
           <span class="text-[11px] font-mono font-bold text-blue-800 uppercase tracking-wider block truncate">서버 부하 & 비용
             절감</span>
-          <div class="text-lg sm:text-xl md:text-2xl font-black font-mono text-blue-700 whitespace-nowrap">90% ⬇</div>
-          <p class="text-xs text-zinc-600 font-medium leading-snug">풀스택 기반 부하분산·비용절감</p>
+          <div class="text-base sm:text-xl md:text-2xl font-black font-mono text-blue-700 break-keep">90% ⬇</div>
+          <p class="text-xs text-zinc-600 font-medium leading-snug break-keep">풀스택 기반 부하분산·비용절감</p>
         </div>
 
         <!-- KPI 4 -->
         <div
-          class="p-3.5 sm:p-4 bg-amber-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
+          class="p-3 sm:p-4 bg-amber-50 border-2 border-black brutal-shadow-sm flex flex-col justify-between h-full space-y-1">
           <span class="text-[11px] font-mono font-bold text-amber-800 uppercase tracking-wider block truncate">개발
             생산성</span>
-          <div class="text-lg sm:text-xl md:text-2xl font-black font-mono text-amber-700 whitespace-nowrap">30% ⬆</div>
-          <p class="text-xs text-zinc-600 font-medium leading-snug">Flutter 단일 코드베이스 도입</p>
+          <div class="text-base sm:text-xl md:text-2xl font-black font-mono text-amber-700 break-keep">30% ⬆</div>
+          <p class="text-xs text-zinc-600 font-medium leading-snug break-keep">Flutter 단일 코드베이스 도입</p>
         </div>
       </div>
 
@@ -644,7 +672,7 @@
     <!-- 2. SECTION: LIVE SANDBOX & DEPLOYED APPS (Option A: Showcase First) -->
     <section id="apps" class="space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black pb-2">
-        <div class="flex items-center gap-2">
+        <div class="flex flex-wrap items-center gap-2">
           <h2
             class="inline-block bg-black text-white px-3.5 py-1 text-sm sm:text-base font-black font-display uppercase tracking-wider brutal-shadow-sm">
             🚀 LIVE WEB APPLICATIONS
@@ -652,41 +680,43 @@
           <span class="text-xs font-mono font-bold text-zinc-600">실시간 구동 웹 애플리케이션 쇼케이스</span>
         </div>
         <span
-          class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 border border-emerald-800 px-2 py-0.5 self-start sm:self-auto">
-          ● 2 LIVE APPS
+          class="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 border border-emerald-800 px-2 py-0.5 self-start sm:self-auto shrink-0">
+          ● 3 LIVE APPS
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <!-- 3D Lotto Simulator -->
         <article
-          class="career-item bg-[#94FF98] brutal-card brutal-card-hover p-5 sm:p-6 flex flex-col justify-between space-y-4"
+          class="career-item bg-[#94FF98] brutal-card brutal-card-hover p-4 sm:p-5 md:p-6 h-full flex flex-col justify-between space-y-4"
           data-techs="flutter,web,flame,forge2d,canvas,dart"
           data-keywords="3d lotto simulator 로또 시뮬레이터 flame forge2d physics canvas flutter web 60fps 물리엔진">
-          <div class="space-y-3">
-            <div class="flex justify-between items-start gap-2">
-              <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <span
-                    class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-2 py-0.5 inline-block">
-                    PHYSICS 3D SIMULATION
-                  </span>
-                  <span
-                    class="inline-flex items-center gap-1 bg-black text-[#94FF98] text-[10px] font-mono font-bold px-2 py-0.5 border border-black">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#94FF98] neo-pulse-dot"></span> LIVE
-                  </span>
-                </div>
-                <h3 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight text-black">🔮 3D LOTTO
-                  SIMULATOR</h3>
+          <div class="space-y-3 flex-1 flex flex-col">
+            <!-- Top Meta Bar -->
+            <div class="flex items-center justify-between gap-1.5 flex-wrap">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span
+                  class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-1.5 py-0.5">
+                  PHYSICS 3D SIMULATION
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 bg-black text-[#94FF98] text-[10px] font-mono font-bold px-1.5 py-0.5 border border-black">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#94FF98] neo-pulse-dot"></span> LIVE
+                </span>
               </div>
               <span
-                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
+                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[10.5px] font-black uppercase brutal-shadow-sm shrink-0">
                 FLUTTER
               </span>
             </div>
 
-            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
+            <!-- Title -->
+            <h3 class="text-base sm:text-lg font-black font-display uppercase tracking-tight text-black break-keep">
+              🔮 3D LOTTO SIMULATOR
+            </h3>
+
+            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed flex-1">
               Flame 2D & Forge2D 물리 엔진 레이어를 결합하여 웹 브라우저 캔버스 환경에서 60fps 고프레임으로 구동되는 3D 로또 볼 믹싱 및 물리 충돌 시뮬레이션을 구현한 웹
               애플리케이션입니다.
             </p>
@@ -700,7 +730,7 @@
           </div>
 
           <a href="https://xpwmaosldk.github.io/LotteryPredictor" target="_blank" rel="noopener noreferrer"
-            class="w-full text-center bg-white hover:bg-black hover:text-[#94FF98] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5"
+            class="w-full text-center bg-white hover:bg-black hover:text-[#94FF98] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5 mt-auto"
             aria-label="3D Lotto Simulator 라이브 사이트 새 창으로 열기">
             <span>LAUNCH LIVE SITE</span> <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
           </a>
@@ -708,32 +738,34 @@
 
         <!-- Horse Race Predictor -->
         <article
-          class="career-item bg-[#FF94E7] brutal-card brutal-card-hover p-5 sm:p-6 flex flex-col justify-between space-y-4"
+          class="career-item bg-[#FF94E7] brutal-card brutal-card-hover p-4 sm:p-5 md:p-6 h-full flex flex-col justify-between space-y-4"
           data-techs="react,web,typescript,recharts"
           data-keywords="horse race predictor 경마 예측 react typescript recharts kra indexeddb vite 데이터 시각화">
-          <div class="space-y-3">
-            <div class="flex justify-between items-start gap-2">
-              <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <span
-                    class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-2 py-0.5 inline-block">
-                    DATA VISUALIZATION
-                  </span>
-                  <span
-                    class="inline-flex items-center gap-1 bg-black text-[#FF94E7] text-[10px] font-mono font-bold px-2 py-0.5 border border-black">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#FF94E7] neo-pulse-dot"></span> LIVE
-                  </span>
-                </div>
-                <h3 class="text-lg sm:text-xl font-black font-display uppercase tracking-tight text-black">🐎 HORSE RACE
-                  PREDICTOR</h3>
+          <div class="space-y-3 flex-1 flex flex-col">
+            <!-- Top Meta Bar -->
+            <div class="flex items-center justify-between gap-1.5 flex-wrap">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span
+                  class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-1.5 py-0.5">
+                  DATA VISUALIZATION
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 bg-black text-[#FF94E7] text-[10px] font-mono font-bold px-1.5 py-0.5 border border-black">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#FF94E7] neo-pulse-dot"></span> LIVE
+                </span>
               </div>
               <span
-                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[11px] font-black uppercase brutal-shadow-sm">
+                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[10.5px] font-black uppercase brutal-shadow-sm shrink-0">
                 REACT
               </span>
             </div>
 
-            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed">
+            <!-- Title -->
+            <h3 class="text-base sm:text-lg font-black font-display uppercase tracking-tight text-black break-keep">
+              🐎 HORSE RACE PREDICTOR
+            </h3>
+
+            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed flex-1">
               한국마사회(KRA) 공공 데이터 API와 연동하여 경주 일정, 출전마 전적, 주로 상태 등을 정밀 분석하고 순위 예측 알고리즘 및 레이더 차트 데이터 시각화를 구현한 웹 애플리케이션입니다.
             </p>
 
@@ -746,8 +778,57 @@
           </div>
 
           <a href="https://xpwmaosldk.github.io/HorseRacePredictor" target="_blank" rel="noopener noreferrer"
-            class="w-full text-center bg-white hover:bg-black hover:text-[#FF94E7] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5"
+            class="w-full text-center bg-white hover:bg-black hover:text-[#FF94E7] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5 mt-auto"
             aria-label="Horse Race Predictor 라이브 사이트 새 창으로 열기">
+            <span>LAUNCH LIVE SITE</span> <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+          </a>
+        </article>
+
+        <!-- Bithumb 24H Autotrade Bot -->
+        <article
+          class="career-item bg-[#FF9F43] brutal-card brutal-card-hover p-4 sm:p-5 md:p-6 h-full flex flex-col justify-between space-y-4 md:col-span-2 lg:col-span-1"
+          data-techs="react,web,typescript,websocket,pwa,crypto"
+          data-keywords="bithumb 24h autotrade bot 빗썸 자동매매 트레이딩 봇 react typescript websocket pwa 가상자산 핀테크 차트 퀀트 암호화폐 비트코인">
+          <div class="space-y-3 flex-1 flex flex-col">
+            <!-- Top Meta Bar -->
+            <div class="flex items-center justify-between gap-1.5 flex-wrap">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span
+                  class="text-[10px] font-mono font-bold text-zinc-900 bg-white/90 border border-black px-1.5 py-0.5">
+                  FINTECH / QUANT BOT
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 bg-black text-[#FF9F43] text-[10px] font-mono font-bold px-1.5 py-0.5 border border-black">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#FF9F43] neo-pulse-dot"></span> LIVE
+                </span>
+              </div>
+              <span
+                class="bg-white border-2 border-black px-2 py-0.5 font-mono text-[10.5px] font-black uppercase brutal-shadow-sm shrink-0">
+                REACT
+              </span>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-base sm:text-lg font-black font-display uppercase tracking-tight text-black break-keep">
+              🪙 BITHUMB 24H AUTOTRADE
+            </h3>
+
+            <p class="text-xs sm:text-sm font-medium text-zinc-900 leading-relaxed flex-1">
+              빗썸(Bithumb) 실시간 시세 WebSocket 연동 및 PWA 백그라운드 구동 기반 24시간 무중단 가상자산 자동매매 시스템입니다. 실시간 틱/호가 분석 및 알고리즘 기반 변동성 매매를
+              수행합니다.
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="tag-badge" data-search="React">React</span>
+              <span class="tag-badge" data-search="TypeScript">TypeScript</span>
+              <span class="tag-badge" data-search="WebSocket">WebSocket</span>
+              <span class="tag-badge" data-search="PWA">PWA</span>
+            </div>
+          </div>
+
+          <a href="https://xpwmaosldk.github.io/Autotrade" target="_blank" rel="noopener noreferrer"
+            class="w-full text-center bg-white hover:bg-black hover:text-[#FF9F43] text-black border-2 border-black py-2 text-xs font-mono font-black uppercase brutal-shadow transition flex items-center justify-center gap-1.5 mt-auto"
+            aria-label="Bithumb 24H Autotrade 라이브 사이트 새 창으로 열기">
             <span>LAUNCH LIVE SITE</span> <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
           </a>
         </article>
@@ -1098,8 +1179,8 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <input type="search" id="tech-search-input" oninput="handleSearchInput(this.value)"
-          placeholder="기술 스택, 프로젝트명, 성과 검색 (예: Flutter, Spring Boot, AOSP, Bootchart, WebRTC, AWS, Riverpod...)"
-          class="w-full pl-9 pr-28 py-2 bg-zinc-50 border-2 border-black font-mono text-xs sm:text-sm font-semibold focus:bg-white focus:outline-none placeholder:text-zinc-400">
+          placeholder="기술 스택, 프로젝트명, 성과 검색 (예: Flutter, Spring Boot, AOSP, Bootchart, WebRTC, AWS...)"
+          class="w-full pl-9 pr-16 sm:pr-28 py-2 bg-zinc-50 border-2 border-black font-mono text-xs sm:text-sm font-semibold focus:bg-white focus:outline-none placeholder:text-zinc-400">
 
         <div class="absolute inset-y-1 right-1.5 flex items-center gap-1">
           <span class="hidden sm:inline-flex text-[10px] text-zinc-400 font-mono items-center gap-0.5 mr-1">
@@ -2052,10 +2133,17 @@
   </main>
 
   <!-- FLOATING ACTION CONTROLS -->
-  <aside id="floating-quick-bar" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 no-print" aria-label="빠른 실행 도구">
+  <aside id="floating-quick-bar" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-2 no-print"
+    aria-label="빠른 실행 도구">
+    <!-- PWA Install Floating Button (Visible when install prompt is active) -->
+    <button id="pwa-install-btn" onclick="installPWA()"
+      class="hidden bg-[#FFE600] text-black border-2 border-black p-2.5 sm:p-3 brutal-shadow brutal-btn rounded-none transition-all duration-200"
+      aria-label="포트폴리오를 앱으로 설치" title="포트폴리오 앱 설치">
+      <i class="fa-solid fa-download text-sm font-black"></i>
+    </button>
     <!-- Back to Top Button -->
     <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-      class="bg-[#FFE600] text-black border-2 border-black p-3 brutal-shadow brutal-btn rounded-none opacity-0 pointer-events-none transition-all duration-200"
+      class="bg-[#FFE600] text-black border-2 border-black p-2.5 sm:p-3 brutal-shadow brutal-btn rounded-none opacity-0 pointer-events-none transition-all duration-200"
       aria-label="페이지 맨 위로 이동" title="맨 위로 이동">
       <i class="fa-solid fa-arrow-up text-sm font-black"></i>
     </button>
@@ -2063,10 +2151,10 @@
 
   <!-- TOAST NOTIFICATION -->
   <div id="copy-toast"
-    class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-black text-[#FFE600] border-2 border-white px-4 py-2.5 brutal-shadow-lg text-xs font-mono font-black flex items-center gap-2 rounded shadow-2xl opacity-0 pointer-events-none"
+    class="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 max-w-[90vw] sm:max-w-md bg-black text-[#FFE600] border-2 border-white px-4 py-2.5 brutal-shadow-lg text-xs font-mono font-black flex items-center justify-center gap-2 rounded shadow-2xl opacity-0 pointer-events-none text-center"
     role="status" aria-live="polite">
-    <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-    <span id="toast-message">클립보드에 복사되었습니다!</span>
+    <i class="fa-solid fa-circle-check text-emerald-400 text-sm shrink-0"></i>
+    <span id="toast-message" class="break-keep">클립보드에 복사되었습니다!</span>
   </div>
 
   <!-- INTERACTIVE SCRIPTS -->
@@ -2397,12 +2485,87 @@
       handleScroll();
     }
 
+    // 7. Progressive Web App (PWA) & Service Worker Integration
+    let deferredInstallPrompt = null;
+
+    function setupPWA() {
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((reg) => {
+              console.log('[PWA] Service Worker registered with scope:', reg.scope);
+
+              reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                if (newWorker) {
+                  newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                      showToast('⚡ 최신 포트폴리오가 업데이트되었습니다.');
+                    }
+                  });
+                }
+              });
+            })
+            .catch((err) => {
+              console.warn('[PWA] Service Worker registration failed:', err);
+            });
+        });
+      }
+
+      // Handle PWA Install Prompt
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredInstallPrompt = e;
+
+        const floatingBtn = document.getElementById('pwa-install-btn');
+        const navBtn = document.getElementById('nav-pwa-install-btn');
+        if (floatingBtn) floatingBtn.classList.remove('hidden');
+        if (navBtn) navBtn.classList.remove('hidden');
+      });
+
+      // Handle App Installed Event
+      window.addEventListener('appinstalled', () => {
+        deferredInstallPrompt = null;
+        const floatingBtn = document.getElementById('pwa-install-btn');
+        const navBtn = document.getElementById('nav-pwa-install-btn');
+        if (floatingBtn) floatingBtn.classList.add('hidden');
+        if (navBtn) navBtn.classList.add('hidden');
+        showToast('🎉 포트폴리오가 성공적으로 설치되었습니다!');
+      });
+
+      // Network Offline / Online Status Monitoring
+      window.addEventListener('offline', () => {
+        showToast('⚡ 오프라인 모드: 저장된 캐시로 정상 열람 중입니다.');
+      });
+
+      window.addEventListener('online', () => {
+        showToast('🌐 네트워크가 정상 복구되었습니다.');
+      });
+    }
+
+    // Trigger PWA installation
+    window.installPWA = async function () {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      const choiceResult = await deferredInstallPrompt.userChoice;
+      if (choiceResult && choiceResult.outcome === 'accepted') {
+        showToast('⚡ 포트폴리오 앱 설치를 진행합니다.');
+      }
+      deferredInstallPrompt = null;
+      const floatingBtn = document.getElementById('pwa-install-btn');
+      const navBtn = document.getElementById('nav-pwa-install-btn');
+      if (floatingBtn) floatingBtn.classList.add('hidden');
+      if (navBtn) navBtn.classList.add('hidden');
+    };
+
     // Initialization on DOM Ready
     document.addEventListener('DOMContentLoaded', () => {
       setupInteractiveTagBadges();
       setupKeyboardShortcuts();
       setupScrollSpy();
       setupScrollFeatures();
+      setupPWA();
     });
   </script>
 
