@@ -1,10 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest.json",
+  "id": "https://xpwmaosldk.github.io/",
   "name": "풀스택 개발자 xpwmaosldk | 이력서 & 포트폴리오",
   "short_name": "xpwmaosldk",
   "description": "9년 8개월 차 시니어 풀스택 개발자 xpwmaosldk의 인터랙티브 이력서 & 포트폴리오. Flutter, Spring Boot, Android, AWS.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "https://xpwmaosldk.github.io/",
+  "scope": "https://xpwmaosldk.github.io/",
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",
@@ -23,17 +24,6 @@
     "developer"
   ],
   "icons": [
-    {
-      "src": "./favicon.ico",
-      "sizes": "48x48 32x32 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "./favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
     {
       "src": "./icon-192.png",
       "sizes": "192x192",
@@ -57,6 +47,17 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "./favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
@@ -64,7 +65,7 @@
       "name": "주요 경력 (Career)",
       "short_name": "경력",
       "description": "시니어 풀스택 개발자 경력 타임라인 보기",
-      "url": "./index.html#career",
+      "url": "https://xpwmaosldk.github.io/#career",
       "icons": [
         {
           "src": "./icon-192.png",
@@ -76,7 +77,7 @@
       "name": "기술 스택 (Skills)",
       "short_name": "기술스택",
       "description": "Flutter, Spring Boot, Android 등 기술 스택 보기",
-      "url": "./index.html#skills",
+      "url": "https://xpwmaosldk.github.io/#skills",
       "icons": [
         {
           "src": "./icon-192.png",
@@ -88,7 +89,7 @@
       "name": "프로젝트 (Projects)",
       "short_name": "프로젝트",
       "description": "오픈소스 패키지 및 대표 프로젝트 보기",
-      "url": "./index.html#projects",
+      "url": "https://xpwmaosldk.github.io/#projects",
       "icons": [
         {
           "src": "./icon-192.png",
@@ -100,7 +101,7 @@
       "name": "연락처 (Contact)",
       "short_name": "연락처",
       "description": "이메일 및 GitHub 프로필 확인",
-      "url": "./index.html#contact",
+      "url": "https://xpwmaosldk.github.io/#contact",
       "icons": [
         {
           "src": "./icon-192.png",
@@ -108,5 +109,6 @@
         }
       ]
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }
