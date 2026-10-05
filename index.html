@@ -62,13 +62,6 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 
-  <!-- PWA Web App Manifest & Mobile Integration -->
-  <link rel="manifest" href="./manifest.json">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="xpwmaosldk">
-
   <!-- Web Fonts: Pretendard (Korean) + Space Grotesk + JetBrains Mono -->
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
@@ -489,13 +482,6 @@
       <a href="#education" class="nav-tab flex items-center gap-1 shrink-0" data-section="education">
         <span>🎓 학력</span>
       </a>
-      <!-- PWA Install Navigation Action (Visible when installable) -->
-      <button id="nav-pwa-install-btn" onclick="installPWA()"
-        class="hidden nav-tab brutal-btn bg-[#FFE600] text-black px-2 py-0.5 text-xs font-black shrink-0 border border-black shadow-[1.5px_1.5px_0px_#000] hover:bg-[#FFD700] ml-1"
-        title="포트폴리오 앱으로 설치">
-        <i class="fa-solid fa-download text-[10px]"></i>
-        <span>앱 설치</span>
-      </button>
     </div>
 
     <!-- Row 2: Tech Stack Filter Chips -->
@@ -2135,12 +2121,6 @@
   <!-- FLOATING ACTION CONTROLS -->
   <aside id="floating-quick-bar" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-2 no-print"
     aria-label="빠른 실행 도구">
-    <!-- PWA Install Floating Button (Visible when install prompt is active) -->
-    <button id="pwa-install-btn" onclick="installPWA()"
-      class="hidden bg-[#FFE600] text-black border-2 border-black p-2.5 sm:p-3 brutal-shadow brutal-btn rounded-none transition-all duration-200"
-      aria-label="포트폴리오를 앱으로 설치" title="포트폴리오 앱 설치">
-      <i class="fa-solid fa-download text-sm font-black"></i>
-    </button>
     <!-- Back to Top Button -->
     <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
       class="bg-[#FFE600] text-black border-2 border-black p-2.5 sm:p-3 brutal-shadow brutal-btn rounded-none opacity-0 pointer-events-none transition-all duration-200"
@@ -2485,79 +2465,19 @@
       handleScroll();
     }
 
-    // 7. Progressive Web App (PWA) & Service Worker Integration
-    let deferredInstallPrompt = null;
-
-    function setupPWA() {
-      // Service Worker Registration
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js')
-            .then((reg) => {
-              console.log('[PWA] Service Worker registered with scope:', reg.scope);
-
-              reg.addEventListener('updatefound', () => {
-                const newWorker = reg.installing;
-                if (newWorker) {
-                  newWorker.addEventListener('statechange', () => {
-                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                      showToast('⚡ 최신 포트폴리오가 업데이트되었습니다.');
-                    }
-                  });
-                }
-              });
-            })
-            .catch((err) => {
-              console.warn('[PWA] Service Worker registration failed:', err);
-            });
+    // Service Worker Cleanup (기존 등록된 PWA Service Worker 및 캐시 완전 해제)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (const registration of registrations) {
+          registration.unregister();
+        }
+      });
+      if ('caches' in window) {
+        caches.keys().then((keys) => {
+          keys.forEach((key) => caches.delete(key));
         });
       }
-
-      // Handle PWA Install Prompt
-      window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredInstallPrompt = e;
-
-        const floatingBtn = document.getElementById('pwa-install-btn');
-        const navBtn = document.getElementById('nav-pwa-install-btn');
-        if (floatingBtn) floatingBtn.classList.remove('hidden');
-        if (navBtn) navBtn.classList.remove('hidden');
-      });
-
-      // Handle App Installed Event
-      window.addEventListener('appinstalled', () => {
-        deferredInstallPrompt = null;
-        const floatingBtn = document.getElementById('pwa-install-btn');
-        const navBtn = document.getElementById('nav-pwa-install-btn');
-        if (floatingBtn) floatingBtn.classList.add('hidden');
-        if (navBtn) navBtn.classList.add('hidden');
-        showToast('🎉 포트폴리오가 성공적으로 설치되었습니다!');
-      });
-
-      // Network Offline / Online Status Monitoring
-      window.addEventListener('offline', () => {
-        showToast('⚡ 오프라인 모드: 저장된 캐시로 정상 열람 중입니다.');
-      });
-
-      window.addEventListener('online', () => {
-        showToast('🌐 네트워크가 정상 복구되었습니다.');
-      });
     }
-
-    // Trigger PWA installation
-    window.installPWA = async function () {
-      if (!deferredInstallPrompt) return;
-      deferredInstallPrompt.prompt();
-      const choiceResult = await deferredInstallPrompt.userChoice;
-      if (choiceResult && choiceResult.outcome === 'accepted') {
-        showToast('⚡ 포트폴리오 앱 설치를 진행합니다.');
-      }
-      deferredInstallPrompt = null;
-      const floatingBtn = document.getElementById('pwa-install-btn');
-      const navBtn = document.getElementById('nav-pwa-install-btn');
-      if (floatingBtn) floatingBtn.classList.add('hidden');
-      if (navBtn) navBtn.classList.add('hidden');
-    };
 
     // Initialization on DOM Ready
     document.addEventListener('DOMContentLoaded', () => {
@@ -2565,7 +2485,6 @@
       setupKeyboardShortcuts();
       setupScrollSpy();
       setupScrollFeatures();
-      setupPWA();
     });
   </script>
 
